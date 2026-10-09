@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183e35">
+  <meta name="description" content="The CSE-301 DBMS question archive: past finals, class tests and midterms, searchable by chapter and topic.">
+  <title>DBMS Archive · CSE-301 Question Bank</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/questions.js"></script>
+  <script defer src="search.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to questions</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="DBMS Archive home"><span class="brand-mark" aria-hidden="true">d<span>.</span></span><span>DBMS <strong>Archive</strong><small>CSE-301 / MIST</small></span></a>
+    <nav aria-label="Main"><button id="bank-nav" class="nav-button active" type="button">Question bank</button><button id="saved-nav" class="nav-button" type="button">Saved <span id="saved-count">0</span></button><button id="about-button" class="nav-button" type="button">About the archive <span aria-hidden="true">↗</span></button></nav>
+  </header>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Question filters">
+      <div class="sidebar-heading"><span class="eyebrow">THE SYLLABUS</span><button id="mobile-close" class="icon-button mobile-only" type="button" aria-label="Close filters">×</button></div>
+      <button type="button" id="all-chapters" class="chapter-button all active" aria-pressed="true"><span class="chapter-symbol" aria-hidden="true">▦</span><span>All chapters</span><span id="all-count" class="count">80</span></button>
+      <div id="chapters" class="chapter-list"></div>
+      <div class="sidebar-note"><span class="note-dot" aria-hidden="true"></span><div><strong>A little more focused.</strong><p>Only your taught chapters. Everything outside the syllabus lives in Others.</p></div></div>
+    </aside>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy"><div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> THE CSE-301 QUESTION BANK <span class="hero-edition">2016 — 2026</span></div><h1 id="hero-title">One syllabus.<br>Every <em>question.</em></h1><p>Less time hunting through papers.<br>More time understanding databases.</p></div>
+        <div class="archive-card" aria-label="Archive coverage"><span class="archive-card-label">COLLECTED & ORGANIZED</span><div class="archive-number">15<span>papers</span></div><div class="archive-card-bottom"><span>Finals · Class tests · Midterms</span><span class="stack-icon" aria-hidden="true">▱<br>▱<br>▱</span></div><div class="new-badge"><span aria-hidden="true">✦</span> Includes 2026 assessments</div></div>
+      </section>
+      <section class="search-section" aria-label="Search the question bank">
+        <form id="search-form" role="search"><label for="search-input" class="sr-only">Search questions or topics</label><span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input id="search-input" type="search" placeholder='Try "BCNF" "deadlock"…' aria-describedby="search-help" autocomplete="off"><button id="clear-search" type="button" aria-label="Clear search" hidden>×</button><kbd aria-hidden="true">/</kbd></form>
+        <p id="search-help" class="search-help">Search multiple terms using double quotes: <code>"BCNF" "deadlock"</code>. Matches any quoted term or phrase; no commas needed.</p>
+        <div class="suggestions"><span>Start somewhere</span><button type="button" data-query="BCNF">BCNF <span>↗</span></button><button type="button" data-query="ER diagram">ER diagrams <span>↗</span></button><button type="button" data-query="SQL">SQL queries <span>↗</span></button><button type="button" data-query="Deadlock">Deadlocks <span>↗</span></button></div>
+      </section>
+      <section class="bank-section" aria-labelledby="results-title">
+        <div class="section-heading"><div><span class="eyebrow" id="view-label">EXPLORE THE ARCHIVE</span><h2 id="results-title">All questions</h2></div><button id="mobile-filters" class="filter-toggle" type="button" aria-expanded="false" aria-controls="sidebar">☷ Chapters</button></div>
+        <div class="filters"><div class="select-field year-field"><span class="field-label" id="year-label">YEARS</span><details id="year-filter" class="year-picker"><summary id="year-summary" aria-labelledby="year-label year-summary">All years</summary><div class="year-options"><button id="clear-years" type="button" class="text-button">Clear selection</button><div id="year-options"></div></div></details></div><div class="select-field"><label for="type-filter">ASSESSMENT</label><select id="type-filter"><option value="">All assessments</option><option value="Term final">Term finals</option><option value="Class test">Class tests</option><option value="Midterm">Midterms</option><option value="Viva">Viva allocations</option></select></div><div class="select-field topic-field"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option></select></div><div class="select-field sort-field"><label for="sort-filter">SORT BY</label><select id="sort-filter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="chapter">Chapter order</option><option value="relevance">Search relevance</option></select></div></div>
+        <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+        <div class="results-meta"><p id="result-count" role="status" aria-live="polite">Loading the question bank…</p><button id="reset-button" class="text-button" type="button" hidden>Reset filters <span aria-hidden="true">↺</span></button></div>
+        <div id="results" class="results"><noscript><div class="empty-state"><h3>Enable JavaScript to search.</h3><p>This archive needs JavaScript to display and filter questions.</p></div></noscript></div>
+        <div class="pagination"><button id="load-more" class="load-more" type="button" hidden>Load more questions <span aria-hidden="true">↓</span></button><span id="shown-count"></span></div>
+      </section>
+      <footer><span class="footer-brand">d<span>.</span> <strong>Study the concepts. Know the questions.</strong></span><span class="footer-credit">Made by <strong>Mushfique</strong></span></footer>
+    </main>
+  </div>
+  <div id="sidebar-backdrop" hidden></div>
+  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Close about dialog" type="button">×</button><span class="eyebrow">A NOTE ON THE SOURCES</span><h2>The archive, in context.</h2><p>78 written question groups from 15 papers, plus two viva allocations. Shared scenarios and all subparts stay with their original question.</p><ul id="archive-notes"></ul><h3>How it is structured</h3><p>Questions are organized by chapter and topic, with the year, assessment, marks, and original source attached. A question may cover several chapters. Material outside the taught syllabus appears under Others.</p><p>Choose multiple years, combine chapter and topic filters, or search using quoted terms such as <code>"BCNF" "SQL injection"</code> to find questions matching either phrase. Expand any result to read its complete scenario and subparts.</p><p class="privacy-note">Saved questions stay in this browser. There are no accounts, trackers, or paid search services.</p></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
