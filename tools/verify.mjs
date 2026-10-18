@@ -65,6 +65,8 @@ assert.ok(html.includes('3-1 Archive'));assert.ok(html.includes('Made by <strong
 assert.ok(!/href="data\/(?:question-bank\.md|questions\.json)"/.test(html));
 assert.ok(!/<script(?![^>]*\bsrc=)/.test(html));
 assert.equal(find('CSE305').length,149);
+assert.deepEqual(byId('mma-2023-final-q1').studyParts,['A'],'A stack-segment descriptor belongs to processor architecture');
+assert.ok(!byId('mma-2025-final-q5').chapters.includes('mma-b1'),'An industrial assembly line is not assembly language');
 assert.deepEqual(find('286','mma').map(q=>q.id),find('80286','mma').map(q=>q.id));
 assert.equal(data.questions.filter(q=>q.subject==='mma'&&q.year===2024).length,16);
 assert.equal(new Set(data.questions.filter(q=>q.subject==='mma'&&q.year===2024).map(q=>q.paper)).size,2);

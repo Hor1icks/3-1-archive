@@ -16449,17 +16449,12 @@
       "courseTitle": "Microprocessors, Micro-controllers and Assembly Language",
       "examHeading": "Term Final (Spring) Examination 2023: Jul-Sep 2023",
       "chapters": [
-        "mma-a4",
-        "mma-b3"
+        "mma-a4"
       ],
       "topics": [
         {
           "chapter": "mma-a4",
           "name": "80286 Protected Mode and Protection"
-        },
-        {
-          "chapter": "mma-b3",
-          "name": "Assembly Stack and Procedures"
         },
         {
           "chapter": "mma-a4",
@@ -16468,8 +16463,7 @@
       ],
       "course": "CSE-305",
       "studyParts": [
-        "A",
-        "B"
+        "A"
       ],
       "sourceUrl": "sources/mma/final-exams.pdf#page=34"
     },
@@ -17083,17 +17077,12 @@
       "courseTitle": "Microprocessor, Micro-controller and Assembly Language",
       "examHeading": "Term Final (Spring) Examination 2024: Oct 2024 - Nov 2024",
       "chapters": [
-        "mma-a4",
-        "mma-b3"
+        "mma-a4"
       ],
       "topics": [
         {
           "chapter": "mma-a4",
           "name": "80286 Protected Mode and Protection"
-        },
-        {
-          "chapter": "mma-b3",
-          "name": "Assembly Stack and Procedures"
         },
         {
           "chapter": "mma-a4",
@@ -17102,8 +17091,7 @@
       ],
       "course": "CSE-305",
       "studyParts": [
-        "A",
-        "B"
+        "A"
       ],
       "sourceUrl": "sources/mma/final-exams.pdf#page=37"
     },
@@ -17755,17 +17743,12 @@
       "courseTitle": "Microprocessor, Micro-controller and Assembly Language",
       "examHeading": "Term Final (Spring) Examination 2024: Oct 2024 - Nov 2024",
       "chapters": [
-        "mma-a4",
-        "mma-b3"
+        "mma-a4"
       ],
       "topics": [
         {
           "chapter": "mma-a4",
           "name": "80286 Protected Mode and Protection"
-        },
-        {
-          "chapter": "mma-b3",
-          "name": "Assembly Stack and Procedures"
         },
         {
           "chapter": "mma-a4",
@@ -17774,8 +17757,7 @@
       ],
       "course": "CSE-305",
       "studyParts": [
-        "A",
-        "B"
+        "A"
       ],
       "sourceUrl": "sources/mma/final-exams.pdf#page=40"
     },
@@ -18448,15 +18430,10 @@
       "courseTitle": "Microprocessors, Micro-controllers & Assembly Language",
       "examHeading": "Term Final (Spring) Examination 2025: Oct - Nov 2025",
       "chapters": [
-        "mma-b1",
         "mma-b4",
         "mma-b5"
       ],
       "topics": [
-        {
-          "chapter": "mma-b1",
-          "name": "Assembly Instructions, Registers and Flags"
-        },
         {
           "chapter": "mma-b4",
           "name": "Arduino, ATmega and Sensor Interfacing"
