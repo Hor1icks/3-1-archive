@@ -1,62 +1,71 @@
 # 3-1 Archive
 
-A searchable question archive for Level 3, Term 1 at MIST, starting with **CSE-301: Database Management Systems**. Built to make revision easier: find a topic, compare questions across years, and keep useful questions saved for later.
+A searchable question archive for **Level 3, Term 1 at MIST**, bringing past exams and preparation material together by subject, chapter and topic.
 
-**[Explore the question bank →](https://hor1icks.github.io/3-1-archive/)**
+**[Explore the archive →](https://hor1icks.github.io/3-1-archive/)**
 
-## What’s included
+## Subjects and coverage
 
-The DBMS collection contains **78 written question groups from 15 papers**, plus **two viva mark allocations**. Each written group retains its shared scenario and subquestions.
+| Subject | Exam collection | Preparation material |
+| --- | --- | --- |
+| **CSE-301 · DBMS** | 78 written question groups and two viva allocations from 15 papers | Chapter and topic organization |
+| **CSE-303 · Compiler** | 70 written question groups and two viva allocations from nine term-final papers | 42 separately labeled suggestion and practice prompts, a Part A syllabus and lecture references |
 
-| Assessment | Coverage |
+Both final-exam collections cover source files labeled **2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024 and 2025**. DBMS also includes four class-test papers and two midterms from 2026.
+
+Each exam group keeps its original scenario and subquestions together. Questions appear as selectable text, with grammars, code, mathematical symbols, tables and source diagrams represented in text where needed. Original PDF pages remain linked for reference.
+
+## Find what you need
+
+- **Choose a subject**, or search across the whole archive.
+- **Browse chapters and topics** without mixing different subjects' syllabuses.
+- **Select multiple years** and combine them with assessment, topic and Compiler Part A/B filters.
+- **Search quoted terms:** `"left recursion" "SDD"` finds questions matching either term; `"SQL injection"` searches that phrase.
+- **Read full questions**, including individual part marks and source notes.
+- **Save questions** in the current browser and copy direct question links for later revision.
+
+Search recognizes common variants such as BCNF/Boyce–Codd, ER/E-R/ERD, B+/B⁺, TAC/three-address code, SDD/syntax-directed definition, and LR(0)/LR0.
+
+## Compiler topics
+
+Part A follows the six areas in the supplied syllabus:
+
+| Area | Topics |
 | --- | --- |
-| Term finals | 2016, 2017, 2018, 2019, 2021, 2022*, 2023, 2024, 2025 |
-| Class tests | Six questions across four 2026 class-test papers |
-| Midterms | Two 2026 papers covering hospital and apparel-company database design |
+| A1 | Language processing systems and compiler phases |
+| A2 | Lexical analysis, tokens, regular expressions, NFA and DFA |
+| A3 | Input buffering, sentinels and transition diagrams |
+| A4 | Grammars, derivations, parse trees and ambiguity |
+| A5 | Syntax analysis, recursive descent and parsing; left-recursion elimination |
+| A6 | Lexical and syntax errors |
 
-Questions are presented as selectable text, including relational schemas, functional dependencies, tables, transaction schedules, and mathematical symbols. Original papers are linked for reference.
+Part B follows the four areas in **Kazy Noor Sir's suggestions and lecture slides**: syntax-directed translation/SDD, intermediate code and code generation, code optimization, and runtime environments. Other Compiler material has its own category.
 
-## Find the questions you need
+**Maruf Sir's checklist** emphasizes recursive-descent parsing and left-recursion elimination. That emphasis is labeled as coming from the checklist; it is not a guaranteed exam prediction or mark allocation. Additional handnote practice is distinguished from the recorded suggestions.
 
-- **Browse by chapter and topic.** Questions covering several chapters appear under each relevant chapter.
-- **Select multiple years.** Combine them with assessment and topic filters.
-- **Search terms or phrases.** Search `BCNF`, or enter `"BCNF" "deadlock"` to find questions matching either quoted term. Use `"SQL injection"` to keep a phrase together.
-- **Read complete questions.** Expand a result to see the scenario, all subparts, marks, and source notes.
-- **Save questions for revision.** Bookmarks stay in the current browser; no account is required.
-- **Share a question.** Copy its direct link, or share the current filtered search.
+Compiler references include the supplied Part A syllabus, both suggestion checklists and the 197-page merged lecture deck. The deck is study material, not an exam paper. Its explicit grammar exercise is included as lecture practice; the solution slide is not copied into the question.
 
-Search recognizes common alternatives such as BCNF/Boyce–Codd normal form, ER/E-R/ERD, B+/B⁺, 2PL/two-phase locking, and normalization/normalisation.
+## DBMS chapters
 
-## Chapters
+Introduction to DBMS · ER Design · Relational Model · SQL · Integrity and Security · Relational Database Design · Indexing · Transaction · Concurrency · Others.
 
-| Chapter | Topic |
-| --- | --- |
-| 1 | Introduction to DBMS |
-| 2 | ER Design |
-| 3 | Relational Model |
-| 4 | SQL |
-| 6 | Integrity and Security |
-| 7 | Relational Database Design |
-| 12 | Indexing |
-| 15 | Transaction |
-| 16 | Concurrency |
-| Others | Material outside the taught chapters, including storage, RAID, and data mining |
+The existing DBMS question IDs are retained, so saved questions and direct links remain compatible.
 
 ## Marks and source accuracy
 
-Marks appear beside individual parts where the source provides them, with the overall question total shown separately. If a paper gives only a shared total, that is stated rather than assigning invented marks. Printed arithmetic discrepancies are explained in source notes.
+Individual marks are shown wherever the original paper assigns them. The overall question total is labeled separately. Where only a shared total is printed, the archive states that instead of inventing a breakdown. Suggestion and practice prompts have no assumed exam year or marks.
 
-Questions are transcribed from the supplied papers. Missing figures, incomplete wording, and inconsistent source details are flagged. Statements that students are asked to assess are retained as questions, not presented as verified facts or model answers.
+Missing figures, incomplete wording, ambiguous scans and printed inconsistencies are noted on the affected question. Statements that students are asked to assess remain questions, not verified claims or model answers.
 
-A few details to keep in mind:
+A few source-label details:
 
-- **2022\*** follows the source filename; the paper itself is headed **2021, July–August**. It is kept separate from the February 2021 paper.
-- **Class Test 1** has no printed date and is grouped with the supplied 2026 assessments.
-- The **24 September 2026** paper retains its printed title, **Class Test 3, Group B**, despite a different handwritten test number.
-- Some **2023 schemas and figures** referenced by questions are absent from the supplied pages.
-- The **two viva entries** contain marks only; the papers do not supply oral questions.
+- The **2022-labeled DBMS paper** is headed July–August 2021; the **2022-labeled Compiler paper** is headed September 2021. Filename years are retained as filters to keep these papers separate from the other 2021 files.
+- **DBMS Class Test 1** has no printed date and is grouped with the supplied 2026 assessments.
+- The **24 September 2026 DBMS test** keeps its printed title, Class Test 3, Group B.
+- Some schemas and figures referenced by the **2023 DBMS paper** are absent from the supplied pages.
+- Viva entries contain only the printed marks allocation; the papers do not supply oral questions.
 
-The archive currently covers DBMS, with room to add other Level 3, Term 1 subjects later.
+The archive currently contains DBMS and Compiler and is structured to accommodate more subjects.
 
 ---
 

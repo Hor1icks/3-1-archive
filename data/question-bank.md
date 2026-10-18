@@ -1,6 +1,6 @@
-# CSE-301 DBMS Question Bank
+# 3-1 Archive Question Bank
 
-## 2016 · Term final · Question 1
+## CSE-301 · 2016 · Term final · Question 1
 
 a. "Logical data independence is more difficult than physical data independence"- in light of the above mentioned statement explain the differences between physical and logical data independence. What are the five main functions of a database administrator?
 [a: 10 marks (5+5=10)]
@@ -15,7 +15,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 1.
 
 
-## 2016 · Term final · Question 2
+## CSE-301 · 2016 · Term final · Question 2
 
 a. Briefly discuss about weak Entity Sets [ Hints: definition, identifying entity set, existence dependence, identifying relationship, discriminator, primary key of weak entity set, descriptive attributes, E-R diagram of weak entity sets and tabular representation of weak entity sets]. We can convert any weak entity set by simply adding appropriate attributes; Why, then, do we have weak entity sets?
 [a: 10 marks (8+2=10)]
@@ -30,7 +30,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 1.
 
 
-## 2016 · Term final · Question 3
+## CSE-301 · 2016 · Term final · Question 3
 
 Consider a database system of a banking enterprise that has the following relation schemas:
 
@@ -80,7 +80,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 2.
 
 
-## 2016 · Term final · Question 4
+## CSE-301 · 2016 · Term final · Question 4
 
 a. What is the formal definition of 'Extraneous Attributes'? How can we test efficiently if an attribute in extraneous [Let R be the relation schema, and let F be the given set of functional dependencies that hold on R]?
 [a: 6 marks]
@@ -104,7 +104,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 2.
 
 
-## 2016 · Term final · Question 5
+## CSE-301 · 2016 · Term final · Question 5
 
 a. Write down the properties of B tree and B⁺ (B PLUS) Tree. Compare between Binary Trees and Adel'son-vel'skii and Landis (AVL) Tree for indexing.
 [a: 16 marks (5+5+6=16)]
@@ -133,7 +133,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 3.
 
 
-## 2016 · Term final · Question 6
+## CSE-301 · 2016 · Term final · Question 6
 
 a. "Ensuring consistency in spite of concurrent execution of transactions requires extra work"- in contradiction to it still we adopt concurrent execution of transactions. Explain two good reasons for allowing concurrency.
 [a: 4 marks]
@@ -173,7 +173,7 @@ Source: CSE,L-3,T-1,2016.pdf, pages 3.
 
 Notes: In Schedule 2, the printed increment of B is 150, although the scenario says 1500. This source discrepancy is retained.
 
-## 2016 · Term final · Question 7
+## CSE-301 · 2016 · Term final · Question 7
 
 a. Why is Index Authorization needed? What do you understand by 'Notion of Roles', 'Audit Trails' and 'Cascading of the Revoke'?
 [a: 9 marks (3+6=9)]
@@ -191,7 +191,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2016.pdf, pages 4.
 
 
-## 2016 · Term final · Question 8
+## CSE-301 · 2016 · Term final · Question 8
 
 a. Discuss different phases and Timestamps of 'Validation-Based Protocol'. Illustrate two conditions of 'Validation Test' with example.
 [a: 10 marks (6+4=10)]
@@ -207,7 +207,7 @@ Source: CSE,L-3,T-1,2016.pdf, pages 4.
 
 Notes: The paper prints “Wound Die”; this refers to the wound-wait comparison. The quoted wording is retained.
 
-## 2017 · Term final · Question 1
+## CSE-301 · 2017 · Term final · Question 1
 
 a. List five responsibilities of a database management system. For each responsibility, explain the problems that would arise if the responsibility were not discharged.
 [a: 10 marks]
@@ -233,7 +233,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 1.
 
 
-## 2017 · Term final · Question 2
+## CSE-301 · 2017 · Term final · Question 2
 
 a. "One limitation of E-R model is that it cannot express relationships among relationships." — How to solve this problem? Explain with suitable example.
 [a: 8 marks]
@@ -251,7 +251,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 2.
 
 
-## 2017 · Term final · Question 3
+## CSE-301 · 2017 · Term final · Question 3
 
 a. Consider the following relational database schemes:
 [a: 18 marks (4×4.5=18)]
@@ -295,7 +295,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 2.
 
 
-## 2017 · Term final · Question 4
+## CSE-301 · 2017 · Term final · Question 4
 
 a. Let, two relations r(R) and s(S) be given with S ⊂ R. Prove that r ÷ s = π[R−S](r) − π[R−S]((π[R−S](r) × s) − π[R−S,S](r))
 [a: 7 marks]
@@ -333,7 +333,7 @@ Source: CSE,L-3,T-1,2017.pdf, pages 2, 3.
 
 Notes: Projection subscripts in the printed division identity are represented in brackets, including the source’s final π[R−S,S](r) term.
 
-## 2017 · Term final · Question 5
+## CSE-301 · 2017 · Term final · Question 5
 
 a. Discuss 'Canonical Cover' (Hints: definition, properties and algorithm). "A decomposition having the property F′⁺ = F⁺ is a dependency-preserving decomposition" - Justify the statement (assume their standard meaning).
 [a: 12 marks (6+6=12)]
@@ -354,7 +354,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 3.
 
 
-## 2017 · Term final · Question 6
+## CSE-301 · 2017 · Term final · Question 6
 
 a. Write down properties of 'B*' (B steric) Tree of order M. Compare 'B' Tree and 'B⁺ (B plus) Tree for indexing.
 [a: 10 marks (5+5=10)]
@@ -378,7 +378,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 3, 4.
 
 
-## 2017 · Term final · Question 7
+## CSE-301 · 2017 · Term final · Question 7
 
 a. 'Database-system implementers have paid much more attention to the 'ACID' properties than have file system implementers'- Why might this be the case? Explain the "Shadow Copy" scheme of recovery-management component of a database.
 [a: 11 marks (5+6=11)]
@@ -399,7 +399,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2017.pdf, pages 4.
 
 
-## 2017 · Term final · Question 8
+## CSE-301 · 2017 · Term final · Question 8
 
 a. What is 'Starvation of Transaction'? Discuss refinement of basic two phase locking protocol with 'Lock Conversion'.
 [a: 8 marks (4+4=8)]
@@ -415,7 +415,7 @@ Source: CSE,L-3,T-1,2017.pdf, pages 4.
 
 Notes: The source prints 9+3+4=17 for part (c), although the addends total 16. The printed allocation is retained.
 
-## 2018 · Term final · Question 1
+## CSE-301 · 2018 · Term final · Question 1
 
 a. You have been asked to design an employee tracking database for a company. They want to track information about employees, the employee's job history, and their certifications. Employee information includes first name, middle name, last name, social security number, address, city, state, zip, home phone and email address. Job history would include job title, job description, pay grade, pay range, salary and date of promotion. For certifications, they want certification type and date achieved. An employee can have multiple jobs over time, (i.e., Analyst, Sr. Analyst, QA Administrator). Employees can also earn certifications necessary for their jobs. Draw an ER diagram for this application. Be sure to mark the multiplicity of each relationship of the diagrams. Decide key attributes and identify them on the diagram. Please state all assumptions you make in your answer.
 [a: 20 marks]
@@ -427,7 +427,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 1.
 
 
-## 2018 · Term final · Question 2
+## CSE-301 · 2018 · Term final · Question 2
 
 a. Consider a database system for a business enterprise that has the following relation schemas: Product_schema = (pid, name, price, category, year, maker Cid) Purchase _ schema = (buyer_ssn, seller_ssn, store, pid) Company _ schema = (Cid, name, stock price, country) Person_schema = (ssn, name, phone number, city) Note:
 [a: 20 marks (4×5=20)]
@@ -476,7 +476,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 1, 2.
 
 
-## 2018 · Term final · Question 3
+## CSE-301 · 2018 · Term final · Question 3
 
 a. "A database system is partitioned into modules that deals with each of the responsibilities of the overall system", - according to this statement draw the database system structure and briefly discuss different components of 'Query Processor' and 'Storage Manager' of a Database Management System (DBMS).
 [a: 15 marks (5+5+5=15)]
@@ -499,7 +499,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 2.
 
 
-## 2018 · Term final · Question 4
+## CSE-301 · 2018 · Term final · Question 4
 
 a. Explain what is meant by 'Repeatation of Information" and "Inability to Represent Information"? Explain why each of these properties may indicate a Bad Relational Database Design. Why and when certain functional dependencies are called 'Trivial Functional Dependencies'?
 [a: 10 marks (7+3=10)]
@@ -523,7 +523,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 2, 3.
 
 
-## 2018 · Term final · Question 5
+## CSE-301 · 2018 · Term final · Question 5
 
 a. Why 'Roles' are used for assigning privilege to users? Create three users Rezwan, Shahidul and Shihab and assign them ALTER, DROP, INSERT, SELECT, INDEX and DELETE privileges respectively on Student and Faculty tables. Do this by assigning the users a role of "Admin" then transfer these privileges to another role named "Super Admin". Finally, revoke Drop and INDEX privileges from "Admin" judiciously.
 [a: 10 marks]
@@ -538,7 +538,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 3.
 
 
-## 2018 · Term final · Question 6
+## CSE-301 · 2018 · Term final · Question 6
 
 a. Write down the properties of B tree and B⁺ (B plus) tree.
 [a: 10 marks (5+5=10)]
@@ -571,7 +571,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 3.
 
 
-## 2018 · Term final · Question 7
+## CSE-301 · 2018 · Term final · Question 7
 
 a. "Ensuring consistency in spite of concurrent execution of transaction requires extra work. Concurrent execution is more important when data must be fetched from (slow) disk or when transactions are long, and is less important when data is in memory and transactions are very short" — Justify why with all these contradictions still we adopt concurrent execution of transactions.
 [a: 5 marks]
@@ -604,7 +604,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 4.
 
 
-## 2018 · Term final · Question 8
+## CSE-301 · 2018 · Term final · Question 8
 
 a. Discuss the Tree locking Protocol. Compare between 'Two phase locking protocol' , 'Time stamp — ordering Protocol' and 'Tree- locking Protocol' in context of the following:
 [a: 15 marks (6+9=15)]
@@ -631,7 +631,7 @@ Total: 35 marks.
 Source: CSE,L-3,T-1,2018.pdf, pages 4.
 
 
-## 2019 · Term final · Question 1
+## CSE-301 · 2019 · Term final · Question 1
 
 a. The schemas of a Hospital are:
 [a: 20 marks (4×5=20)]
@@ -666,7 +666,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 1.
 
 
-## 2019 · Term final · Question 2
+## CSE-301 · 2019 · Term final · Question 2
 
 a. 'Logical data independence is more difficult than Physical data independence'- in light of the above mentioned statement explain the differences between Physical and Logical data independence. Distinguish between 'Data Definition Language' (DDL) and 'Data Manipulation Language' (DML). Contrast the advantages and disadvantages of storing derived attributes in tables.
 [a: 12 marks (4+4+4=12)]
@@ -678,7 +678,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 1, 3.
 
 
-## 2019 · Term final · Question 3
+## CSE-301 · 2019 · Term final · Question 3
 
 a. Consider the following relational database schemes:
 [a: 14 marks (4×3.5=14)]
@@ -716,7 +716,7 @@ Source: CSE,L-3,T-1,2019.pdf, pages 3.
 
 Notes: Projection subscripts in the printed division identity are represented in brackets, including the source’s final π[R−S,S](r) term. The printed allocations are (a) 14, (b) 6 and (c) 6, totaling 26 although a complete question normally carries 30. No missing marks have been invented.
 
-## 2019 · Term final · Question 4
+## CSE-301 · 2019 · Term final · Question 4
 
 a. Mention two requirements that must be met while designing a 'Trigger mechanism'. Analyze why do we need to use Triggers and when should we not use 'Triggers'? Discuss four instances when trigger can be applied.
 [a: 7 marks (2+3+2=7)]
@@ -754,7 +754,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 3, 5.
 
 
-## 2019 · Term final · Question 5
+## CSE-301 · 2019 · Term final · Question 5
 
 a. Discuss 'Canonical Cover'. [Hint: definition, properties and algorithm], "A decomposition having the property F′⁺ = F⁺ is a dependency-preserving decomposition."- Justify the statement assuming their standard meaning.
 [a: 10 marks (5+5=10)]
@@ -775,7 +775,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 5.
 
 
-## 2019 · Term final · Question 6
+## CSE-301 · 2019 · Term final · Question 6
 
 a. Since indices speed query processing, why might they not be kept on several search keys? Is it possible in general to have two
 [a: 7 marks (4+3=7)]
@@ -797,7 +797,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 5, 7.
 
 
-## 2019 · Term final · Question 7
+## CSE-301 · 2019 · Term final · Question 7
 
 a. Database-system implementers paid much more attention to the ACID properties than have file-system implementers. Why might this be the case? During its execution, a transaction passes through several states, until it finally commit or aborts. List three possible sequences of states through which a transaction may pass. Explain why each state transition may occur.
 [a: 10 marks (5+5=10)]
@@ -818,7 +818,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 7.
 
 
-## 2019 · Term final · Question 8
+## CSE-301 · 2019 · Term final · Question 8
 
 a. For each of the following protocols, describe aspects of practical applications that would lead you to suggest using the protocol, and aspects that would suggest not using the protocols:
 [a: 10 marks (5×2=10)]
@@ -848,7 +848,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2019.pdf, pages 7.
 
 
-## 2021 · Term final · Question 1
+## CSE-301 · 2021 · Term final · Question 1
 
 a. Consider a database for the registrar’s office of MIST. The database maintains data about the following entities:
 [a: 15 marks]
@@ -872,7 +872,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2021.pdf, pages 1.
 
 
-## 2021 · Term final · Question 2
+## CSE-301 · 2021 · Term final · Question 2
 
 a. “Any schema that satisfies BCNF as well as satisfies 3NF.” Explain this statement with suitable examples. [10]
 [a: 10 marks]
@@ -902,7 +902,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2021.pdf, pages 1, 2.
 
 
-## 2021 · Term final · Question 3
+## CSE-301 · 2021 · Term final · Question 3
 
 a. Describe the disadvantages of using file processing systems. [10]
 [a: 10 marks]
@@ -919,7 +919,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2021.pdf, pages 2.
 
 
-## 2021 · Term final · Question 4
+## CSE-301 · 2021 · Term final · Question 4
 
 Marks allotted for Viva: 30. (Compulsory)
 
@@ -928,7 +928,7 @@ Source: CSE,L-3,T-1,2021.pdf, pages 2.
 
 Notes: This is a viva allocation, not a printed written question. No oral questions are supplied in the source.
 
-## 2021 · Term final · Question 5
+## CSE-301 · 2021 · Term final · Question 5
 
 a. Let two relations r(R) and s(S) be given with S ⊂ R. Prove that: [09]
 [a: 9 marks]
@@ -978,7 +978,7 @@ Source: CSE,L-3,T-1,2021.pdf, pages 3.
 
 Notes: Part b(4) is incomplete in the source (“earn less than among his/her department”); no missing criterion has been invented. The division identity is transcribed using bracketed projection subscripts. Part (b) assigns 3.75 marks to each of four selected queries (15 total), according to the printed roll-number instruction.
 
-## 2021 · Term final · Question 6
+## CSE-301 · 2021 · Term final · Question 6
 
 a. Write an assertion for the bank database to ensure that the assets value for the Perryridge branch is equal to the sum of all amounts lent by the Perryridge branch. [05]
 [a: 5 marks]
@@ -1030,7 +1030,7 @@ Source: CSE,L-3,T-1,2021.pdf, pages 4.
 
 Notes: Part c(iii), the U₃-to-U₇ grant, is struck through in the scan and retained here for completeness.
 
-## 2021 · Term final · Question 7
+## CSE-301 · 2021 · Term final · Question 7
 
 a. The schema of a Hospital is: [20]
 [a: 20 marks]
@@ -1062,7 +1062,7 @@ Total: 30 marks.
 Source: CSE,L-3,T-1,2021.pdf, pages 4, 5.
 
 
-## 2021 · Term final · Question 8
+## CSE-301 · 2021 · Term final · Question 8
 
 Marks allotted for Viva: 30. (Compulsory)
 
@@ -1071,7 +1071,7 @@ Source: CSE,L-3,T-1,2021.pdf, pages 5.
 
 Notes: This is a viva allocation, not a printed written question. No oral questions are supplied in the source.
 
-## 2022 · Term final · Question 1
+## CSE-301 · 2022 · Term final · Question 1
 
 a. Consider a database for the Real-Estate Agency. The database maintains data about the following information: [15]
 [a: 15 marks]
@@ -1092,7 +1092,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 1.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 2
+## CSE-301 · 2022 · Term final · Question 2
 
 a. A concurrent schedule S for transactions T₁, T₂, T₃ and T₄ is given below. Using a precedence graph, determine whether the given schedule S is conflict serializable or not. [15]
 [a: 15 marks]
@@ -1131,7 +1131,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 1, 2.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 3
+## CSE-301 · 2022 · Term final · Question 3
 
 a. “Cascadeless schedule is a serial schedule” — do you agree with this statement? Justify your answer with suitable examples. [12]
 [a: 12 marks]
@@ -1147,7 +1147,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 2.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 4
+## CSE-301 · 2022 · Term final · Question 4
 
 a. Which of the following two schedules (Schedule 1 and Schedule 2) is a recoverable schedule and why? Explain. [10]
 [a: 10 marks]
@@ -1185,7 +1185,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 2.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 5
+## CSE-301 · 2022 · Term final · Question 5
 
 a. Explain the distinction among superkey, candidate key and primary key with suitable examples. [10]
 [a: 10 marks]
@@ -1204,7 +1204,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 3.
 
 Notes: Part c reproduces the underscore/asterisk patterns printed in the paper; it does not substitute the standard SQL wildcard %. Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 6
+## CSE-301 · 2022 · Term final · Question 6
 
 a. Why do we use foreign key constraints? What is the default behavior when a row in a table gets deleted, which is referred to by another table with a foreign key constraint? Can we change the default behavior for such cascading action? [10]
 [a: 10 marks]
@@ -1223,7 +1223,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 3.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 7
+## CSE-301 · 2022 · Term final · Question 7
 
 a. What is the difference between rank() and dense_rank() in aggregated function? [05]
 [a: 5 marks]
@@ -1251,7 +1251,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 3.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity.
 
-## 2022 · Term final · Question 8
+## CSE-301 · 2022 · Term final · Question 8
 
 a. What is prefetching and data-caching for data servers/storage systems? [10]
 [a: 10 marks]
@@ -1278,7 +1278,7 @@ Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 3, 4.
 
 Notes: Source filename: 2022. Printed examination heading: 2021 (July–August 2021). The archive uses the filename year for continuity. Part a (prefetching and data-caching) is struck through in the supplied scan. It is retained to include every printed prompt.
 
-## 2023 · Term final · Question 1
+## CSE-301 · 2023 · Term final · Question 1
 
 a. Analyze the scenario mentioned below and answer the questions that follow:
 [a: 15 marks (8+7=15)]
@@ -1305,7 +1305,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 1.
 
 Notes: The paper refers to Employee Schema and/or Sales Schema but does not supply those reference schemas in its three DBMS pages.
 
-## 2023 · Term final · Question 2
+## CSE-301 · 2023 · Term final · Question 2
 
 We know that a Database Management System (DBMS) refers to the technology for creating and managing databases. With that as a backdrop, answer the questions that follow:
 
@@ -1328,7 +1328,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 , 2023.pdf, pages 1, 2.
 
 
-## 2023 · Term final · Question 3
+## CSE-301 · 2023 · Term final · Question 3
 
 Refer to the “Sales Schema” and answer the questions that follow:
 
@@ -1349,7 +1349,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 2.
 
 Notes: The paper refers to Employee Schema and/or Sales Schema but does not supply those reference schemas in its three DBMS pages.
 
-## 2023 · Term final · Question 4
+## CSE-301 · 2023 · Term final · Question 4
 
 a. Consider the Exam Cell of an university. It records the marks that students get in different exams for different course offerings. Each student can take multiple course offerings and will require to take multiple exams for each course offering. The records maintained in the Exam Cell are as follows:
 [a: 15 marks (8+7=15)]
@@ -1376,7 +1376,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 2, 3.
 
 Notes: The paper refers to Employee Schema and/or Sales Schema but does not supply those reference schemas in its three DBMS pages.
 
-## 2023 · Term final · Question 5
+## CSE-301 · 2023 · Term final · Question 5
 
 a. “Schedules under Multiversion Timestamp Ordering protocol may not be possible under Timestamp Ordering Protocol” – Verify this statement using the schedule shown in Figure 5(a).
 [a: 20 marks]
@@ -1389,7 +1389,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 3.
 
 Notes: Figure 5(a) is referenced in the question but is not present in the supplied DBMS paper. No replacement figure has been invented.
 
-## 2023 · Term final · Question 6
+## CSE-301 · 2023 · Term final · Question 6
 
 a. Describe the Multiple Granularity Scheme. Explain the purpose of introducing intention mode locks in this scheme. Also explain how the intension mode lock works.
 [a: 12 marks]
@@ -1405,7 +1405,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 3.
 
 Notes: Figure 6(b) is referenced in the question but is not present in the supplied DBMS paper. No replacement figure has been invented.
 
-## 2023 · Term final · Question 7
+## CSE-301 · 2023 · Term final · Question 7
 
 a. Deadlock is a potential evil associated with lock based protocol. Consider the partial schedule shown in figure 7(a). Find out whether the schedule has a deadlock using a wait-for graph. “One of the solutions to prevent starvation in deadlock recovery system is to never choose the oldest transaction in the deadlock set as the victim.” – justify this statement with proper example.
 [a: 8 marks (4+4=8)]
@@ -1421,7 +1421,7 @@ Source: CSE L-3 T-1 , 2023.pdf, pages 3.
 
 Notes: Figure 7(a) is referenced in the question but is not present in the supplied DBMS paper. No replacement figure has been invented.
 
-## 2023 · Term final · Question 8
+## CSE-301 · 2023 · Term final · Question 8
 
 a. Explain why bucket overflow occurs in hash file organization. Describe the open hashing and closed hashing scheme using proper examples.
 [a: 10 marks]
@@ -1444,7 +1444,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 , 2023.pdf, pages 3.
 
 
-## 2024 · Term final · Question 1
+## CSE-301 · 2024 · Term final · Question 1
 
 Analyse the schema given below and answer the questions that follow.
 
@@ -1481,7 +1481,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 1, 2.
 
 
-## 2024 · Term final · Question 2
+## CSE-301 · 2024 · Term final · Question 2
 
 A database management system stores data in such a way that it becomes easier to retrieve, manipulate and produce information. Keeping this in mind answer the questions that follow:
 
@@ -1498,7 +1498,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 2.
 
 
-## 2024 · Term final · Question 3
+## CSE-301 · 2024 · Term final · Question 3
 
 a. Relational Algebra is a widely used procedural query language. It collects instances of relations as inputs and gives occurrences of relations as outputs. Analyse the scheme given below and construct Relational Algebra expressions for the questions that follow:
 [a: 15 marks]
@@ -1546,7 +1546,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 2, 3.
 
 
-## 2024 · Term final · Question 4
+## CSE-301 · 2024 · Term final · Question 4
 
 a. We know that Normalisation is the process of breaking down our data and storing them in different tables consistently. In view of the above, what are the conditions that must be satisfied for a relation to be in First Normal Form, Second Normal Form and Third Normal Form? Explain each with the help of examples. [15]
 [a: 15 marks]
@@ -1572,7 +1572,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 3.
 
 
-## 2024 · Term final · Question 5
+## CSE-301 · 2024 · Term final · Question 5
 
 a. A concurrent schedule S with transactions T1,  T2, T3 and T4 are given below. By constructing a precedence graph, figure out whether the given schedule is conflict serializable.
 [a: 15 marks]
@@ -1602,7 +1602,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 3, 4.
 
 
-## 2024 · Term final · Question 6
+## CSE-301 · 2024 · Term final · Question 6
 
 a. Discuss different “Deadlock Prevention Protocols”. To break the deadlock, what recovery actions need to be taken?
 [a: 15 marks (10+5=15)]
@@ -1617,7 +1617,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 4.
 
 
-## 2024 · Term final · Question 7
+## CSE-301 · 2024 · Term final · Question 7
 
 a. The following  figure presents a B⁺ tree of order 5 (n=5). Perform deletion operation on the given tree in the following order: 20, 32, 11, 22, 21, 8, 27, 43 and 6.
 [a: 15 marks]
@@ -1647,7 +1647,7 @@ Source: CSE L-3 T-1 ,2024.pdf, pages 4.
 
 Notes: The root separator is printed as 26. This is retained exactly, even though the rightmost subtree begins with 21.
 
-## 2024 · Term final · Question 8
+## CSE-301 · 2024 · Term final · Question 8
 
 a. Define the terms “Cascading Rollback” and “Strict Schedule”. Also, explain their implications in the context of database transactions.
 [a: 6 marks (3+3=6)]
@@ -1665,7 +1665,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 ,2024.pdf, pages 4.
 
 
-## 2025 · Term final · Question 1
+## CSE-301 · 2025 · Term final · Question 1
 
 A large university maintains records of its students, teachers courses and examinations. Initially these records were stored in separate paper files and later in simple spreadsheets. As the number of students and departments grew, problems such as data redundancy, inconsistency, difficulty in data retrieval and lack of security started to appear. Based on the scenario:
 
@@ -1688,7 +1688,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 1.
 
 
-## 2025 · Term final · Question 2
+## CSE-301 · 2025 · Term final · Question 2
 
 You are given the following database schema for an online bookstore:
 
@@ -1719,7 +1719,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 1, 2.
 
 
-## 2025 · Term final · Question 3
+## CSE-301 · 2025 · Term final · Question 3
 
 A retail company maintains customers purchase information in a single table called Sales_Record, shown below:
 
@@ -1752,7 +1752,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 2.
 
 
-## 2025 · Term final · Question 4
+## CSE-301 · 2025 · Term final · Question 4
 
 A university database maintains following relation:
 
@@ -1792,7 +1792,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 2, 3.
 
 
-## 2025 · Term final · Question 5
+## CSE-301 · 2025 · Term final · Question 5
 
 a. Define “Shared lock” and “Exclusive lock”. Discuss their drawbacks with necessary examples.
 [a: 10 marks]
@@ -1807,7 +1807,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 3.
 
 
-## 2025 · Term final · Question 6
+## CSE-301 · 2025 · Term final · Question 6
 
 a. A concurrent schedule S with transactions T₁, T₂ and T₃ is given below. Determine whether schedule S is conflict serializable or view serializable. Show the steps clearly. [15]
 [a: 15 marks]
@@ -1838,7 +1838,7 @@ Source: CSE L-3 T-1 2025.pdf, pages 3.
 
 Notes: T₁ and T₃ both have Write(C) in the same printed row. The row is preserved without imposing an order absent from the source.
 
-## 2025 · Term final · Question 7
+## CSE-301 · 2025 · Term final · Question 7
 
 a. A B⁺ tree of order 5 (n=5) stores the following 14 record keys, inserted in this order: 7, 10, 1, 23, 5, 15, 17, 9, 11, 39, 35, 8, 40, 25 Construct the resultant B⁺ tree with the keys given above.
 [a: 15 marks]
@@ -1853,7 +1853,7 @@ Total: 30 marks.
 Source: CSE L-3 T-1 2025.pdf, pages 3.
 
 
-## 2025 · Term final · Question 8
+## CSE-301 · 2025 · Term final · Question 8
 
 a. Discuss the different Deadlock Prevention Protocols, highlighting their principles, advantages, and limitations with examples.
 [a: 10 marks]
@@ -1878,7 +1878,7 @@ Source: CSE L-3 T-1 2025.pdf, pages 3.
 
 Notes: Part (b) assigns 5 marks per short note; answer any two of the three options (10 total).
 
-## 2026 · Class test 3 · Question 1
+## CSE-301 · 2026 · Class test 3 · Question 1
 
 3NF vs. BCNF — University Course Assignment
 
@@ -1921,7 +1921,7 @@ Source: Dbms ct mid question.pdf, pages 1.
 
 Notes: The source assigns 15 marks to the whole question, without individual allocations for parts (a)–(e).
 
-## 2026 · Class test 3 · Question 2
+## CSE-301 · 2026 · Class test 3 · Question 2
 
 Write SQL for creating a trigger called “overdraft-trigger” for the following situation:
 
@@ -1931,7 +1931,7 @@ Total: 5 marks.
 Source: Dbms ct mid question.pdf, pages 1.
 
 
-## 2026 · Class test 3 · Group B · Question 1
+## CSE-301 · 2026 · Class test 3 · Group B · Question 1
 
 Compare between Binary Trees and Adel’son-Vel’skii and Landis (AVL) Trees for indexing.
 
@@ -1944,7 +1944,7 @@ Source: Dbms ct mid question.pdf, pages 2.
 
 Notes: Printed heading: Class Test 3, Group B. A handwritten “CT=4” annotation is not used as the assessment label.
 
-## 2026 · Class test 3 · Group B · Question 2
+## CSE-301 · 2026 · Class test 3 · Group B · Question 2
 
 “Every view serializable schedule is also conflict serializable, but there are conflict serializable schedules that are not view serializable.” Do you agree with this statement? Why? Explain with an example.
 
@@ -1954,7 +1954,7 @@ Total: 9 marks.
 Source: Dbms ct mid question.pdf, pages 2.
 
 
-## 2026 · Class test 2 · Question 1
+## CSE-301 · 2026 · Class test 2 · Question 1
 
 A database schema, along with primary key and foreign key dependencies, can be depicted pictorially by schema diagrams. Figure 1 shows the schema diagram for a banking enterprise.
 
@@ -1981,7 +1981,7 @@ Total: 20 marks.
 Source: Dbms ct mid question.pdf, pages 3.
 
 
-## 2026 · Midterm 1 · Question 1
+## CSE-301 · 2026 · Midterm 1 · Question 1
 
 The Scenario (read carefully)
 
@@ -2033,7 +2033,7 @@ Source: Dbms ct mid question.pdf, pages 4, 5.
 
 Notes: This midterm prints 30 marks overall but does not assign separate marks to Tasks A, B and C.
 
-## 2026 · Midterm 1 · Group B · Question 1
+## CSE-301 · 2026 · Midterm 1 · Group B · Question 1
 
 The Scenario (Read and do Brain Storming carefully: 10 minutes)
 
@@ -2080,7 +2080,7 @@ Total: 30 marks.
 Source: Dbms ct mid question.pdf, pages 6, 7.
 
 
-## 2026 · Class test 1 · Question 1
+## CSE-301 · 2026 · Class test 1 · Question 1
 
 A modern DBMS is designed as a layered and modular software system to achieve data independence, security, concurrency, and efficient query processing. Assume you are designing the architecture of a university database management system that serves students, faculty members, application developers, and database administrators.
 
@@ -2102,3 +2102,2335 @@ Total: 20 marks.
 Source: Dbms ct mid question.pdf, pages 8.
 
 Notes: No date is printed on Class Test 1. It is assigned to 2026 from the user’s description and its inclusion with the dated 2026 assessments.
+
+## CSE-303 · 2016 · Term final · Question 1
+
+a. Which stage in a compiler is most likely to save line numbers of identifiers in the symbol table? Is any other stage suitable for this purpose? Explain clearly.
+[a: 11 marks (5+6=11)]
+
+b. What is “panic mode” recovery in compiler?
+[b: 7 marks]
+
+c. Formulate regular definition for “number” tokens in a certain programming language. The numbers in this language consist of three parts in the same sequence as detailed below:
+Integer part: Consists of any non-zero number of digits from 0 to 9. Cannot start with a 0, unless this 0 is the only digit in this part.
+Decimal part: This part is optional. Consists of decimal point followed by any non-zero number of digits from 0 to 9. Cannot end with a 0. Thus, only a single zero in this part is not permitted.
+Exponent part: This part is optional. Consists of character 'E' followed by an optional minus (-) sign, which is followed by any non-zero number of digits from 0 to 9.
+A few valid numbers are: 123, 123.456, 0.456, 123.456E789, 123.456E-789, 123E789, 123E000.
+A few invalid numbers are: 0123, 123.0, 123.456E+789
+[c: 17 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 5.
+
+
+## CSE-303 · 2016 · Term final · Question 2
+
+a. What are sentinels? Describe where sentinels are used in buffer pairs in lexical analysis. How does the use of sentinels speed up the input process?
+[a: 13 marks (3+3+7=13)]
+
+b. “The token name influences parsing decisions, while the attribute value influences translation of token after the parse” — explain clearly with necessary examples.
+[b: 7 marks]
+
+c. The following table shows a subset of the unary and binary operators used by the C++ language. Corresponding token names are also shown in the table. The attribute value column has been intentionally left blank. Fill up the attribute value column where necessary. Draw a transition diagram which recognizes the tokens.
+| Lexeme | Token Name | Attribute Value |
+| --- | --- | --- |
+| > | relop | |
+| < | relop | |
+| >= | relop | |
+| <= | relop | |
+| && | logop | |
+| ~ | bitop | |
+| & | bitop | |
+| ^ | bitop | |
+| << | bitop | |
+| >> | bitop | |
+[c: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 5, 6.
+
+
+## CSE-303 · 2016 · Term final · Question 3
+
+a. Eliminate left recursion from the following grammar:
+```
+S → Sc | Ta | b
+T → Tc | Sd | d
+U → Ua | Td | Sb | b
+```
+[a: 20 marks]
+
+b. Comment with reasoning on whether the following grammars are LL(1) or not.
+```
+i) S → ABc, A → a | ε, B → b | ε
+ii) S → ACB, A → a | B | ε, B → b | ε, C → c | ε
+iii) S → X, X → aXBA | bAXB | c, A → a, B → a | ε
+iv) A → C | ε, C → CE, C → ε, E → ε
+v) S → S(S) | ε
+```
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 6.
+
+
+## CSE-303 · 2016 · Term final · Question 4
+
+a. Answer the following questions for predictive parsing.
+i) During construction of a parsing table M, for each production rule A → α of the grammar, if ε is in FIRST(α), we add A → α to M[A, b], for each terminal b in FOLLOW(A). Why? Explain clearly in light of the parsing mechanism.
+ii) During a parsing, if w is the input that has been matched so far, and S is the start symbol for the corresponding grammar, with S*⇒ wαβγ, what will be the stack contents? Also comment on the nature of symbols in w and stack contents regarding being terminals/non-terminals.
+iii) During parsing, if the input pointer is pointing to the symbol a, and the top stack symbol is X, with the entry M[X,a] being X → UVW, explain how the stack contents will be altered. Why?
+[a: 20 marks (10+5+5=20)]
+
+b. Left factor this grammar:
+```
+S → T : S | ε
+T → UR
+R → *T | ε
+U → x | y | [S]
+```
+Hence, find the FIRST and FOLLOW sets for each non-terminal in the grammar obtained.
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 6.
+
+
+## CSE-303 · 2016 · Term final · Question 5
+
+a. Define S-attributed and L-attributed syntax directed definitions (SDD). Elaborate on each with necessary examples and counter-examples. How are attributes evaluated in each case?
+[a: 20 marks]
+
+b. Present the S-attributed syntax directed definition which constructs syntax trees for a simple expression grammar involving only the binary operators + and -. Then show the annotated parse tree and syntax tree for α − 4 + C.
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 7.
+
+Notes: Part (b) expression uses printed Greek α and uppercase C: α − 4 + C.
+
+## CSE-303 · 2016 · Term final · Question 6
+
+a. Present the SDD that takes a simple declaration consisting of a basic type followed by a list of identifiers and stores the identifier types in a symbol table. Why is it imperative that inherited attributes are needed for this SDD? What is the deficiency (if any) of the SDD you have presented?
+[a: 20 marks]
+
+b. Show how the SDD in Question 6(a) will work on the declaration, float id1, id2, id3.
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 7.
+
+
+## CSE-303 · 2016 · Term final · Question 7
+
+a. Draw syntax tree for the expression: a + (a * a − a) * (a * a − a) * (a * a + a) − a. And hence, convert the syntax tree into a DAG. Consider usual precedence and associativity of operators.
+[a: 15 marks]
+
+b. Use value-number method to store the DAG in Question 7(a), in an array of records. Then, represent the same DAG using three address code. How can we speed up this value-number method construction? Explain.
+[b: 20 marks (5+5+10=20)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 7.
+
+
+## CSE-303 · 2016 · Term final · Question 8
+
+a. Present the syntax directed translation (SDT) scheme that computes types and their widths for basic and array types. Hence, show the parse tree for the type int [2][3].
+[a: 20 marks]
+
+b. Find out the three address code for the statement, n = g(f(a), a, b[i], a*2). Assume any missing information within reasonable limits. Do not use any unnecessary instruction.
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 7.
+
+
+## CSE-303 · 2017 · Term final · Question 1
+
+a. Explain in detail the following statements.
+i) “Java language processors combine compilation and interpretation”.
+ii) “The front end of a compiler is concerned about the source language, while back end of compiler is concerned about the target machine. The intermediate representation, between the two, is concerned neither about the source language nor about the target language”.
+[a: 15 marks (5+10=15)]
+
+b. Explain clearly, with necessary justifications, the lexical errors (if any) that will occur for each of the following C/C++ statements. You need to consider both the cases where the lexical analyzer uses and does not use panic mode recovery strategy. Then provide the list of tokens that may be generated in both the cases. You may use your own token names.
+```
+i) int float double int float float;
+ii) ; ) ( } { ) ) ) ) ) cse dhaka mist
+iii) int 12345 cse, dhaka;
+```
+[b: 20 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 5.
+
+
+## CSE-303 · 2017 · Term final · Question 2
+
+a. After you learned defining tokens using regular definitions, some of your friends in haste, come up with the following definitions for identifiers and numbers:
+```
+i) id → letter (letter*|digit*)
+ii) id → letter (letter digit)*
+iii) id → letter* (letter|digit)*
+iv) number → digit+ (. digit+) (E[+-]? digit+)?
+v) number → digit+ (. digit)? (E+-? digit+)?
+```
+All of the above definitions are incorrect. Explain in each case what is wrong with the definition. Also for each case, show,
+i) One example string which matches with both the correct and incorrect definition,
+ii) One example string which is rejected by the correct definition but matches the incorrect definition.
+If in some case any of the above mentioned examples is not possible you need to point out that as well. You may assume that letter and digit have been correctly defined.
+[a: 20 marks]
+
+b. Write a Yacc plus Lex program which calculates the value of an arithmetic expression which involves single line inputs only. The arithmetic expression comprises of numbers with decimal points, addition, subtraction, multiplication and division operators. Parentheses can be used in the expression. The expressions may also contain the sin, cos and tan trigonometric functions.
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 5, 6.
+
+
+## CSE-303 · 2017 · Term final · Question 3
+
+a. Explain in detail the relative advantages and disadvantages of having individual and class tokens for the operators.
+[a: 10 marks]
+
+b. Comment with reasoning on whether the following grammar is LL(1) or not.
+```
+S → ABc, A → a | ε, B → b | ε
+```
+[b: 5 marks]
+
+c. Eliminate left-recursion from the following grammar:
+```
+S → Sc | Ta | Ub | b
+T → Tc | Sd | d
+U → Ua | Td | Sb | b
+```
+[c: 20 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 6.
+
+
+## CSE-303 · 2017 · Term final · Question 4
+
+a. Answer the following questions for predictive parsing.
+i) During construction of a parsing table M, for each production table A → α of the grammar, if ε is in FIRST(α), we add A → α to M[A, b], for each terminal b is FOLLOW(A). Why? Explain clearly in light of the parsing mechanism.
+ii) What does multiple entries in a parsing table mean? Is the corresponding grammar LL(1)?
+iii) During parsing, of the input pointer is pointing to the symbol a, and the top stack symbol is X, with the entry M[X, a] being X → UVW, explain how the stack contents will be altered. Why?
+[a: 20 marks (7+6+7=20)]
+
+b. Construct procedure based recursive – descent parsers staring with each of the following grammars:
+```
+i) S → S(S)S | ε
+ii) S → 0S1 | 01
+```
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 6.
+
+Notes: Source wording “production table”, “b is FOLLOW(A)”, “of the input pointer”, and “staring” retained.
+
+## CSE-303 · 2017 · Term final · Question 5
+
+a. Present the S-attributed syntax directed definition (SDD) which constructs syntax trees for a simple expression grammar involving only the binary operators + and -. Then show the annotated parse tree and syntax tree for a−4+c.
+[a: 15 marks]
+
+b. Show how the SDD in Question 5(a) changes when left recursion is eliminated from the corresponding grammar. Why is it imperative that we use inherited attributes here? Show the dependency graph for a−4+c.
+[b: 20 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 7.
+
+
+## CSE-303 · 2017 · Term final · Question 6
+
+a. Construct syntax tree and hence DAG for the expression,
+```
+((x + y) − ((x + y) * (x − y))) + ((x + y) * (x − y).
+```
+Then store the DAG using value number method. Assume usual precedence and associativity of operations.
+[a: 15 marks]
+
+b. Find out the three address code for the statement, n = g(f(a), a, a * 2). Assume any missing information within reasonable limits. Do not use any unnecessary instruction.
+[b: 10 marks]
+
+c. Explain how control flow statements are handled in SSA.
+[c: 10 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 7.
+
+Notes: The printed expression in part (a) is missing closing parentheses at the end; reproduced as printed.
+
+## CSE-303 · 2017 · Term final · Question 7
+
+a. Describe the contents of an activation record with necessary figures.
+[a: 15 marks]
+
+b. We have the given C program and accompanying functions as shown in code1 and code2. For a certain situation, the sequence of function calls and returns are as given. Now for the scenario when the call is in line 6,
+i) Draw the activation tree.
+ii) Sketch the activation records.
+Code1: C program for Question 7(b).
+```
+/* main.c */
+#include <stdio.h>
+void main() {
+  int i, j, k;
+  float a[20];
+  /* .......... */
+  i = fone(a[5], a[15]);
+  /* .......... */
+  i = fone(a[5], a[15]);
+  j = ftwo(i, k);
+  printf("The results, i = %d, j = %d", i, j);
+}
+/* fone.c */
+int fone(m1, m2) {
+  int f1, ii, jj = 0;
+  for (ii = 1; ii <= m2; ii++)
+  {
+    jj = ftwo(m1);
+  }
+  f1 = jj;
+  return f1;
+}
+/* ftwo.c */
+float ftwo(n) {
+  float n1, n2;
+  n2 = n / 2;
+  if (n2 > 10)
+    n1 = ftwo(n2);
+  return n1;
+}
+```
+Code2: Sequence of function calls and returns for Question 7(b).
+```
+1 enter main()
+2   enter fone(10,5)
+3   leave fone(10,5)
+4   enter fone(30,1)
+5     enter ftwo(30)
+6       enter ftwo(15)
+7       leave ftwo(15)
+8     leave ftwo(30)
+9   leave fone(30,1)
+10 leave main()
+```
+[b: 20 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 7, 8, 9.
+
+Notes: Code1 preserves the source’s repeated fone assignment, two-argument call ftwo(i,k), old-style function definitions and uninitialized n1 path. Dotted comments represent source ellipses.
+
+## CSE-303 · 2017 · Term final · Question 8
+
+a. For the given code as shown in code 3, generate machine code for stack allocation sizes of activation records for procedures p, q, and r are 20, 80 and 40 bytes respectively. Code for these procedures start at addresses 1000, 2000, and 4000 respectively. Each action requires 20 bytes. Each word in 4 bytes. Stack starts at address 8000.
+Code3: Code for Question 8(a).
+```
+// Code for p
+action1
+call q
+action2
+call q
+halt
+// Code for q
+action3
+call q
+call r
+action4
+call r
+action5
+call r
+action6
+return
+// Code for r
+call r
+action7
+action8
+call r
+return
+```
+[a: 20 marks]
+
+b. For the given code as shown in code 4, identify the basic blocks. And hence draw the flow graph.
+Code4: Code for Question 8(b).
+```
+1) i = 1
+2) j = 1
+3) t1 = 10 * i
+4) t2 = t1 + j
+5) t3 = 8 * t2
+6) t4 = t3 − 88
+7) a[t4] = 0.0
+8) j = j + 1
+9) if j <= 10 goto (3)
+10) i = i + 1
+11) if i <= 10 goto (2)
+12) i = 1
+13) t5 = i − 1
+14) t6 = 88 * t5
+15) a[t6] = 1.0
+16) i = i + 1
+17) if i <= 10 goto (13)
+```
+[b: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 7, 9.
+
+Notes: Source wording “Each word in 4 bytes” retained.
+
+## CSE-303 · 2018 · Term final · Question 1
+
+a. What is top-down parsing? Write recursive procedures for top-down parsing for the following grammar:
+```
+S → cAd
+A → ab | a
+```
+[a: 12 marks]
+
+b. Briefly explain how the order in which alternates are tried can affect the language accepted for top-down backtracking parsers with an illustrative example.
+[b: 8 marks]
+
+c. What is indirect left-recursion? Show that the following grammar is indirectly left recursive. Also, eliminate left-recursion entirely from this grammar.
+```
+A → Bxy | x
+B → CD
+C → A | a
+D → b
+```
+[c: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 5.
+
+
+## CSE-303 · 2018 · Term final · Question 2
+
+a. What is left-factoring? Left-factor the following grammar:
+```
+S → iCtS | iCtSeS | a
+C → b
+```
+[a: 8 marks]
+
+b. Briefly describe the model of a non-recursive predictive parser and the predictive parsing program.
+[b: 12 marks]
+
+c. Consider the following grammar and the corresponding parsing table:
+```
+E → TE′
+E′ → +TE′ | ε
+T → FT′
+T′ → *FT′ | ε
+F → (E) | id
+```
+| | id | + | * | ( | ) | $ |
+| --- | --- | --- | --- | --- | --- | --- |
+| E | E → TE′ | | | E → TE′ | | |
+| E′ | | E′ → +TE′ | | | E′ → ε | E′ → ε |
+| T | T → FT′ | | | T → FT′ | | |
+| T′ | | T′ → ε | T′ → *FT′ | | T′ → ε | T′ → ε |
+| F | F → id | | | F → (E) | | |
+With input id + id * id, show the sequence of moves by the predictive parser.
+[c: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 5.
+
+
+## CSE-303 · 2018 · Term final · Question 3
+
+a. Briefly describe different parsers of a compiler with appropriate examples for each phase.
+[a: 16 marks]
+
+b. What is the difference between an interpreter and a compiler? What is a hybrid compiler?
+[b: 7 marks]
+
+c. Write the rules for constructing regular expressions over an alphabet.
+[c: 8 marks]
+
+d. What is the regular expression for denoting all strings whose length is not two? Assume a binary alphabet.
+[d: 4 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 6.
+
+Notes: Part (a) says “parsers” in the source, despite the reference to “each phase”; retained.
+
+## CSE-303 · 2018 · Term final · Question 4
+
+a. Formulate regular definition for “number” tokens in a certain programming language. The numbers in the language consists of three parts in the same sequence as detailed below:
+Integer part: Consists of any non-zero number of digits from 0 to 9. Cannot start with a zero, unless this zero is the only digit in this part.
+Decimal part: This part is optional. Consists of decimal points followed by any non-zero number of digits from 0 to 9. Cannot end with a 0. Thus only a single zero in this part is not permitted.
+Exponent part: This part is optional. Consists of character 'E' followed by an optional minus (-) sign, which is followed by any non-zero number of digits from 0 to 9.
+A few valid numbers are: 123, 123.456, 0.456, 123.456E789, 123.456E-789, 123E789, 123E000.
+A few invalid numbers are: 0123, 123.0, 123.456E+789
+[a: 17 marks]
+
+b. What is the role of a transition diagram in the construction of a lexical analyzer? Show the transition diagram for the relational operators: <, <=, =, <>, >, >=.
+[b: 10 marks]
+
+c. What are sentinels? Describe where sentinels are used in buffer pairs in lexical analysis.
+[c: 8 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 6.
+
+
+## CSE-303 · 2018 · Term final · Question 5
+
+a. Define SDD. Define S-attributed and L-attributed syntax directed definitions (SDD) with necessary examples. Determine whether following SDD is S-attributed or L-attributed or not. Justify your answer.
+| Production | Semantic rule |
+| --- | --- |
+| X → ABCDE | C.c = func(X.x, A.a, E.e) |
+[a: 20 marks (3+6+6+5=20)]
+
+b. For the following grammar find out the parse tree for an input sentence “132”. Then from the given SDD, annotate the parse tree by calculating the values of the attributes at the various nodes. Then construct the dependency graph for the same input sentence “132”. Carry out topological sorting of this graph.
+| Production | Semantic rule |
+| --- | --- |
+| S → AB | S.x = A.x + B.z |
+| A → A₁C | A.x = A.z + C.z; A.z = A₁.x + 10; C.z = A.z + A₁.x + C.x |
+| A → F | A.x = 1 + F.g |
+| B → F | B.x = 2 + F.g; B.z = B.x + 1 |
+| C → F | C.x = 3 × F.g |
+| F → 1 | F.g = 1 |
+| F → 2 | F.g = 2 |
+| F → 3 | F.g = 3 |
+[b: 15 marks (5+5+5=15)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 6, 7.
+
+
+## CSE-303 · 2018 · Term final · Question 6
+
+a. Find out the three address code, quadruples and triples representation for the following expression:
+```
+x = y * z * (p/b) + a + d − q
+```
+[a: 15 marks]
+
+b. Construct the syntax tree and DAG for the following expression:
+```
+b = g * h − g/h − c * e − c * e
+```
+[b: 10 marks (5+5=10)]
+
+c. Define the value number method for constructing DAG’s with necessary examples.
+[c: 10 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 7.
+
+Notes: Fractions p over b and g over h in the source are represented as (p/b) and g/h.
+
+## CSE-303 · 2018 · Term final · Question 7
+
+a. Define activation record. Why activation record is used? Describe the contents of an activation record with necessary figures and examples.
+[a: 15 marks (2+3+10=15)]
+
+b. Explain how control flow statements are handled in SSA.
+[b: 10 marks]
+
+c. Describe any two characteristics of peephole optimization with necessary examples.
+[c: 10 marks (5+5=10)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 7.
+
+
+## CSE-303 · 2018 · Term final · Question 8
+
+a. For the following code, generate machine code using static allocation for procedures a, b and c. Assume that code for procedures a, b and c start at the addresses 100, 300 and 500 respectively. Also assume that activation records for procedures a, b and c start at the addresses 700, 900 and 1100 respectively. Further assume that each ACTION instruction takes 32 bytes.
+```
+// code for a
+action1
+action2
+call b
+action3
+halt
+// code for b
+action4
+call c
+return
+// code for c
+action5
+action6
+action7
+return
+```
+[a: 15 marks]
+
+b. Partition the following three address instructions into basic blocks:
+```
+1) i = 1
+2) j = 1
+3) t1 = 10 * i
+4) t2 = t1 + j
+5) t3 = 8 * t2
+6) t4 = t3 − 88
+7) a[t4] = 0.0
+8) j = j + 1
+9) if j <= 10 goto (3)
+10) i = i + 1
+11) if i <= 10 goto (2)
+12) i = 1
+13) t5 = i − 1
+14) t6 = 88 * t5
+15) a[t6] = 1.0
+16) i = i + 1
+17) if i <= 10 goto (13)
+```
+[b: 8 marks]
+
+c. Find out the machine instructions for the following three-address statements:
+```
+i. x = y − z
+ii. a[j] = c
+iii. x = *p
+```
+[c: 12 marks (4×3=12)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 7, 8.
+
+
+## CSE-303 · 2019 · Term final · Question 1
+
+(a) Differentiate between compiler, assembler and interpreter. Define “Hybrid Compiler” and justify the reason behind using a just-in-time compiler with an example. [04+06=10]
+[a: 10 marks (04+06=10)]
+
+(b) Identify the significance of a symbol table in a compiler. Demonstrate how source code is translated into a target code in a compiler using the input statement given below. [02+10=12]
+[b: 12 marks (02+10=12)]
+
+```text
+Result = score1 * 100 + score2 * 100
+```
+
+[You must show all the phases of a compiler sequentially and the possible input and output of each phase for the given input statement in a diagram.]
+
+(c) State the possible error-recovery actions in Lexical Analysis. Explain “Panic mode recovery” with an example. [08]
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 21.
+
+
+## CSE-303 · 2019 · Term final · Question 2
+
+(a) What is “Sentinel”? Define where sentinels are used and how does the use of sentinel speed up the scanning process? [02+04=06]
+[a: 6 marks (02+04=06)]
+
+(b) Tokenize the given source program using the token patterns given in Table 2(b). Also draw the symbol table along with the attributes stored in it. Handle “Lexical Errors” accordingly. [14]
+[b: 14 marks]
+
+Table 2(b)
+
+| Token | Attributes | Pattern | Sample lexemes |
+| --- | --- | --- | --- |
+| Keyword | Lexeme itself | Characters i, f | if |
+| Keyword | Lexeme itself | Characters e, l, s, e | else |
+| Keyword | Lexeme itself | Characters m, a, i, n | main |
+| Keyword | Lexeme itself | Characters p, r, i, n, t, f | printf |
+| NumType | %d | Characters i, n, t | int |
+| NumType | %f | Characters f, l, o, a, t | float |
+| NumType | %lf | Characters d, o, u, b, l, e | double |
+| Literal | Pointer to the symbol table | Characters surrounded by “ and ” | “Hello world” |
+| Operator | Lexeme itself | == or < or > or <= or >= or != | ==, != |
+| Bracket | Lexeme itself | ( or ) or { or } | (, ), {, } |
+| Id | Pointer to the symbol table | Letters followed by letters or digits or underscores (_) | Name, var11, new_var |
+| Number | Lexeme itself | Any numeric constants; allows decimal and exponential. Doesn’t start with 0 unless the number itself is 0 or there is a decimal point after that 0 | 12, 123.5, 12E5, 12E-5, 123.3+E4, 0, 0.556 |
+
+N.B. 1. Example of ‘Lexeme itself’ attribute: `<Bracket, (>`, `<Keyword, else>`.
+2. Example of ‘Pointer to symbol table’ attribute: `<Id, 3556>`.
+[Here, 3556 represents the memory address of the symbol table where the attributes of the particular token are sorted.]
+
+Source Code to “Find the Largest Number among three numbers” is given below:
+
+```c
+#include <stdio.h>
+int main()
+{
+    double n1, n_2, n3;
+    int 1st_var;
+    printf("Enter three different numbers: ");
+    scanf("%lf %lf %lf", &n1, &n_2, &n3);
+    if (n1>=n_2 && n1>=n3)
+        printf("%f is the largest number", n1);
+    if (n_2>=n1 && n_2>=n3)
+        printf("%f is the largest number", n_2);
+    if (n3>=n1 && n3>=n_2)
+        printf("%f is the largest number", n3);
+    return 0;
+}
+```
+
+(c) Formulate regular definition and show the transition diagram for the following tokens given below [No explanation required]. [05=05=10, as printed]
+[c: 10 marks]
+
+(i) Token Number. Pattern: Consists of any non-zero number of digits (0-9). Doesn’t start with a zero unless the number itself is 0. Allows decimal points followed by any non-zero number of digits. There must be at least one digit before the decimal number. Also, the decimal part cannot end with a zero. Exponential not allowed.
+Example: Valid: 123, 123.45, 0.78, 0, 15.600007. Invalid: 123E-5, 34E65, 0.0, 67.890, .325.
+
+(ii) Token RelationalOperator. Pattern: =, <, >, <=, >=, !=, <>.
+Example: Valid: <>, !=, =. Invalid: <<, ==, =<.
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 21, 23.
+
+Notes: The allocation for (c) is printed as 05=05 followed by =10; retained without silently correcting it. Number sample 123.3+E4, invalid identifier 1st_var, and the restricted token table are as printed.
+
+## CSE-303 · 2019 · Term final · Question 3
+
+(a) What is top-down parsing? Left factor the following grammer. [02+03=05]
+[a: 5 marks (02+03=05)]
+
+```text
+S → abB | abcC | abcdD
+B → b | ε
+C → c | ε
+D → d
+```
+
+(b) Grammar: [10+05=15]
+[b: 15 marks (10+05=15)]
+
+```text
+stmt : expr
+     | for (opt_expr; opt_expr; opt_expr) stmt
+     | if (expr) stmt
+     | while (expr) stmt
+     | return expr ;
+Opt_expr : expr | ε
+expr : id = expr | expr - term | expr + term
+     | expr relop expr | term
+term : term * factor | term / factor | factor
+relop : == | <= | < | >= | > | !=
+factor : (expr) | id | num
+```
+
+For the given grammar, (i) Write the pseudocode for building a parse tree. (ii) Draw the parse tree for the input given below:
+
+```c
+for (counter = 1; counter < 5; counter = counter + 1) {
+    sum = sum + counter;
+}
+```
+
+(c) Write down the algorithm for removing left recursion. Eliminate the left recursion of the grammar given below showing the steps of the algorithm. [10]
+[c: 10 marks]
+
+```text
+S → Aa | Bb | b
+A → Ac | Sd
+B → Bd | Sfg
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 23, 25.
+
+Notes: Capitalization Opt_expr versus opt_expr, and braces in the input despite their absence from the grammar, are retained from the paper.
+
+## CSE-303 · 2019 · Term final · Question 4
+
+(a) Describe the different levels of error handling of a compiler. Explain how the production rules of grammar are represented in YACC / Bison with an example. [04+06=10]
+[a: 10 marks (04+06=10)]
+
+(b) Determine whether the following grammars are LL(1) or not with an explanation. [02*2.5=05]
+[b: 5 marks]
+
+```text
+(i)  S → ASab | B, A → a | ε, B → bb
+(ii) S → AaAb | BbBa, A → ε, B → ε
+```
+
+(c) Consider the following grammar: [03*05=15]
+[c: 15 marks]
+
+```text
+S → aAbB | bAaB | ε
+A → S | e | Da
+B → S | ca
+D → d | g
+```
+
+(i) Identify the FIRST and FOLLOW set for the grammar given above [Show the FOLLOW table].
+(ii) Construct a predictive parsing table using the FIRST and FOLLOW set.
+(iii) Show how the string ‘agabca’ will be parsed by the non-recursive parser. [Show the stack content, action at each step and other necessary information.]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 25.
+
+Notes: In (c), the middle alternative of A is the literal terminal e, visually distinct from the ε in S.
+
+## CSE-303 · 2019 · Term final · Question 5
+
+(a) Design the S-attributed SDD which constructs syntax trees for a simple expression grammar involving only the binary operators ‘+’ and ‘-’. Then find out the parse tree and syntax tree for b-5+p. [05*03=15]
+[a: 15 marks]
+
+(b) What are the differences between synthesized and inherited attributes for nonterminals? “All S-attributed definitions are L-attributed, but not all L-attributed definitions are S-attributed.” Explain and justify. [05+10=15]
+[b: 15 marks (05+10=15)]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 27.
+
+
+## CSE-303 · 2019 · Term final · Question 6
+
+(a) Construct the syntax tree and DAG for the following expression: [05*02=10]
+[a: 10 marks]
+
+```text
+((x + y) - ((x + y) * (x - y))) + ((x + y)) * (x - y))
+```
+
+(b) Use value-number method to store the DAG in Question 6(a), in an array of records. Then represent the same DAG using three address code. [05*02=10]
+[b: 10 marks]
+
+(c) What are the disadvantages of triples representation over quadruples representation? Explain how indirect triples overcome the disadvantages of triples. [05+05=10]
+[c: 10 marks (05+05=10)]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 27.
+
+Notes: The expression in (a) has an unmatched final closing parenthesis in the printed source; retained.
+
+## CSE-303 · 2019 · Term final · Question 7
+
+(a) Analyze the following C code in Code 1. [08*02=16]
+[a: 16 marks]
+
+```c
+void f(int n) {
+    int t, s;
+    if (n > 1) {
+        s = f(n - 1);
+        t = f(n - 2);
+    }
+}
+main() {
+    f(5);
+}
+```
+
+Code 1: Code for question 7(a).
+Now find out the sequence of calls and returns that result from an execution of the above program. Then construct the complete activation tree for it.
+
+(b) Define activation record. Why activation record is used? Describe the contents of an activation record with necessary figures and examples. [02+03+09=14]
+[b: 14 marks (02+03+09=14)]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 27.
+
+Notes: The source declares void f but assigns its calls to s and t; retained as printed.
+
+## CSE-303 · 2019 · Term final · Question 8
+
+(a) What are the issues that need to be considered during design of a code generator? Explain the factors of instruction selection with examples. [05+10=15]
+[a: 15 marks (05+10=15)]
+
+(b) Translate the following three address code as shown in Code 2 into an equivalent machine code by using static allocation for procedures a, b and c. Assume that codes for procedures a, b and c start at addresses 3000, 4000 and 5000 respectively. Also assume that activation records for procedures a, b and c start at addresses 7000, 8000 and 9000 respectively. Further assume that each ACTION instruction takes 64 bytes. [15]
+[b: 15 marks]
+
+```text
+// code for a
+    action1
+    action2
+    action3
+    call b
+    action4
+    halt
+// code for b
+    action5
+    action6
+    call c
+    return
+// code for c
+    action7
+    action8
+    return
+```
+
+Code 2: Code for Question 8(b).
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 27, 29.
+
+
+## CSE-303 · 2021 · Term final · Question 1
+
+(a) Explain clearly the difference among the following regular expressions in the context of Lexical Analyzer generator: [10]
+[a: 10 marks]
+
+```text
+(i)   {cse}{mist}
+(ii)  [csemist]
+(iii) csemist
+(iv)  (csemist)
+(v)   csemist+
+```
+
+(b) Explain the terms token, pattern and lexeme with necessary examples. Which of these is (are) specified in lexical analyzer? How? Explain the role of attribute in relation to token, pattern and lexeme. [10]
+[b: 10 marks]
+
+(c) Left Factor the grammar, [10]
+[c: 10 marks]
+
+```text
+A → abB | abcC | abcdD
+B → b
+C → c
+D → d
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 7.
+
+
+## CSE-303 · 2021 · Term final · Question 2
+
+(a) Explain and justify the comment “Java language processors combine compilation and interpretation”. [10]
+[a: 10 marks]
+
+(b) Explain how the various stages in a compiler can be grouped into the analysis and synthesis by the symbol table in this scenario? [10]
+[b: 10 marks]
+
+(c) Explain what would have happened if the task of removing white spaces from input programs was moved from lexical analyzer to syntax analyzer? [10]
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 7.
+
+
+## CSE-303 · 2021 · Term final · Question 3
+
+(a) We have the grammar [15]
+[a: 15 marks]
+
+```text
+S → A * a
+A → A + a | b
+```
+
+Eliminate left recursion from the above grammar. And then find FIRST and FOLLOW for the non-terminals. Use this information to construct the predictive parsing table.
+
+(b) Using the predictive parsing table found in the above question (3-(a)), show in a tabular form, the input matched, stack contents and parsing action for an input string b + a + a * a. From the parsing output, show the derivation of the output string. [15]
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 7, 8.
+
+
+## CSE-303 · 2021 · Term final · Question 4
+
+Marks allotted for Viva 30. (Compulsory) [30]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 8.
+
+
+## CSE-303 · 2021 · Term final · Question 5
+
+(a) Present the SDD which uses inherited attributes to multiply integers. Use this SDD to construct the parse tree for the expression “5 * 6 * 7”, annotate the parse tree by calculating the values of the attributes at the various nodes. Then construct the dependency graph for the same expression “5 * 6 * 7”. Carry out topological sorting of this graph. [05 x 04=20]
+[a: 20 marks]
+
+(b) Describe how the memory is subdivided into code and data areas by C++ language compiler for Linux operating system with necessary figures. [10]
+[b: 10 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 9.
+
+
+## CSE-303 · 2021 · Term final · Question 6
+
+(a) Find out the three-address code and quadruples representation for the following expression: [05 x 02=10]
+[a: 10 marks]
+
+```text
+n = f(a, g(a, b, c), h(p, q))
+```
+
+(b) Compare between name equivalence and structural equivalence with necessary examples. [10]
+[b: 10 marks]
+
+(c) Construct the syntax tree and DAG for the following expression: [05 x 02=10]
+[c: 10 marks]
+
+```text
+a * (b + c) + (b + c) * c + a(b + c)
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 9.
+
+Notes: The expression in (c) prints a(b + c) without an explicit multiplication operator.
+
+## CSE-303 · 2021 · Term final · Question 7
+
+(a) Present the grammar that generates a sequence of declarations with list of names of basic types, array types or record types. Then use this grammar to construct the parse tree for “record {int a, b; float a[3][4];}”. [09]
+[a: 9 marks]
+
+(b) Find out the machine instructions for the following three-address statements: [04 x 03=12]
+[b: 12 marks]
+
+```text
+(i)   if a<b goto L
+(ii)  b[p] = d
+(iii) y = *z
+```
+
+(c) Explain clearly the difference among, [03 x 03=09]
+[c: 9 marks]
+
+```text
+(i)   LD R1, 100(R2)
+(ii)  LD R1, #100
+(iii) LD R1, *100(R2)
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 9.
+
+Notes: Declaration example repeats the name a as printed.
+
+## CSE-303 · 2021 · Term final · Question 8
+
+Marks allotted for Viva 30. (Compulsory) [30]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 10.
+
+
+## CSE-303 · 2022 · Term final · Question 1
+
+(a) We have the following grammar for variable declaration in C: [5+10+5=20]
+[a: 20 marks (5+10+5=20)]
+
+```text
+V → TD;
+T → int | float | char
+D → D, F | F
+F → id
+```
+
+(i) Now, eliminate left recursion from the above grammar (if there is any).
+(ii) Find FIRST and FOLLOW for each non terminal.
+(iii) Construct the predictive parsing table using the above information.
+
+(b) Find out whether the following statements are syntactically correct or not for the above mentioned grammar in Question-1(a) using top down parsing approach. [10]
+[b: 10 marks]
+
+```text
+(i)  Char id, id;
+(ii) int id = 4;
+```
+
+If syntactically correct, using the predictive parsing table derived from the above question-1(a), show in a tabular form the input matched, stack content, parsing output sequentially.
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 5.
+
+Notes: Filename year is 2022; compiler heading explicitly reads Term Final (Spring) Examination 2021: September 2021 on both section covers. Grouped under filename year as requested. Char is capitalized in (b)(i), whereas the grammar terminal is lowercase char.
+
+## CSE-303 · 2022 · Term final · Question 2
+
+(a) [16]
+[a: 16 marks]
+
+```text
+funDel → typeSpec ID (parms) stmt | ID (parms) stmt
+parms → parmTypeList | ε
+parmTypeList → typespec parmIdList
+parmIdList → parmIdList, parmTypeList | ID
+Stmt → expr; | ;
+expr → term = term | term relop term
+term → ID | NUMBER
+```
+
+For the above function formulate the regular definition and show the transition diagram for these: identifier, number, semicolon, comma, assignment operator, relational operator and show the transition diagram for each token.
+
+(b) “If we do not store the reserved keyword in the symbol table, then we must prioritize the keyword tokens so that the reserved-word tokens are recognized in preference to id, when the lexeme matches both patterns.” Support or refuse the statement with justification. [6]
+[b: 6 marks]
+
+(c) Describe where sentinels are used in buffer pairs in lexical analysis. How does the use of sentinels speed up the input process? [8]
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 5, 6.
+
+Notes: Grammar spelling/case differences funDel, typeSpec/typespec and stmt/Stmt are preserved. Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 3
+
+(a) “Compiler works in two steps whereas interpreter works in one step” — How does this make a difference in working principle of both compiler and interpreter? [5]
+[a: 5 marks]
+
+(b) Explain and justify the comment that Java language processors combine compilation and interpretation. [5]
+[b: 5 marks]
+
+(c) Explain whether the following grammars are “LLCD” [unclear scan] or not, your answer will not be accepted without proper explanation. [20]
+[c: 20 marks]
+
+```text
+(i)   S → AB | Bc | d, A → a | ε, B → b | ε, C → c | ε
+(ii)  S → A | a, A → a
+(iii) S → aB | ε, B → bC | ε, C → eS | ε
+(iv)  S → A, A → Bb | Cd, B → aB | ε, C → cC | ε
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 6.
+
+Notes: The scan renders the grammar classification as LLCD; likely a damaged LL(1), but the intended text is not silently substituted. In (c)(iii), C → eS is transcribed as visible (not changed to cS). Some bold letters have scan marks above them; those marks are treated as image artifacts. Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 4
+
+(a) What should a diagram’s code do if the character read at one point is not among the ones for which a following state has been specified? [05]
+[a: 5 marks]
+
+(b) During construction of a parsing table M, for each production A → α of the grammar, if ε is in FIRST(α), we add A → α to M[A, b], for each terminal b in FOLLOW(A). Explain clearly in light of parsing mechanism. [10]
+[b: 10 marks]
+
+(c) What is intermediate code generation? List two important properties it should have. Give the transition process for statement given below: [05]
+[c: 5 marks]
+
+```text
+result = a + b * c + (d/2):
+```
+
+(d) Preform left factoring in the following grammar: [10]
+[d: 10 marks]
+
+```text
+(i)  S → a | ab | abc | abcd
+(ii) S → bSSaaS | bSSaSb | bSb | a
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 6.
+
+Notes: The expression in (c) ends with a colon in the printed source. The wording Preform is printed. Bold glyphs in (d)(ii) have small scan marks above them, treated as artifacts rather than mathematical diacritics. Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 5
+
+(a) Draw dependency graph for the syntax directed definition shown in figure-5(a) for the declaration, float a, b, d; [10]
+[a: 10 marks]
+
+Figure-5(a): SDD of Declaration
+
+| Production | Semantic rules |
+| --- | --- |
+| 1) D → T L | L.inh = T.type |
+| 2) T → int | T.type = integer |
+| 3) T → float | T.type = float |
+| 4) L → L₁, id | L₁.inh = L.inh; addType(id.entry, L.inh) |
+| 5) L → id | addType(id.entry, L.inh) |
+
+(b) Using the incremental syntax directed translation shown in figure-5(b), draw an annotated parse tree and write the generated three address code for the expression, [10]
+[b: 10 marks]
+
+```text
+m = (n + 10) + (-p + 8)
+```
+
+Figure-5(b): Incremental SDT for Code Generation
+
+```text
+S → id = E ; { gen(top.get(id.lexeme) '=' E.addr); }
+E → E₁ + E₂  { E.addr = new Temp();
+               gen(E.addr '=' E₁.addr '+' E₂.addr); }
+  | - E₁     { E.addr = new Temp();
+               gen(E.addr '=' 'minus' E₁.addr); }
+  | (E₁)     { E.addr = E₁.addr; }
+  | id       { E.addr = top.get(id.lexeme); }
+```
+
+(c) Generate machine code for the following sequence assuming that n, s, i are in a memory location. [10]
+[c: 10 marks]
+
+```text
+    s = 0
+    i = 0
+L1: if i>n goto L2
+    s = s + i
+    i = i + 1
+    goto L1
+L2:
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 7, 8.
+
+Notes: The supplied SDT has no numeric-literal production despite numeric literals in its requested expression; retained without adding productions. Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 6
+
+(a) Write three address code and Quadruples for the following code segment using the position number for labels assuming each data takes 4 bytes. [18]
+[a: 18 marks]
+
+```text
+a[i] = b * c - b * d
+x = f(y + 1) + g(5, f(y + 3))
+q = *p + &y
+```
+
+(b) Write short note on the following concepts: [12]
+(i) Type Equivalence
+(ii) Type Expression
+(iii) Value-number method
+(iv) DAG
+[b: 12 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 8.
+
+Notes: Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 7
+
+(a) Explain the different addressing modes for a simple target machine model. [5]
+[a: 5 marks]
+
+(b) Explain the way of calculating program cost. Calculate program cost for the following target machine code. [10]
+[b: 10 marks]
+
+```text
+LD R0, P
+LD R1, x
+ST 0(R0), R1
+LD R0, x
+LD R1, y
+SUB R0, R0, R1
+BLTZ *R3, R0
+```
+
+(c) For the following code, generate machine code using stack allocation for procedures proc1, proc2, and proc3. Assume that code for procedures proc1, proc2 and proc3 start at the address 200, 400 and 600 respectively. Also assume that activation records size for procedures proc1, proc2 and proc3 are 50, 20 and 30 respectively. Further assume that each action instruction takes 32 bytes and stack starts at address 740. [15]
+[c: 15 marks]
+
+```text
+//code for proc1
+    action1
+    action2
+    call proc2
+    action3
+    action4
+    halt
+//code for proc2
+    action 5
+    call proc3
+    return
+//code for proc3
+    action6
+    action7
+    return
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 8.
+
+Notes: The zero in ST 0(R0), R1 resembles capital O in the scan; transcribed as zero for the displacement. Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2022 · Term final · Question 8
+
+(a) “Stack allocation would not be feasible if procedure calls, or activations of procedures did not nest in time” — Justify the statement. [07]
+[a: 7 marks]
+
+(b) Explain the elements of a general Activation Record. [08]
+[b: 8 marks]
+
+(c) Consider the following pseudo code for generating Fibonacci numbers. Show the downward growing stack for the activation records considering f(5) is called initially and currently f(1) is activated. [15]
+[c: 15 marks]
+
+```c
+int f(int n) {
+    int t, s;
+    if (n < 2) return 1;
+    s = f(n-1);
+    t = f(n-2);
+    return s + t;
+}
+```
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 8, 9.
+
+Notes: Filename year 2022; printed compiler examination heading is September 2021.
+
+## CSE-303 · 2023 · Term final · Question 1
+
+a. Consider the following grammar for identifier declaration:
+```text
+L → D | L D
+D → T I ;
+T → int | float | char
+I → id | I , id
+```
+Based on this grammar, determine whether it is suitable for a top-down or bottom-up parser. If the grammar is suitable for bottom-up parsing, then apply the shift-reduce process and build bottom-up parser for the following statements:
+```text
+int id1; float id2;
+```
+If not, justify your answer by discussing the characteristics of the grammar.
+[a: 10 marks]
+
+b. (i) Inspect the grammar of Question-1(a) and determine whether you need to modify the grammar before constructing a predictive top-down parser or not? Justify your response. If so, make the necessary changes and use the modified grammar for the following questions; otherwise, use the given grammar.
+[b: 20 marks (4+8+8); b(i): 4 marks (4+8+8)]
+
+(ii) Find FIRST and FOLLOW for each non-terminal.
+[b(ii): 8 marks (4+8+8)]
+
+(iii) Construct a predictive parsing table using the FIRST and FOLLOW set.
+[b(iii): 8 marks (4+8+8)]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 4.
+
+
+## CSE-303 · 2023 · Term final · Question 2
+
+a. Discuss the trade-offs between using a compiler and an interpreter.
+[a: 10 marks]
+
+b. Compiler is a language processing system which converts a source code to a target machine code. Now, demonstrate the translation done by each phases of the compiler for the following statement considering all the variables are integer numbers.
+```text
+result = - num1 * 10 + num2 * 40
+```
+[b: 20 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 4.
+
+
+## CSE-303 · 2023 · Term final · Question 3
+
+a. Suppose, a situation arises where the lexical analyzer is unable to proceed because none of the patterns for tokens matches a prefix of the remaining input. How will the lexical analyzer recover from this phase?
+[a: 10 marks]
+
+b. Consider the following grammars and patterns for identifying tokens in a programming language:
+```text
+expr → term operator term | id assignment_op term
+term → num | id
+operator → + | - | * | /
+assignment_op → = | += | -= | *= | /=
+```
+For the given grammar, write down the patterns for identifying the tokens “number”, “identifier”, “operator”, “assignment-op”. Also draw the transition diagrams for each of the patterns.
+(i) Number: Consider of any non-zero number of digits (0-9) but starting digit cannot be zero (0). Decimal points are followed by any non-zero number of digits. This part is optional. There must be at least one digit before the decimal number. Exponential part not considered.
+(ii) Identifier: Identifier can contain any number of letters or digits or underscore (_). But it cannot start with any digit.
+(iii) Operators and assignment operators: Operators mentioned in the grammar.
+[b: 10 marks]
+
+c. Consider the following two transition diagrams for arithmetic operator ('+' and '-' only) and arrow operators ('->') for C language respectively:
+```text
+Arithmetic operator: start → (0)
+(0) -- '+' --> ((1)) [return (PLUS)]
+(0) -- '-' --> ((2)) [return (MINUS)]
+Arrow operator: start → (3)
+(3) -- '-' --> (4) -- '>' --> ((5)) [return (ARR_OP)]
+Double parentheses denote accepting states.
+```
+If both the transition diagrams are matched in parallel, then how to resolve the case where both the diagrams will reach to the accepting states for '->' input?
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 5.
+
+
+## CSE-303 · 2023 · Term final · Question 4
+
+a. Explain whether the following grammars are LL(1) or not; your answer will not be accepted without proper explanation.
+```text
+(i) S → X X ; X → x X | y
+(ii) S → A S a b | B ; A → a | ε ; B → b b
+```
+[a: 10 marks]
+
+b. Explain the back-tracking procedure of recursive-descent top-down parser with proper algorithm and example.
+[b: 10 marks]
+
+c. Perform left-factoring in the following grammar.
+```text
+(i) F → n | n [A] | n (A)
+(ii) S → b S S′ | a ; S′ → S a a S | S a S b | b
+```
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 5.
+
+
+## CSE-303 · 2023 · Term final · Question 5
+
+a. Figure-5(a) represents a Syntax-Directed Definition (SDD) to keep track of block information in the programs. Identify the class of the SDD shown in Figure-5(a) and justify your answer.
+Figure-5(a): Syntax Directed Definition (SDD) for Block information
+| Production | Semantic rules |
+| --- | --- |
+| Ss → S ; Ss₁ | S.block = Ss.block; Ss₁.block = Ss.block |
+| Ss → ε | |
+| S → B | B.block = S.block |
+| B → { Ss } | Ss.block = child(B.block) |
+| S → other | other.block = S.block; |
+[a: 7 marks]
+
+b. Following grammar generates a binary number with a decimal point. Design a L-attributed SDD to compute the decimal value of a binary string generated by the grammar and using the designed SDD illustrate that, the value of binary string 101.110 is the decimal number 5.75.
+```text
+S → L . L | L
+L → L B | B
+B → 0 | 1
+```
+[b: 15 marks]
+
+c. Appling the Syntax-Directed Definition (SDD) shown in Figure-5(c), build a syntax tree represented as a record for the string “b – (a + 3 - 5)” and list down the steps of tree construction.
+Figure-5(c): Syntax Directed Definition (SDD) for Syntax Tree
+| Production | Semantic rules |
+| --- | --- |
+| E → E₁ + T | E.node = new Node('+', E₁.node, T.node) |
+| E → E₁ - T | E.node = new Node('-', E₁.node, T.node) |
+| E → T | E.node = T.node |
+| T → ( E ) | T.node = E.node |
+| T → id | T.node = new Leaf(id, id.entry) |
+| T → num | T.node = new Leaf(num, num.val) |
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 6.
+
+
+## CSE-303 · 2023 · Term final · Question 6
+
+a. Considering the Syntax-Directed Definition (SDD) in Figure-6(a), build an annotated parse tree and corresponding dependency graph for the declaration, “float arr[4][5][2];”.
+Figure-6(a): Syntax Directed Definition (SDD) for type checking
+| Production | Semantic rules |
+| --- | --- |
+| T → B id C ; | T.t = C.t; C.b = B.t |
+| B → int | B.t = integer |
+| B → float | B.t = float |
+| C → [ num ] C₁ | C.t = array(num.val, C₁.t) |
+| C → ε | C₁.b = C.b; C.t = C.b |
+[a: 15 marks]
+
+b. Briefly explain the elements of a general activation record for procedure call with appropriate examples.
+[b: 7 marks]
+
+c. Explain how nonlocal data on the stack can be accessed using the access control link of the activation record with appropriate examples.
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 7.
+
+Notes: Figure-6(a) prints C₁.b = C.b in the C → ε row, although C₁ does not occur in that production. This apparent source error is preserved.
+
+## CSE-303 · 2023 · Term final · Question 7
+
+a. Illustrate three address code for the code segment shown in Code-7(a) which turns a 10*10 matrix A into an identity matrix. Assume that, the real-valued array elements take 8 bytes each and the matrix A is stored in row-major form.
+Code-7(a): Creating Identity Matrix-A
+```text
+for i from 1 to 10 do
+    for j from 1 to 10 do
+        A[i,j] = 0.0;
+for i from 1 to 10 do
+    A[i,i] = 1.0;
+```
+[a: 10 marks]
+
+b. Partition the three address instructions that you have generated in question-7(a) into a set of basic blocks and construct flow graph.
+[b: 10 marks]
+
+c. Compare among the following data structure for representing intermediate representations:
+(i) Quadruples
+(ii) Triples
+(iii) Indirect Triples
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 7.
+
+
+## CSE-303 · 2023 · Term final · Question 8
+
+a. For the three address code shown in Code-8(a), write down generated machine code using static allocations for procedure proc1 and proc2. Use pseudo instruction ACTION to represent the sequence of machine instructions to execute the statement action1, action2 and action3. Start the code for procedure proc1 at address 200 and proc2 at address 350. Furthermore assume that each ACTION instruction takes 16 bytes and the activation records for these procedures are statically allocated starting at locations 400 and 494, respectively. Consider that action3 has a condition which is responsible for returning back to the caller procedure. You also have to explain the reasons behind each line of the generated machine code.
+Code-8(a): Pseudo Code (printed on the preceding page)
+```text
+// code for procedure proc1
+action1
+call proc2
+action2
+halt
+[a: 15 marks]
+
+// code for procedure proc2
+action3
+call proc2
+return
+```
+
+b. Explain the following optimization mechanism with appropriate examples:
+(i) Basic Block Optimization
+(ii) Peephole Optimization
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 7, 8.
+
+
+## CSE-303 · 2024 · Term final · Question 1
+
+We have the following grammar for regular expressions over symbols a and b only:
+```text
+rexpr → rexpr + rterm | rterm
+rterm → rterm rfactor | rfactor
+rfactor → rfactor * | rprimary
+rprimary → a | b
+```
+
+a. (i) Eliminate left recursion from the above grammar (if there is any).
+[a: 24 marks (05+12+07); a(i): 5 marks (05+12+07)]
+
+(ii) Now find FIRST and FOLLOW for each non-terminal.
+[a(ii): 12 marks (05+12+07)]
+
+(iii) Construct the predictive parsing table using the above information.
+[a(iii): 7 marks (05+12+07)]
+
+b. Using the predictive parsing table derived from Question 1(a), identify whether the following statement is syntactically correct or not.
+```text
+b * a + ab
+```
+[b: 6 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 5.
+
+
+## CSE-303 · 2024 · Term final · Question 2
+
+a. Explain and justify the comment “Java language processors combine compilation and interpretation”.
+[a: 10 marks]
+
+b. Compiler is a language processing system which converts a source code to a target machine code. Now demonstrate the translation done by each phases of the compiler for the following statement considering all the variables are integers.
+```text
+result = num1 * 10 + num2 * 40
+```
+[b: 20 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 5.
+
+
+## CSE-303 · 2024 · Term final · Question 3
+
+a. Consider the following grammar. Write down the patterns for identifying the tokens (mentioned in the question no 3(a)) and draw the transition diagram for each pattern.
+```text
+stmt → for (expr; expr; expr)
+expr → term assignment_operator term
+     | term increment_operator
+     | term relop term
+term → id | number
+```
+Now, write down patterns for number, ID, parenthesis, assignment_operator and increment_operator. Draw transition diagram for the mentioned patterns.
+[a: 15 marks]
+
+b. Identify the purpose of using two-buffer scheme instead of one-buffer scheme in the process of lexical analysis.
+[b: 7 marks]
+
+c. Explain clearly the difference among the following regular expressions in the context of Lexical Analyzer Generator.
+```text
+(i) [spring 2024]
+(ii) {spring}{2024}
+(iii) (spring 2024)
+(iv) spring 2024
+```
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 6.
+
+
+## CSE-303 · 2024 · Term final · Question 4
+
+a. Explain the back-tracking procedure of recursive-descent top-down parser with proper example.
+[a: 10 marks]
+
+b. Explain whether the following grammers are LL(1) or not; your answer will not be accepted without proper explanation.
+```text
+S → X x X y | Y y Y x
+X → x X | ε
+Y → y Y | ε
+```
+[b: 10 marks]
+
+c. Perform left-factoring for the following grammars.
+```text
+(i) S → S+S | SS | (S) | S * | a
+(ii) S → bSSaaS | bSSasb | bsb | a
+```
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 6.
+
+Notes: The second grammar in part (c) prints bSSasb (lowercase s); preserved as printed.
+
+## CSE-303 · 2024 · Term final · Question 5
+
+a. The SDD in Fig. 5(a) takes a simple declaration D consisting of a basic type T followed by a list L of identifiers. Semantic rules of the SDD enters the type for each of the identifiers on the list into the symbol-table. Now, modify the semantic rules in such a way so that it can calculate the width (in bytes) of the identifiers and enter it into the symbol-table. Assume the required attributes to do the task and give proper explanation for the addition of each attribute, rule or side-effect in the semantic rules column.
+Fig. 5(a): Syntax-directed definition for simple type declarations
+| Production | Semantic rules |
+| --- | --- |
+| D → T L | L.inh = T.type |
+| T → int | T.type = integer |
+| T → float | T.type = float |
+| L → L₁ , id | L₁.inh = L.inh; addType(id.entry, L.inh) |
+| L → id | addType(id.entry, L.inh) |
+[a: 10 marks]
+
+b. Fig. 5(b) is a syntax-directed definition (SDD) for constructing syntax trees during top-down parsing using the SDD of Fig. 5(b) answer the followings:
+(i) Identify the class of the SDD with appropriate explanation.
+(ii) Draw parse tree for the expression, (x+y) – (a-(4+b)).
+(iii) Construct dependency graph for the same expression and
+(iv) Construct syntax tree using the semantic rules showing the node construction steps of the tree.
+Fig. 5(b): Syntax-directed Definition for Constructing syntax trees during top-down parsing
+| Production | Semantic rules |
+| --- | --- |
+| E → T E′ | E.node = E′.syn; E′.inh = T.node |
+| E′ → + T E′₁ | E′₁.inh = new Node('+', E′.inh, T.node); E′.syn = E′₁.syn |
+| E′ → - T E′₁ | E′₁.inh = new Node('-', E′.inh, T.node); E′.syn = E′₁.syn |
+| E′ → ε | E′.syn = E′.inh |
+| T → ( E ) | T.node = E.node |
+| T → id | T.node = new Leaf(id, id.entry) |
+| T → num | T.node = new Leaf(num, num.val) |
+[b: 20 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 7.
+
+
+## CSE-303 · 2024 · Term final · Question 6
+
+a. Explain how indirect triples representation of three address code overcomes the problem of triples representation with appropriate example.
+[a: 10 marks]
+
+b. The translation scheme in Fig. 6(b) generates three address code for expressions with array references. Considering the SDT given in Fig. 6(b) draw an annotated parse tree for the array referenced expression,
+```text
+X = arr[i] + st[i][j+1];
+```
+and find out the generated three address code using the semantic actions assuming that arr is an array of integers and st is an array of floating numbers and X, i, j all are integers.
+Fig. 6(b): Semantic actions for array references (continues on PDF page 8)
+```text
+S → id = E ;
+    { gen(top.get(id.lexeme) '=' E.addr); }
+  | L = E ;
+    { gen(L.array.base '[' L.addr ']' '=' E.addr); }
+E → E₁ + E₂
+    { E.addr = new Temp();
+      gen(E.addr '=' E₁.addr '+' E₂.addr); }
+  | id
+    { E.addr = top.get(id.lexeme); }
+  | L
+    { E.addr = new Temp();
+      gen(E.addr '=' L.array.base '[' L.addr ']'); }
+L → id [ E ]
+    { L.array = top.get(id.lexeme);
+      L.type = L.array.type.elem;
+      L.addr = new Temp();
+      gen(L.addr '=' E.addr '*' L.type.width); }
+  | L₁ [ E ]
+    { L.array = L₁.array;
+      L.type = L₁.type.elem;
+      t = new Temp();
+      L.addr = new Temp();
+      gen(t '=' E.addr '*' L.type.width);
+      gen(L.addr '=' L₁.addr '+' t); }
+```
+[b: 20 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 7, 8.
+
+
+## CSE-303 · 2024 · Term final · Question 7
+
+a. Briefly explain the elements of a general activation record for the procedures with appropriate examples.
+[a: 7 marks]
+
+b. Fig. 7(b) is a C code to compute nth Fibonacci numbers recursively. Suppose that the activation record for the function fibo includes the following elements in order: (return value, argument n, local s, local t); there will normally be other elements in the activation record as well. To answer the questions below assume that the initial call is fibo(5).
+(i) Draw the complete activation tree for the call fibo(5) by simulating the program given in Fig. 7(b).
+(ii) What does the stack and its activation records look like the first time fibo(1) is about to return?
+(iii) What does the stack and its activation records look like the fifth time fibo(1) is about to return?
+Fig. 7(b): Program to compute nth Fibonacci Number
+```c
+int fibo (int n){
+    int t, s;
+    if (n<2) return 1;
+    s = fibo(n-1);
+    t = fibo(n-2);
+    return s+t;
+}
+```
+[b: 15 marks]
+
+c. Explain how non-local data on the stack can be accessed using the access control link of the activation record for a language which supports nested procedure declaration and procedure can have function-valued parameter with appropriate examples.
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 8.
+
+
+## CSE-303 · 2024 · Term final · Question 8
+
+a. For a simple target machine explain how program cost can be estimated for different types of instruction. Now determine the total program cost of the following instruction sequences:
+```text
+LD R0, y
+LD R1, #10
+ADD R0, R0, R1
+INC R0, R0
+LD R1, 200(R0)
+ST x(R0), R1
+BLTZ *R0, R1
+```
+[a: 10 marks]
+
+b. For the pseudo-code given in Fig. 8(b), considering the instructions of a simple target machine, generate machine code using stack allocation for procedures main, proc and add. Assume that code area for procedures main, proc and add start at the addresses 100, 200 and 500 respectively. Also assume that activation records size for the procedures main, proc and add are 20, 40 and 10 respectively. Further assume that, each action1, action2, action5 takes 16 bytes and each action3, action4, action6 and action7 instruction takes 10 bytes and the stack starts at address 740. Consider that action7 has a condition which is responsible for returning back to the caller procedure. Assume the registers and instructions as required for the target machine.
+Fig. 8(b): Psuedo-code for a simple target machine.
+```text
+// code for main procedure
+action1
+action2
+call proc
+action3
+halt
+[b: 20 marks]
+
+// code for proc procedure
+action4
+call add
+action5
+call proc
+action6
+call proc
+return
+
+// code for add procedure
+action7
+action4
+return
+```
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 9.
+
+
+## CSE-303 · 2025 · Term final · Question 1
+
+Consider the following grammers and answer the Questions.
+```text
+Grammer-01 (G-01):
+E → E + E | E * E | (E) | id | num
+Grammer-02 (G-02):
+E → E + T | T
+T → T * F | F
+F → (E) | id | num
+```
+
+a. Identify the set of lexemes that these above grammers can generate. Define suitable regular expressions (REs) for each token.
+[a: 8 marks]
+
+b. Describe the problems with grammer G-01 and how does G-02 resolve these problems with appropriate example and parse tree.
+[b: 10 marks]
+
+c. Can grammer G-02 be used for a top-down parser (recursive descent)? Justify your answer. If no, transform G-02 into an equivalent grammer that is suitable for top-down parsing.
+[c: 12 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 4.
+
+
+## CSE-303 · 2025 · Term final · Question 2
+
+Consider the following grammer:
+```text
+S → A C B | C b b | B a
+A → d a | B C
+B → g | ε
+C → h | ε
+```
+where S, A, B and C are non-terminals and a, b, d, g, h and ϵ are terminals.
+
+a. Find the FIRST and FOLLOW for each non-terminals of the above grammer.
+[a: 8 marks]
+
+b. Build a predictive parsing table from FIRST and FOLLOW set.
+[b: 14 marks]
+
+c. Explain the concept of Non-Recursive Predictive Parsing. Describe the algorithm used by such a parser to process an input string.
+[c: 8 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 4.
+
+Notes: The source calls ϵ a terminal; retained without correction.
+
+## CSE-303 · 2025 · Term final · Question 3
+
+a. Explain the role of “Buffer Pair” in the design of a lexical analyzer and how this scheme works.
+[a: 10 marks]
+
+b. Construct the Regular Expressions (REs) and show the transition diagram that will match Date format. Day, Month, and year – all three parts must be present in the date format. The parts can be separated by either dot (.) or hyphen (-). Year must be written in 4 digit format. Needless to say that the numbers in the date should represent valid numbers. Example of some correct and incorrect date formats are given below:
+Correct:
+```text
+12-03-2022, 1-2-2000, 1.11.2050
+01-10-2019, 01.05.1950, 1-02-2024
+```
+Incorrect:
+```text
+36.9.2022, 3-14-2023, 12.12.22
+```
+[b: 10 marks]
+
+c. “If we do not store the reserved keywords in the symbol table, then we must prioritize the keyword tokens so that the reserved word tokens are recognized preference to id, when the lexeme matches both pattern”. Justify the statement.
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 4, 5.
+
+
+## CSE-303 · 2025 · Term final · Question 4
+
+a. Compiler is a language processing system which converts a source code to a target machine code. Now, demonstrate the translation done by each phases of the compiler for the following statement considering all the variables are integer numbers.
+```text
+result = -num1 * 10 + num2 * 40
+```
+[a: 20 marks]
+
+b. Perform left-factoring in the following grammer.
+```text
+(i) F → n | n[A] | n(A)
+(ii) S → bSS′ | a
+(iii) S′ → SaaS | SaSb | b
+```
+[b: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 5.
+
+
+## CSE-303 · 2025 · Term final · Question 5
+
+Answer all the questions for following CFG rules:
+```text
+L → E n
+E → E₁ + T
+E → T
+T → T₁ * F
+T → F
+F → (E)
+F → digit
+```
+
+a. Define Syntax Directed Translation with importance.
+[a: 5 marks (5+8+10+7=30)]
+
+b. Differentiate between Syntax, Directed Definitions and Syntax Directed translation schemes in terms of the above CFG or production rules.
+[b: 8 marks (5+8+10+7=30)]
+
+c. Produce the Semantic Rules followed by an annotated parse tree for the expression Input: 5 + 3 * 4 along with a dependency graph for both synthesized and inherited attributes.
+[c: 10 marks (5+8+10+7=30)]
+
+d. For the following expressions and binary operators, draw the respective syntax tree:
+```text
+mknode (op, left, right)
+mkleaf (id, entry)
+mkleaf (num, val)
+```
+[d: 7 marks (5+8+10+7=30)]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 5.
+
+Notes: The source lists tree-construction routines in part (d), but provides no separate concrete expression for that part. No expression has been supplied.
+
+## CSE-303 · 2025 · Term final · Question 6
+
+a. Analyze the Bottom-up evaluation procedure for the expression: 5 + 3 * 4n with step by step derivation.
+[a: 12 marks (12+6+6+6=30)]
+
+b. State the translation schemes for S-attributed definitions with an example.
+[b: 6 marks (12+6+6+6=30)]
+
+c. Analyze on requirements of inherited and synthesized attributes in Syntax Directed Definitions.
+[c: 6 marks (12+6+6+6=30)]
+
+d. Explain the role of Intermediate Code generations in Compiler Design.
+[d: 6 marks (12+6+6+6=30)]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 6.
+
+Notes: Part (a) prints the expression as 5 + 3 * 4n; the trailing n is preserved. The preceding hyphen is sentence punctuation in the source.
+
+## CSE-303 · 2025 · Term final · Question 7
+
+a. For the following arithmatic expression, what will be the representation in 3-Access Codes and postfix Notations.
+```text
+A = B + C * D
+```
+[a: 6 marks (6+6+8+10=30)]
+
+b. Explain how intermediate codes ensures portability and optimization opportunities for hardware architectures.
+[b: 6 marks (6+6+8+10=30)]
+
+c. Discuss on the control flows of if-else and while-loop statements with examples drawing Graphs.
+[c: 8 marks (6+6+8+10=30)]
+
+d. Illustrate the possible issues of flow controls among different basic blocks of codes given below with respective Directed Acyclic Graphs.
+```text
+a = b + c
+b = a - d
+c = b + c
+d = a - d
+```
+[d: 10 marks (6+6+8+10=30)]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 6.
+
+Notes: “3-Access Codes” is the source wording, preserved.
+
+## CSE-303 · 2025 · Term final · Question 8
+
+a. Discuss on the basic requirements of Code-Optimization along with their opportunities.
+[a: 5 marks (5+6+5x3+4=30)]
+
+b. Define Code-Optimization in the context of necessity on trade-offs between compilation used and execution efficiency for machine dependent and independent optimization.
+[b: 6 marks (5+6+5x3+4=30)]
+
+c. For the following intermediate code sequences:
+```text
+t₁ = a * 2
+t₂ = a * 2
+t₃ = t₁ + t₂
+t₄ = 0 * b
+t₅ = t₃ + t₄
+```
+[c: 15 marks (5+6+5x3+4=30)]
+
+(i) Identify redundant and unnecessary computation.
+[c(i): 5 marks (5+6+5x3+4=30)]
+
+(ii) Rewrite optimized code using common sub expression elimination and dead code elimination.
+[c(ii): 5 marks (5+6+5x3+4=30)]
+
+(iii) For the following loop, produce the optimized code applying code motion and strength reduction.
+```text
+For(i=0; i<10; i++){
+    x = 4*i;
+    y = 20;
+    z = x+y;
+}
+```
+[c(iii): 5 marks (5+6+5x3+4=30)]
+
+d. Discuss on the applicability on Peephole Optimization with examples.
+[d: 4 marks (5+6+5x3+4=30)]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 6.
+
+Notes: The printed grouped allocation is 5+6+5x3+4=30; the three 5-mark shares correspond to c(i), c(ii), c(iii). Capitalized For is preserved.
+
+## CSE-303 · Undated · Exam suggestion · Question 1
+
+Define a language processing system and draw its diagram. Explain the roles of the preprocessor, compiler, assembler, linker and loader.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 2
+
+Define a compiler and explain its role, structure and phases of compilation. Give particular attention to lexical analysis and syntax analysis.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 3
+
+Explain lexical analysis and the lexical analyzer/scanner’s work and role. Understand how source characters become tokens for the parser.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 4
+
+Define and distinguish token, lexeme and pattern, using examples.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 5
+
+Given a code block, identify and count tokens, including valid tokens and invalid token-like sequences under the stated language rules. Show a line-by-line breakdown.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 6
+
+Very important: recognize tokens using regular expressions (RE), NFA and DFA. Practise keywords and identifiers in particular, including their patterns and automata.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 7
+
+Very important: explain input buffering. Review the slide diagrams, begin/lookahead pointers, the two-buffer scheme and sentinels.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 8
+
+Draw detailed transition diagrams for keywords/reserved words, identifiers, arithmetic operators, relational operators and logical operators. The syllabus also includes other common tokens.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 9
+
+Show states, labelled transitions, the start state and accepting states. Include lookahead/retraction where the slide example requires it.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 10
+
+Define grammar and context-free grammar (CFG). Identify terminals, non-terminals, production rules and the start symbol.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 11
+
+Given a grammar and target string, perform leftmost and rightmost derivations. Show the intermediate steps clearly.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 12
+
+Explain syntax analysis, the syntax analyzer’s role/responsibilities, the phases of syntax analysis and the role of parsing.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 13
+
+Distinguish top-down and bottom-up parsing. Prepare recursive-descent parsing: one function per non-terminal, production choices and matching input.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 14
+
+Define and detect left recursion. Distinguish direct and indirect left recursion.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 15
+
+Explain why left recursion causes problems for a recursive-descent parser: a function calls itself again before consuming input, causing infinite recursion and possible stack overflow.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 16
+
+Practise eliminating left recursion and transforming a left-recursive grammar into an equivalent non-left-recursive grammar. Show each transformation step and explain the resulting grammar.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Additional practice · Question 17
+
+Handout practice example:
+
+```text
+Before: S → Sa | b
+After: S → bS′
+       S′ → aS′ | ε
+```
+
+Explain why both generate b followed by zero or more a symbols, and why the new form avoids the original recursive-descent problem.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt. The source labels this as additional handnote practice, not a topic explicitly singled out in the recorded final suggestion.
+
+## CSE-303 · Undated · Exam suggestion · Question 18
+
+Define both error types, their common causes and detection. Given a program containing both, list and classify each error correctly.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 19
+
+Distinguish an invalid token from a grammatically invalid arrangement of valid tokens. A missing semicolon is a syntax error. Apply the stated language rules when judging token validity.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Additional practice · Question 20
+
+Prepare parse-tree construction and ambiguity: demonstrate ambiguity with two distinct parse trees or two distinct leftmost/rightmost derivations for the same string. Review precedence, associativity and removing ambiguity as handnote self-study topics. These were not explicitly singled out in the recorded final suggestion.
+
+Marks not specified in the source.
+Source: Maruf_Sir_Part_A_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt. The source labels this as additional handnote practice, not a topic explicitly singled out in the recorded final suggestion.
+
+## CSE-303 · Undated · Exam suggestion · Question 1
+
+Relate grammar, syntax-directed translation, attributes and semantic rules to a given scenario.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 2
+
+Identify synthesized and inherited attributes from a scenario or semantic rules. Classify an SDD as S-attributed or L-attributed.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 3
+
+Explain the relationship between S- and L-attributed definitions, how each works, and their performance/evaluation differences, with examples.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 4
+
+Explain synthesized attribute evaluation order and bottom-up evaluation; trace the computations.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 5
+
+Build a symbol table. Explain how an SDD distributes attributes/type information and which attributes are synthesized or inherited.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 6
+
+Given production rules and a string, draw a parse tree or annotated parse tree, calculate attribute values and write the relevant semantic rules.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 7
+
+Explain from code/rules when an attribute is synthesized or inherited and how it is computed.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 8
+
+Draw a dependency graph with arrow directions. Identify the attribute dependencies using the parse tree and explain the evaluation order.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 9
+
+Justify grammar ambiguity and explain whether it is related to cycles in an attribute dependency graph.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 1.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 10
+
+Explain its relationship with SDD, its purpose and why it supports optimization.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 11
+
+Prepare three-address code (TAC), quadruples and triples. Choose the appropriate representation for a scenario and justify your choice.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 12
+
+Prepare basic blocks, control-flow graphs and DAGs; show the relevant labels and dependencies.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 13
+
+Explain why optimization is necessary.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 14
+
+Identify suitable assembly/target-code optimization techniques and explain the reason for each change.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 15
+
+Compare given loops or code segments. Choose an optimization based on the scenario and justify it.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 16
+
+Prepare scenario-based multidimensional array problems with relevant rules/functions. The exact wording of this handwritten line is unclear.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt. The supplied checklist explicitly flags the underlying handwritten line as unclear; no more specific problem has been invented.
+
+## CSE-303 · Undated · Exam suggestion · Question 17
+
+From code/pseudocode, identify static and dynamic memory allocation and explain why each applies.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 18
+
+Draw and trace activation records; identify which procedure activations are currently active and explain the execution process.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 19
+
+Explain when stack allocation is effective. Choose the suitable runtime environment/storage allocation approach for a scenario and justify it.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 20
+
+Practise finding errors in code and writing a grammar when required.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Exam suggestion · Question 21
+
+Prepare parameter passing, especially call-by-value, with a definition, figure and example.
+
+Marks not specified in the source.
+Source: Kazy_Noor_Sir_Exam_Suggestions.pdf, pages 2.
+
+Notes: This is a preparation prompt from the supplied suggestion checklist, not a past exam question. No year or marks are printed for this prompt.
+
+## CSE-303 · Undated · Lecture practice · Question 1
+
+Given the grammar:
+
+```text
+E → E + T | T
+T → T * F | F
+F → (E) | id
+```
+
+A. Identify the problem with this grammar.
+
+B. Rewrite it into an equivalent grammar suitable for Recursive Descent Parsing.
+
+C. Explain why the transformed grammar works.
+
+Marks not specified in the source.
+Source: Kazy Noor Sir Merged (1).pdf, pages 196.
+
+Notes: An explicit practice exercise on PDF page 196 of the supplied merged slides. No date or marks are printed. The solution slide is not included in the question text.

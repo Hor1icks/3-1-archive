@@ -10,6 +10,9 @@
       .replace(/two[\s-]*phase\s+locking|strict\s+2pl|\b2\s*pl\b/g,' 2pl ')
       .replace(/first normal form/g,'1nf').replace(/second normal form/g,'2nf').replace(/third normal form/g,'3nf')
       .replace(/normali[sz](?:ation|ations|e|ed|ing)/g,' normalization ')
+      .replace(/\bcse[\s-]*(\d{3})\b/g,' cse$1 ').replace(/ε|ϵ/g,' epsilon ').replace(/\b(lr|slr|ll|lalr)\s*\(?\s*(\d+)\)?/g,' $1$2 ')
+      .replace(/three[\s-]*address\s+code/g,' tac ').replace(/syntax[\s-]*directed\s+definitions?/g,' sdd ')
+      .replace(/recursive[\s-]*descent/g,' recursive descent ').replace(/regular\s+expressions?/g,' regex ')
       .replace(/dead[\s-]+lock/g,'deadlock').replace(/time[\s-]+stamp/g,'timestamp')
       .replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
   }
@@ -25,7 +28,7 @@
   }
   function index(question,chapters){
     const chapterNames=question.chapters.map(id=>chapters.find(c=>c.id===id)?.name||'').join(' ');
-    const searchable=normalize([question.title,question.body,question.year,question.assessment,chapterNames,...question.topics.map(t=>t.name)].join(' '));
+    const searchable=normalize([question.title,question.body,question.year,question.assessment,question.subject,question.course,question.instructor,question.section,chapterNames,...question.topics.map(t=>t.name)].join(' '));
     return {...question,searchable,words:new Set(searchable.split(' ')),titleIndex:normalize(question.title),topicIndex:normalize(question.topics.map(t=>t.name).join(' '))};
   }
   function matchesToken(question,token){
@@ -34,5 +37,5 @@
   }
   function matches(question,queryTokens){return queryTokens.every(t=>matchesToken(question,t));}
   function score(question,queryTokens){return queryTokens.reduce((s,t)=>s+(question.titleIndex.includes(t)?5:0)+(question.topicIndex.includes(t)?3:0)+(question.searchable.includes(t)?1:0),0);}
-  root.DBMSSearch={normalize,tokens,parse,index,matches,matchesQuery,score};
+  root.ArchiveSearch={normalize,tokens,parse,index,matches,matchesQuery,score};
 })(typeof window!=='undefined'?window:globalThis);
