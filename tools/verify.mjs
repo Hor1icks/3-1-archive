@@ -8,17 +8,17 @@ const data=JSON.parse(fs.readFileSync(path.join(root,'data/questions.json'),'utf
 const context={window:{}};vm.createContext(context);
 for(const file of ['search.js','data/questions.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context);
 assert.deepEqual(JSON.parse(JSON.stringify(context.window.ARCHIVE_DATA)),data);
-assert.equal(data.questions.length,194);assert.deepEqual(data.subjects.map(s=>s.id),['dbms','compiler']);
+assert.equal(data.questions.length,343);assert.deepEqual(data.subjects.map(s=>s.id),['dbms','compiler','mma']);
 const search=context.window.ArchiveSearch,indexed=data.questions.map(q=>search.index(q,data.chapters));
 const find=(query,subject)=>indexed.filter(q=>(!subject||q.subject===subject)&&search.matchesQuery(q,query));
 const byId=id=>data.questions.find(q=>q.id===id);
-for(const [subject,written,viva,prep] of [['dbms',78,2,0],['compiler',70,2,42]]){
+for(const [subject,written,viva,prep] of [['dbms',78,2,0],['compiler',70,2,42],['mma',78,2,69]]){
  const entries=data.questions.filter(q=>q.subject===subject);
  assert.equal(entries.filter(q=>q.entryType==='question').length,written);
  assert.equal(entries.filter(q=>q.entryType==='viva').length,viva);
  assert.equal(entries.filter(q=>['suggestion','practice'].includes(q.entryType)).length,prep);
 }
-assert.equal(new Set(data.questions.map(q=>q.id)).size,194);
+assert.equal(new Set(data.questions.map(q=>q.id)).size,343);
 for(const year of [2016,2017,2018,2019,2021,2022,2023,2024,2025]){
  assert.deepEqual(data.questions.filter(q=>q.subject==='compiler'&&q.year===year).map(q=>q.number).sort(),[1,2,3,4,5,6,7,8]);
  assert.deepEqual(data.questions.filter(q=>q.subject==='dbms'&&q.year===year).map(q=>q.number).sort(),[1,2,3,4,5,6,7,8]);
@@ -64,4 +64,14 @@ assert.ok(html.includes('Content-Security-Policy'));assert.ok(html.includes('con
 assert.ok(html.includes('3-1 Archive'));assert.ok(html.includes('Made by <strong>Mushfique</strong>'));
 assert.ok(!/href="data\/(?:question-bank\.md|questions\.json)"/.test(html));
 assert.ok(!/<script(?![^>]*\bsrc=)/.test(html));
-console.log('PASS: 194 entries, two isolated subject taxonomies, all nine Compiler finals, marks/provenance, 42 undated preparation prompts, aliases, quoted search, CSP, and source resources.');
+assert.equal(find('CSE305').length,149);
+assert.deepEqual(find('286','mma').map(q=>q.id),find('80286','mma').map(q=>q.id));
+assert.equal(data.questions.filter(q=>q.subject==='mma'&&q.year===2024).length,16);
+assert.equal(new Set(data.questions.filter(q=>q.subject==='mma'&&q.year===2024).map(q=>q.paper)).size,2);
+for(const q of data.questions.filter(q=>q.subject==='mma')){
+ assert.ok(q.studyParts.every(p=>['A','B'].includes(p)));
+ if(q.sourceUrl){assert.ok(/^sources\/mma\/[a-z-]+\.pdf#page=\d+$/.test(q.sourceUrl));assert.ok(fs.existsSync(path.join(root,q.sourceUrl.split('#')[0])));}
+ else assert.ok(q.transcriptExcerpt);
+ if(['suggestion','practice'].includes(q.entryType)){assert.equal(q.year,null);assert.equal(q.marks,null);}
+}
+console.log('PASS: 343 entries, three isolated subject taxonomies, Compiler and MMA finals, both 2024 MMA editions, marks/provenance, 111 undated preparation prompts, aliases, quoted search, CSP, and source resources.');

@@ -12,7 +12,7 @@
   const initialSubject=subjectInfo(params.get('subject'))?params.get('subject'):chapterInfo(params.get('chapter'))?.subject||oldQuestion?.subject||'all';
   const state={subject:initialSubject,part:['A','B'].includes(params.get('part'))?params.get('part'):'',chapter:validChapter(params.get('chapter'))?params.get('chapter'):'',years:(params.get('year')||'').split(',').filter(y=>questions.some(q=>String(q.year??'undated')===y)),type:params.get('type')||'',topic:params.get('topic')||'',query:params.get('q')||'',sort:params.get('sort')||'newest',savedOnly:params.get('saved')==='1',limit:12};
   if(state.chapter&&state.subject!=='all'&&chapterInfo(state.chapter).subject!==state.subject)state.chapter='';
-  if(state.subject!=='compiler')state.part='';
+  if(!['compiler','mma'].includes(state.subject))state.part='';
   let saved=new Set(),toastTimer,queryTimer,facetSubject;
   try{const value=JSON.parse(localStorage.getItem('archive-saved-v1')??localStorage.getItem('dbms-saved-v1')??'[]');if(Array.isArray(value))saved=new Set(value.filter(id=>questions.some(q=>q.id===id)));}catch{}
   const expanded=new Set();
@@ -77,7 +77,7 @@
   function safeSource(url){return /^sources\/[a-zA-Z0-9_./-]+\.pdf(?:#page=\d+)?$/.test(url)?url:'';}
   function sourceLink(q){
     if(q.sourceUrl)return safeSource(q.sourceUrl);
-    if(q.subject==='compiler')return '';
+    if(q.subject!=='dbms')return '';
     if(q.year===2026)return 'sources/2026-assessments.pdf#page='+q.pages[0];
     const starts={2016:2,2017:6,2018:10,2019:14,2021:18,2022:23,2023:27,2024:30,2025:34};
     const page=q.year===2019?(q.pages[0]-1)/2:q.pages[0]-1;
@@ -92,21 +92,21 @@
     const totalLabel=Number.isFinite(q.marks)?'Total: '+q.marks+' marks':'Marks not specified';
     const date=q.date?new Date(q.date+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'';
     return '<article class="question-card'+(isExpanded?' expanded':'')+'" id="'+esc(q.id)+'">'+
-      '<div class="card-top"><span class="year-badge'+(q.year===2026?' current':'')+'">'+(q.year||'Undated')+'</span><span class="subject-badge">'+esc(subject.shortName)+'</span><span>'+esc(q.assessment)+'</span><span class="dot" aria-hidden="true"></span><span>'+((q.entryType==='suggestion'||q.entryType==='practice')?'PROMPT ':'QUESTION ')+q.number+'</span>'+(q.section?'<span>PART '+esc(q.section)+'</span>':'')+''+(date?'<span class="dot" aria-hidden="true"></span><span>'+esc(date)+'</span>':'')+'</div>'+
+      '<div class="card-top"><span class="year-badge'+(q.year===2026?' current':'')+'">'+(q.year||'Undated')+'</span><span class="subject-badge">'+esc(subject.shortName)+'</span><span>'+esc(q.assessment)+'</span><span class="dot" aria-hidden="true"></span><span>'+((q.entryType==='suggestion'||q.entryType==='practice')?'PROMPT ':'QUESTION ')+q.number+'</span>'+(q.section?'<span>'+(q.subject==='mma'&&['question','viva'].includes(q.entryType)?'SECTION ':'PART ')+esc(q.section)+'</span>':'')+(q.paperLabel?'<span class="subject-badge">'+esc(q.paperLabel)+'</span>':'')+''+(date?'<span class="dot" aria-hidden="true"></span><span>'+esc(date)+'</span>':'')+'</div>'+
       '<button type="button" class="save-button'+(isSaved?' saved':'')+'" data-save="'+esc(q.id)+'" aria-pressed="'+isSaved+'" aria-label="'+(isSaved?'Unsave':'Save')+' '+esc(q.title)+'">'+bookmarkIcon+'</button>'+
       (q.priority?'<div class="priority-label">'+esc(q.priority)+'</div>':'')+'<h3>'+highlight(q.title)+'</h3><div class="card-tags">'+chapterTags+topicTags+'</div>'+
       ((q.partMarks||[]).length?'<div class="marks-breakdown" aria-label="Marks by question part">'+q.partMarks.filter(m=>/^(?:[a-f]|Task [ABC])$/.test(m.label)).map(m=>markBadge(q,m)).join('')+'</div>':'')+
       (preview.matched?'<span class="match-label">MATCHING PASSAGE</span>':'')+'<p class="question-preview">'+highlight(preview.text)+'</p>'+
-      '<div class="question-full" id="body-'+esc(q.id)+'"'+(isExpanded?'':' hidden')+'>'+richText(q)+(q.notes.length?'<aside class="source-notes"><strong>NOTE FROM THE SOURCE</strong>'+q.notes.map(n=>'<p>'+esc(n)+'</p>').join('')+'</aside>':'')+'<div class="source-reference">Source: '+esc(q.source)+' · original '+(q.pages.length===1?'page ':'pages ')+q.pages.join(', ')+(sourceLink(q)?'<br><a href="'+sourceLink(q)+'" target="_blank" rel="noopener noreferrer">Open original source ↗</a>':'')+(q.instructor?'<br>'+esc(q.instructor):'')+(q.relatedSources||[]).filter(ref=>safeSource(ref.url)).map(ref=>'<br><a href="'+safeSource(ref.url)+'" target="_blank" rel="noopener noreferrer">'+esc(ref.label)+' ↗</a>').join('')+'</div></div>'+
+      '<div class="question-full" id="body-'+esc(q.id)+'"'+(isExpanded?'':' hidden')+'>'+richText(q)+(q.notes.length?'<aside class="source-notes"><strong>NOTE FROM THE SOURCE</strong>'+q.notes.map(n=>'<p>'+esc(n)+'</p>').join('')+'</aside>':'')+'<div class="source-reference">Source: '+esc(q.source)+(q.pages.length?' · original '+(q.pages.length===1?'page ':'pages ')+q.pages.join(', '):' · supplied instructor transcript')+(q.transcriptExcerpt?'<details><summary>Transcript excerpt</summary><p lang="bn">'+esc(q.transcriptExcerpt)+'</p></details>':'')+(sourceLink(q)?'<br><a href="'+sourceLink(q)+'" target="_blank" rel="noopener noreferrer">Open original source ↗</a>':'')+(q.instructor?'<br>'+esc(q.instructor):'')+(q.relatedSources||[]).filter(ref=>safeSource(ref.url)).map(ref=>'<br><a href="'+safeSource(ref.url)+'" target="_blank" rel="noopener noreferrer">'+esc(ref.label)+' ↗</a>').join('')+'</div></div>'+
       '<div class="card-bottom"><button type="button" class="expand-button" data-expand="'+esc(q.id)+'" aria-expanded="'+isExpanded+'" aria-controls="body-'+esc(q.id)+'">'+(isExpanded?'Close question':'Read full question')+' <span aria-hidden="true">⌄</span></button><div class="card-actions"><span>'+totalLabel+(q.entryType==='viva'?' · Viva':'')+'</span><button type="button" class="copy-link" data-copy="'+esc(q.id)+'" aria-label="Copy link to '+esc(q.title)+'">Copy link ↗</button></div></div></article>';
   }
   function filtered(){
     const terms=search.tokens(state.query);
-    const list=questions.filter(q=>(state.subject==='all'||q.subject===state.subject)&&(!state.part||q.section===state.part)&&(!state.chapter||q.chapters.includes(state.chapter))&&(!state.years.length||state.years.includes(String(q.year??'undated')))&&(!state.type||(state.type==='Viva'?q.entryType==='viva':state.type==='preparation'?['suggestion','practice'].includes(q.entryType):q.assessment===state.type))&&(!state.topic||q.topics.some(t=>t.name===state.topic&&(!state.chapter||t.chapter===state.chapter)))&&(!state.savedOnly||saved.has(q.id))&&search.matchesQuery(q,state.query));
+    const list=questions.filter(q=>(state.subject==='all'||q.subject===state.subject)&&(!state.part||(q.subject==='mma'?(q.studyParts||[]).includes(state.part):q.section===state.part))&&(!state.chapter||q.chapters.includes(state.chapter))&&(!state.years.length||state.years.includes(String(q.year??'undated')))&&(!state.type||(state.type==='Viva'?q.entryType==='viva':state.type==='preparation'?['suggestion','practice'].includes(q.entryType):q.assessment===state.type))&&(!state.topic||q.topics.some(t=>t.name===state.topic&&(!state.chapter||t.chapter===state.chapter)))&&(!state.savedOnly||saved.has(q.id))&&search.matchesQuery(q,state.query));
     const dateKey=q=>q.date||`${q.year}-01-01`;
     return list.sort((a,b)=>{
       if(state.sort==='oldest')return (a.year||0)-(b.year||0)||dateKey(a).localeCompare(dateKey(b))||a.number-b.number;
-      if(state.sort==='chapter'){const rank=q=>Math.min(...q.chapters.map(id=>chapterInfo(id).order+(chapterInfo(id).subject==='compiler'?100:0)));return rank(a)-rank(b)||(b.year||0)-(a.year||0)||a.number-b.number;}
+      if(state.sort==='chapter'){const rank=q=>Math.min(...q.chapters.map(id=>chapterInfo(id).order+data.subjects.findIndex(s=>s.id===chapterInfo(id).subject)*100));return rank(a)-rank(b)||(b.year||0)-(a.year||0)||a.number-b.number;}
       if(state.sort==='relevance'&&terms.length){const diff=search.score(b,terms)-search.score(a,terms);if(diff)return diff;}
       return (b.year||0)-(a.year||0)||dateKey(b).localeCompare(dateKey(a))||a.number-b.number;
     });
@@ -147,7 +147,7 @@
   function setSubject(id){if(id!=='all'&&!subjectInfo(id))return;state.subject=id;reset();closeSidebar();}
   function renderContext(){
     const scoped=questions.filter(q=>state.subject==='all'||q.subject===state.subject);
-    $('#all-count').textContent=scoped.length;$('#part-field').hidden=state.subject!=='compiler';
+    $('#all-count').textContent=scoped.length;$('#part-field').hidden=!['compiler','mma'].includes(state.subject);
     $('#all-subjects').setAttribute('aria-pressed',String(state.subject==='all'));
     document.querySelectorAll('#subjects button').forEach(b=>{b.classList.toggle('selected',b.dataset.subject===state.subject);b.setAttribute('aria-pressed',String(b.dataset.subject===state.subject));});
     if(facetSubject!==state.subject){
@@ -159,10 +159,13 @@
       $('#year-options').innerHTML=years.map(y=>'<label><input type="checkbox" value="'+y+'"> <span>'+y+'</span></label>').join('')+(scoped.some(q=>!q.year)?'<label class="undated-option"><input type="checkbox" value="undated"> <span>Undated guides</span></label>':'');
       const assessments=[...new Set(scoped.filter(q=>!['practice','suggestion'].includes(q.entryType)).map(q=>q.entryType==='viva'?'Viva':q.assessment))];
       $('#type-filter').innerHTML='<option value="">All assessments</option>'+assessments.map(type=>'<option value="'+esc(type)+'">'+esc(type==='Viva'?'Viva allocations':type)+'</option>').join('')+(scoped.some(q=>['practice','suggestion'].includes(q.entryType))?'<option value="preparation">Suggestions & practice</option><option value="Exam suggestion">Exam suggestions</option><option value="Additional practice">Additional practice</option><option value="Lecture practice">Lecture practice</option>':'');
-      const chips=state.subject==='dbms'?['BCNF','ER diagram','SQL','Deadlock']:state.subject==='compiler'?['Left recursion','SDD','NFA','Activation records']:['Left recursion','BCNF','SDD','SQL'];
+      const chips=state.subject==='dbms'?['BCNF','ER diagram','SQL','Deadlock']:state.subject==='compiler'?['Left recursion','SDD','NFA','Activation records']:state.subject==='mma'?['80286','8255','Assembly','Arduino']:['BCNF','Left recursion','80286','Arduino'];
       $('#quick-searches').innerHTML='<span>Start somewhere</span>'+chips.map(query=>'<button type="button" data-query="'+esc(query)+'">'+esc(query)+' <span>↗</span></button>').join('');
     }
-    $('#resource-section').hidden=state.subject!=='compiler';
+    const resources=data.resources.filter(ref=>ref.subject===state.subject&&safeSource(ref.url));
+    $('#resource-section').hidden=!resources.length;
+    $('#resources-title').textContent=(subjectInfo(state.subject)?.shortName||'Subject')+' study references';
+    $('#study-resources').innerHTML=resources.map(ref=>'<a class="resource-card" href="'+safeSource(ref.url)+'" target="_blank" rel="noopener noreferrer"><strong>'+esc(ref.label)+' ↗</strong><span>'+esc(ref.detail)+'</span></a>').join('');
     $('#archive-notes').innerHTML=[...data.notes,...data.subjects.filter(subject=>state.subject==='all'||subject.id===state.subject).flatMap(subject=>subject.notes)].map(note=>'<li>'+esc(note)+'</li>').join('');
   }
   $('#subjects').innerHTML=data.subjects.map(subject=>{

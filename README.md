@@ -9,9 +9,10 @@ A searchable question archive for **Level 3, Term 1 at MIST**, bringing past exa
 | Subject | Exam collection | Preparation material |
 | --- | --- | --- |
 | **CSE-301 · DBMS** | 78 written question groups and two viva allocations from 15 papers | Chapter and topic organization |
+| **CSE-305 · MMA** | 78 written question groups and two viva allocations from ten term-final papers | 39 suggestion prompts and 30 lecture exercises, plus lecture and handwritten references |
 | **CSE-303 · Compiler** | 70 written question groups and two viva allocations from nine term-final papers | 42 separately labeled suggestion and practice prompts, a Part A syllabus and lecture references |
 
-Both final-exam collections cover source files labeled **2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024 and 2025**. DBMS also includes four class-test papers and two midterms from 2026.
+All final-exam collections cover source files labeled **2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024 and 2025**. DBMS also includes four class-test papers and two midterms from 2026.
 
 Each exam group keeps its original scenario and subquestions together. Questions appear as selectable text, with grammars, code, mathematical symbols, tables and source diagrams represented in text where needed. Original PDF pages remain linked for reference.
 
@@ -19,7 +20,7 @@ Each exam group keeps its original scenario and subquestions together. Questions
 
 - **Choose a subject**, or search across the whole archive.
 - **Browse chapters and topics** without mixing different subjects' syllabuses.
-- **Select multiple years** and combine them with assessment, topic and Compiler Part A/B filters.
+- **Select multiple years** and combine them with assessment, topic and Compiler or MMA study Part A/B filters.
 - **Search quoted terms:** `"left recursion" "SDD"` finds questions matching either term; `"SQL injection"` searches that phrase.
 - **Read full questions**, including individual part marks and source notes.
 - **Save questions** in the current browser and copy direct question links for later revision.
@@ -45,6 +46,18 @@ Part B follows the four areas in **Kazy Noor Sir's suggestions and lecture slide
 
 Compiler references include the supplied Part A syllabus, both suggestion checklists and the 197-page merged lecture deck. The deck is study material, not an exam paper. Its explicit grammar exercise is included as lecture practice; the solution slide is not copied into the question.
 
+## MMA topics
+
+**Part A:** 8255 ports, operating modes and control words; 8086 architecture, registers, addressing, signals and interrupts; 80286 protected mode, descriptors and protection; 80386 modes and paging; Pentium, 64-bit architecture and arithmetic coprocessors.
+
+**Part B:** assembly instructions and flags; branches, arrays and programming; stacks and procedures; Arduino/ATmega and sensor interfaces; PWM, UART, I²C and SPI. Historical 8051 material has its own area, while older peripherals and other topics remain available under Others.
+
+The study-part filter follows this current division. The original printed sections remain visible because some older papers reverse the subjects. Both distinct **2024 editions (180 and 240 total marks)** are included and labeled. The 2022-labeled MMA paper is headed July–August 2021.
+
+The supplied instructor transcript and end-of-note suggestions are presented as **undated study prompts**, separately from past exam questions and lecture practice. The 80286 emphasis comes from these sources, not a guaranteed future question. Ambiguous transcript wording is noted; the initial “8206” is normalized to 8086 based on its later BIU/EU discussion and the written outline.
+
+References include the Intel and assembly/microcontroller lecture decks, handwritten suggestion excerpts, and original exam pages with their register appendices. Classroom access details are omitted from the public Part B deck while retaining page numbering.
+
 ## DBMS chapters
 
 Introduction to DBMS · ER Design · Relational Model · SQL · Integrity and Security · Relational Database Design · Indexing · Transaction · Concurrency · Others.
@@ -65,7 +78,7 @@ A few source-label details:
 - Some schemas and figures referenced by the **2023 DBMS paper** are absent from the supplied pages.
 - Viva entries contain only the printed marks allocation; the papers do not supply oral questions.
 
-The archive currently contains DBMS and Compiler and is structured to accommodate more subjects.
+The archive currently contains DBMS, Compiler and MMA and is structured to accommodate more subjects.
 
 ---
 

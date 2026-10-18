@@ -13,6 +13,7 @@
       .replace(/\bcse[\s-]*(\d{3})\b/g,' cse$1 ').replace(/ε|ϵ/g,' epsilon ').replace(/\b(lr|slr|ll|lalr)\s*\(?\s*(\d+)\)?/g,' $1$2 ')
       .replace(/three[\s-]*address\s+code/g,' tac ').replace(/syntax[\s-]*directed\s+definitions?/g,' sdd ')
       .replace(/recursive[\s-]*descent/g,' recursive descent ').replace(/regular\s+expressions?/g,' regex ')
+      .replace(/\b(?:80)?286\b/g,'80286').replace(/\b(?:80)?386\b/g,'80386')
       .replace(/dead[\s-]+lock/g,'deadlock').replace(/time[\s-]+stamp/g,'timestamp')
       .replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
   }
@@ -28,7 +29,7 @@
   }
   function index(question,chapters){
     const chapterNames=question.chapters.map(id=>chapters.find(c=>c.id===id)?.name||'').join(' ');
-    const searchable=normalize([question.title,question.body,question.year,question.assessment,question.subject,question.course,question.instructor,question.section,chapterNames,...question.topics.map(t=>t.name)].join(' '));
+    const searchable=normalize([question.title,question.body,question.year,question.assessment,question.subject,question.course,question.instructor,question.section,question.paperLabel,chapterNames,...question.topics.map(t=>t.name)].join(' '));
     return {...question,searchable,words:new Set(searchable.split(' ')),titleIndex:normalize(question.title),topicIndex:normalize(question.topics.map(t=>t.name).join(' '))};
   }
   function matchesToken(question,token){

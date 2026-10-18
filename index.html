@@ -6,13 +6,13 @@
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#183e35">
-  <meta name="description" content="3-1 Archive: DBMS and Compiler past exams and preparation prompts, searchable by subject, chapter and topic.">
+  <meta name="description" content="3-1 Archive: DBMS, Compiler and MMA past exams and preparation prompts, searchable by subject, chapter and topic.">
   <title>3-1 Archive · MIST Question Bank</title>
-  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2">
-  <script defer src="data/questions.js?v=2"></script>
-  <script defer src="search.js?v=2"></script>
-  <script defer src="app.js?v=2"></script>
+  <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script defer src="data/questions.js?v=3"></script>
+  <script defer src="search.js?v=3"></script>
+  <script defer src="app.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to questions</a>
@@ -23,14 +23,14 @@
   <div class="layout">
     <aside id="sidebar" class="sidebar" aria-label="Question filters">
       <div class="sidebar-heading"><span class="eyebrow">CHAPTERS & TOPICS</span><button id="mobile-close" class="icon-button mobile-only" type="button" aria-label="Close filters">×</button></div>
-      <button type="button" id="all-chapters" class="chapter-button all active" aria-pressed="true"><span class="chapter-symbol" aria-hidden="true">▦</span><span>All chapters</span><span id="all-count" class="count">80</span></button>
+      <button type="button" id="all-chapters" class="chapter-button all active" aria-pressed="true"><span class="chapter-symbol" aria-hidden="true">▦</span><span>All chapters</span><span id="all-count" class="count">343</span></button>
       <div id="chapters" class="chapter-list"></div>
       <div class="sidebar-note"><span class="note-dot" aria-hidden="true"></span><div><strong>A little more focused.</strong><p>Choose a subject to explore its chapters. Past exams and preparation prompts keep their source labels.</p></div></div>
     </aside>
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy"><div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> THE LEVEL 3, TERM 1 QUESTION BANK <span class="hero-edition">2016 — 2026</span></div><h1 id="hero-title">One archive.<br>Every <em>subject.</em></h1><p>Past exams, class tests and preparation prompts.<br>Find your subject. Focus your revision.</p></div>
-        <div class="archive-card" aria-label="Archive coverage"><span class="archive-card-label">COLLECTED & ORGANIZED</span><div class="archive-number"><span id="paper-total" class="stat-value">24</span><span>exam papers</span></div><div class="archive-card-bottom"><span>DBMS · Compiler</span><span class="stack-icon" aria-hidden="true">▱<br>▱<br>▱</span></div><div class="new-badge"><span aria-hidden="true">✦</span> <span id="archive-badge">2 subjects · one searchable archive</span></div></div>
+        <div class="archive-card" aria-label="Archive coverage"><span class="archive-card-label">COLLECTED & ORGANIZED</span><div class="archive-number"><span id="paper-total" class="stat-value">34</span><span>exam papers</span></div><div class="archive-card-bottom"><span>DBMS · Compiler · MMA</span><span class="stack-icon" aria-hidden="true">▱<br>▱<br>▱</span></div><div class="new-badge"><span aria-hidden="true">✦</span> <span id="archive-badge">3 subjects · one searchable archive</span></div></div>
       </section>
       <section class="subjects-section" aria-labelledby="subjects-title"><div class="subjects-heading"><h2 id="subjects-title">Choose your subject</h2><button id="all-subjects" class="text-button" type="button" aria-pressed="true">All subjects</button></div><div id="subjects" class="subject-grid"></div></section>
       <section id="resource-section" class="resources-section" aria-labelledby="resources-title" hidden><details><summary id="resources-title">Compiler syllabus & study references</summary><div id="study-resources" class="resource-grid"></div><p>These are reference materials. Suggestion prompts are labeled separately from past exams.</p></details></section>
@@ -41,7 +41,7 @@
       </section>
       <section class="bank-section" aria-labelledby="results-title">
         <div class="section-heading"><div><span class="eyebrow" id="view-label">EXPLORE THE ARCHIVE</span><h2 id="results-title">All questions</h2></div><button id="mobile-filters" class="filter-toggle" type="button" aria-expanded="false" aria-controls="sidebar">☷ Chapters</button></div>
-        <div class="filters"><div id="part-field" class="select-field" hidden><label for="part-filter">SECTION / PART</label><select id="part-filter"><option value="">Both parts</option><option value="A">Part A</option><option value="B">Part B</option></select></div><div class="select-field year-field"><span class="field-label" id="year-label">YEARS</span><details id="year-filter" class="year-picker"><summary id="year-summary" aria-labelledby="year-label year-summary">All years</summary><div class="year-options"><button id="clear-years" type="button" class="text-button">Clear selection</button><div id="year-options"></div></div></details></div><div class="select-field"><label for="type-filter">ASSESSMENT</label><select id="type-filter"><option value="">All assessments</option><option value="Term final">Term finals</option><option value="Class test">Class tests</option><option value="Midterm">Midterms</option><option value="Viva">Viva allocations</option></select></div><div class="select-field topic-field"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option></select></div><div class="select-field sort-field"><label for="sort-filter">SORT BY</label><select id="sort-filter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="chapter">Chapter order</option><option value="relevance">Search relevance</option></select></div></div>
+        <div class="filters"><div id="part-field" class="select-field" hidden><label for="part-filter">STUDY PART</label><select id="part-filter"><option value="">Both parts</option><option value="A">Part A</option><option value="B">Part B</option></select></div><div class="select-field year-field"><span class="field-label" id="year-label">YEARS</span><details id="year-filter" class="year-picker"><summary id="year-summary" aria-labelledby="year-label year-summary">All years</summary><div class="year-options"><button id="clear-years" type="button" class="text-button">Clear selection</button><div id="year-options"></div></div></details></div><div class="select-field"><label for="type-filter">ASSESSMENT</label><select id="type-filter"><option value="">All assessments</option><option value="Term final">Term finals</option><option value="Class test">Class tests</option><option value="Midterm">Midterms</option><option value="Viva">Viva allocations</option></select></div><div class="select-field topic-field"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option></select></div><div class="select-field sort-field"><label for="sort-filter">SORT BY</label><select id="sort-filter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="chapter">Chapter order</option><option value="relevance">Search relevance</option></select></div></div>
         <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
         <div class="results-meta"><p id="result-count" role="status" aria-live="polite">Loading the question bank…</p><button id="reset-button" class="text-button" type="button" hidden>Reset filters <span aria-hidden="true">↺</span></button></div>
         <div id="results" class="results"><noscript><div class="empty-state"><h3>Enable JavaScript to search.</h3><p>This archive needs JavaScript to display and filter questions.</p></div></noscript></div>
@@ -51,7 +51,7 @@
     </main>
   </div>
   <div id="sidebar-backdrop" hidden></div>
-  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Close about dialog" type="button">×</button><span class="eyebrow">THE QUESTION ARCHIVE</span><h2>Your semester, in one place.</h2><p id="archive-summary"></p><h3>How it is structured</h3><p>Start with a subject, then combine its chapter, topic, year and assessment filters. A question can cover several chapters; its complete scenario and subparts stay together. Compiler Part A follows the supplied syllabus, while Part B follows the four supplied lecture and suggestion areas.</p><p>Quoted searches such as <code>"left recursion" "SDD"</code> match either phrase. Marks are shown where the source supplies them. Undated preparation prompts are labeled separately, with no invented marks or exam year.</p><ul id="archive-notes"></ul><p class="privacy-note">Saved questions stay in this browser. There are no accounts or trackers. This is a public question archive; source papers are available for reference.</p></dialog>
+  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Close about dialog" type="button">×</button><span class="eyebrow">THE QUESTION ARCHIVE</span><h2>Your semester, in one place.</h2><p id="archive-summary"></p><h3>How it is structured</h3><p>Start with a subject, then combine its chapter, topic, year and assessment filters. A question can cover several chapters; its complete scenario and subparts stay together. Compiler Part A follows the supplied syllabus, while Part B follows the four supplied lecture and suggestion areas. MMA study Part A covers Intel processors; Part B covers assembly and microcontrollers. Its older papers retain their printed sections even when these differ from the current study-part division.</p><p>Quoted searches such as <code>"left recursion" "SDD"</code> match either phrase. Marks are shown where the source supplies them. Undated preparation prompts are labeled separately, with no invented marks or exam year.</p><ul id="archive-notes"></ul><p class="privacy-note">Saved questions stay in this browser. There are no accounts or trackers. This is a public question archive; source papers are available for reference.</p></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

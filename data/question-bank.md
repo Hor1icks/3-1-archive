@@ -4434,3 +4434,2497 @@ Marks not specified in the source.
 Source: Kazy Noor Sir Merged (1).pdf, pages 196.
 
 Notes: An explicit practice exercise on PDF page 196 of the supplied merged slides. No date or marks are printed. The solution slide is not included in the question text.
+
+## CSE-305 · 2016 · Term final · Question 1
+
+a. What are the basic differences between microprocessor and microcontroller?
+[a: 6 marks]
+
+b. Write down an assembly program for printer driver procedure (mode 1), which is connected with an 8086 microprocessor via 82C55 (PPI). Here, the printer is connected with 82C55 through port-A. 82C55 PPI is decoded at I/O port number 0BH to 0EH. [See the necessary registers at the end, Figure:1]
+Figure-1: Command Byte A of 82C55 (Figure for Question 1b).
+Command Byte A of 82C55 (bits D7…D0):
+D7 = 1. D6–D5: Group A mode, 00=mode 0, 01=mode 1, 1X=mode 2 (X=0 or 1).
+D4: Port A, 1=input, 0=output. D3: Group A Port C (PC7–PC4), 1=input, 0=output.
+D2: Group B mode, 00=mode 0, 01=mode 1. D1: Port B, 1=input, 0=output. D0: Group B Port C (PC3–PC0), 1=input, 0=output.
+[b: 12 marks]
+
+c. What is the main purpose of Direct memory access (DMA)? Describe different types of direct memory access.
+[c: 11 marks (2+9=11)]
+
+d. Draw the internal structure of 8254.
+[d: 6 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 8, 11.
+
+
+## CSE-305 · 2016 · Term final · Question 2
+
+a. Describe the working principle of line decoding method and also state the disadvantages of this method.
+[a: 10 marks (5+5=10)]
+
+b. Draw an 8-bit microprocessor interfaced with a 5K RAM system using fully decoded addressing technique. The microprocessor has 10 bit address bus.
+[b: 8 marks]
+
+c. Draw a flowchart of keyboard scanning procedure.
+[c: 5 marks]
+
+d. Write down the differences between the followings:
+i. Full and partial decoding method.
+ii. 2-Key lockout and N-Key rollover method.
+iii. Mode 0 and mode 1 operation of 8254.
+[d: 12 marks (4×3=12)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 8.
+
+Notes: The source specifies 5K RAM with a 10-bit address bus; retained without correction.
+
+## CSE-305 · 2016 · Term final · Question 3
+
+a. What is the main purpose of control unit in a microprocessor? Discuss the techniques of designing the control unit.
+[a: 9 marks]
+
+b. Write down a program for 8086 microprocessor to write a 8-digit numerical display with right entry which is interfaced with an 8279 Programmable Keyboard/Display Interface (PK/DI) at I/O port address 80H (for data) and 81H (for control/status). The 8279 CLK pin is connected to a 3.0 MHz clock. Assume, the keyboard uses encoded N-key rollover method. [See the necessary registers at the end, Figure:2].
+Figure-2: Registers and codes used for programming 8279 (Figure for question 3b).
+Registers and codes used for programming 8279:
+DD: 00=8-digit display with left entry; 01=16 digit display with left entry; 10=8-digit display with right entry; 11=16-digit display with right entry.
+MMM: 000=encoded keyboard with 2-key lockout; 001=decoded keyboard with 2-key lockout; 010=encoded keyboard with N-key rollover; 011=decoded keyboard with N-key rollover; 100=encoded sensor matrix; 101=decoded sensor matrix; 110=strobed keyboard, encoded display scan; 111=strobed keyboard, decoded display scan.
+Command codes: 000DDMMM=Mode Select; 001PPPPP=Clock command; 010 Z 0 AAA=Read FIFO; 011 Z AAAA=Display read; 100 Z AAAA=Write display; 101 0WWBB=Display write inhibit; 110 0 CCFA=Clear; 111 E 000=End of interrupt.
+[b: 12 marks]
+
+c. Define standard I/O and memory mapped I/O with suitable example.
+[c: 8 marks]
+
+d. Discuss the command byte of 82C55 PPI.
+[d: 6 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 8, 9, 11.
+
+
+## CSE-305 · 2016 · Term final · Question 4
+
+a. What is interrupt driven I/O and how it works?
+[a: 8 marks]
+
+b. Suppose, a programmable interval timer 8254 is connected to function at I/O ports 0700H, 0702H, 0704H, 0706H of a 8086 microprocessor. Counter 0 operates in Mode 3 (square wave) and counter 2 operates in Mode 2 (continuous wave). The count programmed in counter 0 is 60 and the count of counter 2 is 305. All counts are written in binary format. Write an initialization program for 8254. [See the necessary registers at the end, Figure:3]
+Figure-3: Control Word Register of 8254, D7…D0: SC1 | SC0 | RW1 | RW0 | M2 | M1 | M0 | BCD.
+[b: 10 marks]
+
+c. Draw the internal structure (both Port-A and Port-B) and timing diagram of strobed input operation of the 82C55.
+[c: 10 marks]
+
+d. What are the advantages of 8279 PK/DI over 82C55 PPI.
+[d: 5 marks]
+
+Total: 33 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 9, 11.
+
+Notes: Printed part allocations sum to 33 marks; retained without adjustment.
+
+## CSE-305 · 2016 · Term final · Question 5
+
+a. Develop a procedure for arithmetic coprocessor 80×87 that will calculate the area of a triangle and the result must be saved in a variable called triangle_area. Also show the status of the stack of 80×87 after each instruction is executed. [Area of a triangle = 1/2 × height × base, suppose here height = 2.5m and base = 12.0m.
+[a: 15 marks (10+5=15)]
+
+b. Differentiate between the direct and indirect modes for accessing I/O ports with example.
+[b: 4 marks]
+
+c. What main function is provided by 8288 bus controller when used with 8086/8088?
+[c: 6 marks]
+
+d. Compare among 8086, 80186, 80286 microprocessors.
+[d: 10 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 9.
+
+
+## CSE-305 · 2016 · Term final · Question 6
+
+a. Discuss what will happen if a higher priority interrupt comes to an unmasked interrupt request pin of 8259A when 8086 is already executing a lower priority.
+[a: 12 marks]
+
+b. Suppose, 8086 microprocessor executes the instructions:
+i. MOV ARRAY[SI], CX; Here [SI] = 000AH and [DS] = EEEEH and ARRAY = E2H. Now calculate the 20-bit memory address where the processor writes the data of CX register.
+ii. MOV BYTE. Here, [DF] = 1, [DS] = 2000H, [SI] = 0500H, [ES] = 4000H, [DI] = 0300H. Now calculate memory address where the processor moves data.
+[b: 10 marks (5+5=10)]
+
+c. Draw the connection diagram of 16550 with microprocessor.
+[c: 8 marks]
+
+d. How does poll and poll status register of 80186 differ from each other?
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 9, 10.
+
+Notes: Part b(ii) is printed “MOV BYTE.”; no further operands are supplied.
+
+## CSE-305 · 2016 · Term final · Question 7
+
+a. What is the purpose of Tag Register in 80×87 coprocessor? Briefly discuss the six errors that are found in the 80×87 arithmetic coprocessor status register. [See the necessary registers at the end; Figure:4(a-b)]
+Figure-4(a): The Tag register of 80X87; Figure-4(b): The status register of 80X87 (Figure for Question-7a).
+Tag register of 80X87: 16 bits, from bit15 to bit0 comprising two-bit fields TAG(7), TAG(6), TAG(5), TAG(4), TAG(3), TAG(2), TAG(1), TAG(0).
+Status register of 80X87: D15=Busy; D14=C3; D13–D11=Top of Stack Pointer; D10=C2; D9=C1; D8=C0; D7=Exception Flag; D6=Stack Fault; D5=Precision; D4=Underflow; D3=Overflow; D2=Zero Divide; D1=Denormalized; D0=Invalid Operation. C3, C2, C1 and C0 are Condition Codes; D5…D0 are Exception Flags.
+[a: 10 marks (4+6=10)]
+
+b. Write down a program for 8086 microprocessor to program 8259A Programmable Interrupt Controller (PIC) and 16550 UART for receiving 6-bit serial data which sends 1200 bauds per second. Other bit pattern of baud frame is two stop bit, stick parity off, odd parity as parity and transmit no break between two bauds. The INTR signal from the 16550 UART is connected to the programmable interrupt controller’s interrupt request pin IR3. 18.432 MHz crystal is used as a timing source in 16550 UART. The 8259A PIC is set up to function at interrupt vectors D0H–D7H and operates with automatic EOI. The 16550 UART is decoded at I/O ports 80H–87H, the 8259A PIC is decoded at I/O ports 31H and 35H. [See the necessary registers at the end; Figure:5(a-c) and Figure:6(a-c)]
+Supplied Figure-5(a): Register selection in 16550 (A2 A1 A0):
+| A2 A1 A0 | Register |
+| --- | --- |
+| 000 | Receiver buffer (read) and transmitter holding (write) |
+| 001 | Interrupt enable |
+| 010 | Interrupt identification (read) and FIFO control (write) |
+| 011 | Line control |
+| 100 | Modem control |
+| 101 | Line status |
+| 110 | Modem status |
+| 111 | Scratch |
+Figure-5(b): Line Control Register, D7…D0: DL | SB | ST | P | PE | S | L1 | L0.
+L1 L0: 00=5 bits, 01=6 bits, 10=7 bits, 11=8 bits. S: 0=1 stop bit; 1=1.5 or 2 stop bits. PE: 0=no parity; 1=parity enabled. P: 0=odd parity; 1=even parity. ST: 0=stick parity off; 1=stick parity on. SB: 0=no break sent; 1=send break on SOUT. DL: 0=divisor latch off; 1=enable divisor latch.
+Figure-5(c): FIFO Control Register, D7…D0: RT1 | RT0 | 0 | 0 | DMA | XMIT RST | REVC RST | EN.
+EN: 0=disable FIFO; 1=enable FIFO. Receiver Reset: 0=no effect; 1=reset receiver FIFO. Transmitter Reset: 0=no effect; 1=reset transmitter FIFO. DMA mode control: 0=set to function as 16450 UART; 1=FIFO mode. Receiver Trigger level RT1 RT0: 00=1 bytes in FIFO; 01=4 bytes in FIFO; 10=8 bytes in FIFO; 11=14 bytes in FIFO.
+Figure-5(d): Line Status Register, D7…D0: ER | TE | TH | BI | FE | PE | OE | DR.
+DR (Data Ready): 0=no data to read, 1=data in FIFO. OE (Overrun Error): 0=no overrun error, 1=overrun error. PE (Parity Error): 0=no parity error, 1=parity error. FE (Framing Error): 0=no framing error, 1=framing error. BI (Break Indicator): 0=no break, 1=break being received. TH (Transmitter Holding Register): 0=wait for transmitter, 1=transmitter ready for data. TE (Transmitter Empty): 0=transmitter not empty, 1=transmitter empty. ER (Error): 0=no error, 1=at least one error in FIFO.
+Figure-5(e): Interrupt Control Register, D7…D0: 0 | 0 | 0 | 0 | EM | EL | ET | ER.
+ER=Enable Receiver interrupt; ET=Enable Transmitter Interrupt; EL=Enable Line Interrupt; EM=Enable Modem Interrupt. Each: 0=disabled, 1=enabled.
+Figures-6(a–e): 8259A command words (fields listed A0, then D7…D0):
+ICW1: 0 | A7 | A6 | A5 | 1 | LTIM | ADI | SNGL | IC4.
+ICW2: 1 | T7 | T6 | T5 | T4 | T3 | A10 | A9 | A8 (Interrupt vector address).
+ICW3 master: 1 | S7 | S6 | S5 | S4 | S3 | S2 | S1 | S0. Si=1: IR input has a slave; Si=0: IR input does not have a slave.
+ICW3 slave: 1 | 0 | 0 | 0 | 0 | 0 | ID2 | ID1 | ID0. Slave IDs 0…7 correspond to ID2 ID1 ID0=000,001,010,011,100,101,110,111.
+ICW4: 1 | 0 | 0 | 0 | SFNM | BUF | M/S | AEOI | μPM.
+OCW1: 1 | M7 | M6 | M5 | M4 | M3 | M2 | M1 | M0 (Interrupt Mask Register).
+ICW1: IC4=1 ICW4 needed, 0 no ICW4 needed; SNGL=1 single, 0 cascade mode; ADI=1 call address interval 4, 0 interval 8; LTIM=1 level triggered mode, 0 edge triggered mode; A7–A5 are interrupt vector address (MCS-80/85 mode only).
+ICW2: A15–A8 interrupt vector address in MCS80/85 mode; T7–T3 interrupt vector address in 8086/8088 mode.
+ICW4: μPM=1 8086/8088 mode, 0 MCS-80/85 mode; AEOI=1 auto EOI, 0 normal EOI; BUF M/S=0X non-buffered mode, 10 buffered mode/slave, 11 buffered mode/master; SFNM=1 special fully nested mode, 0 not special fully nested mode.
+OCW1: Mi=1 mask set, Mi=0 mask reset.
+[b: 20 marks]
+
+c. What is watchdog timer?
+[c: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 10, 12, 13, 14, 15.
+
+Notes: Question references Figures 5(a–c) and 6(a–c), but appendices also supply 5(d–e), 6(d–e), each captioned for Question7b; all retained.
+
+## CSE-305 · 2016 · Term final · Question 8
+
+a. The address/data bus of 8086/8088 is multiplexed. Now discuss the demultiplexing process of address/data bus of 8086/8088.
+[a: 15 marks]
+
+b. What do you understand by sending a break between two frames in UART?
+[b: 5 marks]
+
+c. What is automatic END of interrupt?
+[c: 5 marks]
+
+d. How does the instruction queue of BIU work in 8086.
+[d: 10 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2016.pdf, pages 10.
+
+
+## CSE-305 · 2017 · Term final · Question 1
+
+a. Write down the basic differences between microprocessor and microcontroller.
+[a: 5 marks]
+
+b. Consider the following Figure-1:
+Figure1: Peripheral devices connected with 8086 Microprocessor through 82C55 PPI. Diagram connections: 8086 μp — 82C55 PPI; 82C55 Port A — Speaker; 82C55 Port B — Webcam.
+Suppose a speaker and a webcam are connected with an 8086 microprocessor via 82C55 PPI through Port A and Port B respectively. 82C55 PPI is decoded at I/O port number 0BH to 0EH. [See the necessary registers at the end: Figure-3]
+i) Write an assembly program for Webcam and Speaker driver procedure where the webcam and speaker both work in strobe mode.
+ii) Draw the timing diagram of Webcam driver procedure mentioning the signals needed to complete the process.
+Figure-3: Command Byte A of 82C55 (bits D7…D0):
+D7 = 1. D6–D5: Group A mode, 00=mode 0, 01=mode 1, 1X=mode 2 (X=0 or 1).
+D4: Port A, 1=input, 0=output. D3: Group A Port C (PC7–PC4), 1=input, 0=output.
+D2: Group B mode, 0=mode 0, 1=mode 1. D1: Port B, 1=input, 0=output. D0: Group B Port C (PC3–PC0), 1=input, 0=output.
+The supplied bit cells D7…D0 are 1 0 0 0 0 0 1 0.
+[b: 18 marks (12+6=18)]
+
+c. What are the advantages of 8279 PK/DI over 82C55 PPI.
+[c: 4 marks]
+
+d. Draw the internal diagram of 8254.
+[d: 8 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 10, 14.
+
+
+## CSE-305 · 2017 · Term final · Question 2
+
+a. Discuss the multifunctional port line of 8051 microcontroller.
+[a: 5 marks]
+
+b. Suppose, you have a microprocessor of 16 bit address bus and data bus of 8 bit and some RAM of each 256B.
+Figure2: Microprocessor and RAM chip. μp has address bus A0–A15 (16 lines) and data bus D0–D7 (8 lines); separate 256B RAM block.
+Draw a neat diagram showing the connections between the above microprocessor and RAM to include the memory map 0400₁₆ through 04EE₁₆.
+i) Use line decoding method.
+ii) Use Partial decoding method.
+iii) What is the maximum number of RAMs you can associate with this microprocessor in both the methods?
+[b: 22 marks (8+8+6=22)]
+
+c. Why “Wait State” is provided in 8279 PK/DI? Suppose, the 8279 CLK pin is connected to a 2.5 MHz clock. What will be the value of prescaler?
+[c: 8 marks (3+5=8)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 10, 11.
+
+Notes: Memory range in part b is printed 0400₁₆ through 04EE₁₆ (not 04FF); retained.
+
+## CSE-305 · 2017 · Term final · Question 3
+
+a. What is bit addressability and how do this feature help 8051 microcontroller to perform better than those which does not support this feature?
+[a: 5 marks]
+
+b. Suppose, a programmable interval timer 8254 is connected to function at I/O ports 0108H to 010BH of a 8086 microprocessor. Counter 0 operates in mode 3 (Square Wave) and counter 2 operates in mode 2 (Continuous Wave). The count programmed into counter 0 is 75D and the count of counter 2 is 562D. Write an initialization program for 8254. [See the necessary registers at the end Figure-4.]
+Figure-4: Control Word Register of 8254, D7…D0: SC1 | SC0 | RW1 | RW0 | M2 | M1 | M0 | BCD.
+[b: 12 marks]
+
+c. Why Programmable Peripheral Interface is needed to associate with microprocessor? Discuss the command bytes of 82C55 PPI.
+[c: 10 marks (2+8=10)]
+
+d. Suppose, you and your friends are going to a theme park and about to enjoy one of our favorite rides “Boat Splash” which allow only 5 persons to ride on a single boat. The gate of the ride will be opened only when the ride-controller pushes “OPEN” button. Then it will start to take 5 persons and when the last member enters, the gate is automatically closed so that no one can intrude into the ride. If this system is implemented using 8254, in which mode it should be designed to achieve the above functionality. Also write down the basic features of that mode.
+[d: 8 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 11, 14.
+
+
+## CSE-305 · 2017 · Term final · Question 4
+
+a. Discuss the RAM organization of 8051 microcontroller. Also show the decomposition of internal RAM with associate addresses.
+[a: 12 marks]
+
+b. Design a 96-Key keyboard interface to 8088 microprocessor through 8279 PK/DI.
+[b: 9 marks]
+
+c. What is the main purpose of Direct Memory Address? Describe different types of direct memory access.
+[c: 10 marks (1+9=10)]
+
+d. How many ways the Keyboard can be interfaced with the processor. Briefly discuss the methods.
+[d: 4 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 11.
+
+Notes: Part c source says “Direct Memory Address”; retained.
+
+## CSE-305 · 2017 · Term final · Question 5
+
+a. Suppose, three interrupt request pins (IR2, IR5 and IR7) of 8259A, programmable interrupt Controller, are unmasked. An universal asynchronous receiver transmitter, 16550 is connected to IR2. Now, a divide error interrupt occurs at IR7 and 8259A sends the interrupt to 8086. Discuss what will happen if 16550 gives an interrupt, when 8086 is already executing the previous interrupt.
+[a: 12 marks]
+
+b. What do you understand by high impedance state of address/data bus during hold acknowledgement of 8086 microprocessor?
+[b: 8 marks]
+
+c. Write a procedure in assembly language for 16550, universal asynchronous receiver transmitter, that will receive data and check for errors. If there is any parity error, CL register will contain ASCII of ‘P’, if there is overrun error while receiving data, CL register will contain ASCII of ‘O’, otherwise, it will transfer received data to AL register. [See the necessary registers at the end-Figure:5(a-b)].
+Figure-5(a): Line Status Register, D7…D0: ER | TE | TH | BI | FE | PE | OE | DR.
+DR (Data Ready): 0=no data to read, 1=data in FIFO. OE (Overrun Error): 0=no overrun error, 1=overrun error. PE (Parity Error): 0=no parity error, 1=parity error. FE (Framing Error): 0=no framing error, 1=framing error. BI (Break Indicator): 0=no break, 1=break being received. TH (Transmitter Holding Register): 0=wait for transmitter, 1=transmitter ready for data. TE (Transmitter Empty): 0=transmitter not empty, 1=transmitter empty. ER (Error): 0=no error, 1=at least one error in FIFO.
+Figure-5(b): Register selection in 16550 (A2 A1 A0):
+| A2 A1 A0 | Register |
+| --- | --- |
+| 000 | Receiver buffer (read) and transmitter holding (write) |
+| 001 | Interrupt enable |
+| 010 | Interrupt identification (read) and FIFO control (write) |
+| 011 | Line control |
+| 100 | Modem control |
+| 101 | Line status |
+| 110 | Modem status |
+| 111 | Scratch |
+[c: 10 marks]
+
+d. What is the difference between non-specific end of interrupt and rotate on non-specific end of interrupt?
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 12, 15.
+
+
+## CSE-305 · 2017 · Term final · Question 6
+
+a. How bus unit, instruction unit, execution unit and address unit of 80286 work together?
+[a: 8 marks]
+
+b. Suppose, two programmable interrupt controller, 8259As are connected with each other where the slave device is connected to interrupt request 5 of master device. Now draw the connection diagram between these two devices.
+[b: 7 marks]
+
+c. Discuss about the stack addressing mode and register addressing mode of 80 × 87 with example.
+[c: 8 marks (4+4=8)]
+
+d. Suppose, 8086 microprocessor executes the following instructions. Find the effective address and describe what happens after executing the instructions.
+i) Mov ARRAY [BP] [DI], AH; Here [DI] = 000A₁₆, [BP] = 1230₁₆, ARRAY = E2₁₆, [DS] = 2000₁₆ and [SS] = 2040₁₆.
+ii) STOSB; Here, [SI] = 0002₁₆, [DI] = 2003₁₆, [ES] = 0300₁₆, [AL] = 08₁₆, DF = 1 and the address pointed by E.S : DI contains 42₁₆.
+[d: 12 marks (6+6=12)]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 12.
+
+
+## CSE-305 · 2017 · Term final · Question 7
+
+a. How does poll and poll status register of 80186 microprocessor differ from each other?
+[a: 5 marks]
+
+b. Suppose, a microprocessor has 24 bit address bus (A0–A23) and 16 bit data bus (D0–D15). The lower 12 bit of data bus is multiplexed with lower 12 bit of address bus (AD0–AD11) and the upper 4 bit of data bus (D12–D15) and upper 12 bit of address bus (A12–A23) work individually. Now design a fully buffered system for this microprocessor.
+[b: 10 marks]
+
+c. Develop a procedure for arithmetic coprocessor 80 × 87 that will calculate the solution of the equation – (a+b)² = a² + b² + 2ab. Also show the status of the stack of 80 × 87 after each instruction is executed. [Suppose, a = 234.56 and b = 588.2345]
+[c: 15 marks (10+5=15)]
+
+d. Draw the connection diagram of 16550, universal asynchronous receiver transmitter with microprocessor.
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 12, 13.
+
+
+## CSE-305 · 2017 · Term final · Question 8
+
+a. Write down a program for 8086 microprocessor to program 8259A, programmable interrupt controller and 16550, universal asynchronous receiver transmitter.
+i) The 16550 receives 8-bit serial data which sends 300D bauds per second. Other bit pattern of baud frame is two stop bits, no parity bit and a break between two data frames.
+ii) The INTR signal from 16550 UART is connected to the 8259A’s interrupt request input IR6.
+iii) 18.432 MHz crystal is used as timing source in 16550 UART.
+iv) The 16550 UART is decoded at I/O ports 0E0H to 0E7H of 8086.
+v) The 8259A PIC is set up to function at interrupt vectors 0A5H–0ACH and operates with rotate on non-specific end of interrupt, specially fully nested mode and will trigger on level triggered mode.
+vi) The 8259A PIC is decoded at I/O ports 22H and 24H.
+[See the necessary registers at the end: Figure-5(b-c) and 6(a-f)].
+Figure-5(b): Register selection in 16550 (A2 A1 A0):
+| A2 A1 A0 | Register |
+| --- | --- |
+| 000 | Receiver buffer (read) and transmitter holding (write) |
+| 001 | Interrupt enable |
+| 010 | Interrupt identification (read) and FIFO control (write) |
+| 011 | Line control |
+| 100 | Modem control |
+| 101 | Line status |
+| 110 | Modem status |
+| 111 | Scratch |
+Figure-5(c): Line Control Register, D7…D0: DL | SB | ST | P | PE | S | L1 | L0.
+L1 L0: 00=5 bits, 01=6 bits, 10=7 bits, 11=8 bits. S: 0=1 stop bit; 1=1.5 or 2 stop bits. PE: 0=no parity; 1=parity enabled. P: 0=odd parity; 1=even parity. ST: 0=stick parity off; 1=stick parity on. SB: 0=no break sent; 1=send break on SOUT. DL: 0=divisor latch off; 1=enable divisor latch.
+Figure-5(d): FIFO Control Register, D7…D0: RT1 | RT0 | 0 | 0 | DMA | XMIT RST | REVC RST | EN.
+EN: 0=disable FIFO; 1=enable FIFO. Receiver Reset: 0=no effect; 1=reset receiver FIFO. Transmitter Reset: 0=no effect; 1=reset transmitter FIFO. DMA mode control: 0=set to function as 16450 UART; 1=FIFO mode. Receiver Trigger level RT1 RT0: 00=1 bytes in FIFO; 01=4 bytes in FIFO; 10=8 bytes in FIFO; 11=14 bytes in FIFO.
+Figure-5(e): Interrupt Control Register, D7…D0: 0 | 0 | 0 | 0 | EM | EL | ET | ER.
+ER=Enable Receiver interrupt; ET=Enable Transmitter Interrupt; EL=Enable Line Interrupt; EM=Enable Modem Interrupt. Each: 0=disabled, 1=enabled.
+Figure-6(a–e): 8259A command words (fields listed A0, then D7…D0):
+ICW1: 0 | A7 | A6 | A5 | 0 | LTIM | ADI | SNGL | IC4.
+ICW2: 1 | T7 | T6 | T5 | T4 | T3 | A10 | A9 | A8 (Interrupt vector address).
+ICW3 master: 1 | S7 | S6 | S5 | S4 | S3 | S2 | S1 | S0. Si=1: IR input has a slave; Si=0: IR input does not have a slave.
+ICW3 slave: 1 | 0 | 0 | 0 | 0 | 0 | ID2 | ID1 | ID0. Slave IDs 0…7 correspond to ID2 ID1 ID0=000,001,010,011,100,101,110,111.
+ICW4: 1 | 0 | 0 | 0 | SFNM | BUF | M/S | AEOI | μPM.
+OCW1: 1 | M7 | M6 | M5 | M4 | M3 | M2 | M1 | M0 (Interrupt Mask Register).
+ICW1: IC4=1 ICW4 needed, 0 no ICW4 needed; SNGL=1 single, 0 cascade mode; ADI=1 call address interval 4, 0 interval 8; LTIM=1 level triggered mode, 0 edge triggered mode; A7–A5 are interrupt vector address (MCS-80/85 mode only).
+ICW2: T7–T3 are A3–A0 of Interrupt vector address. A10–A9, A8: selected according to interrupt request level. They are not the address lines to microprocessor. A0=1 selects ICW2.
+ICW4: μPM=1 8086/8088 mode, 0 MCS-80/85 mode; AEOI=1 auto EOI, 0 normal EOI; BUF M/S=0X non-buffered mode, 10 buffered mode/slave, 11 buffered mode/master; SFNM=1 special fully nested mode, 0 not special fully nested mode.
+OCW1: Mi=1 mask set, Mi=0 mask reset.
+Figure-6(f): OCW2 (A0 then D7…D0): 0 | R | SL | EOI | 0 | 0 | L2 | L1 | L0. L2 L1 L0 selects IR level 0…7 as 000,001,010,011,100,101,110,111.
+R SL EOI: 001=Non specific EOI command; 011=Specific EOI command (End of interrupt); 101=Rotate on non specific EOI command; 100=Rotate in automatic EOI mode (Set); 000=Rotate in automatic EOI mode (Clear) (Automatic rotation); 111=Rotate on specific EOI command; 110=Set priority command (Specific rotation); 010=No operation. L0–L2 are used for Rotate on specific EOI and Set priority commands.
+[a: 20 marks]
+
+b. Differentiate between direct and indirect modes for accessing I/O ports of 8086 microprocessor with example.
+[b: 5 marks]
+
+c. Compare between 8086, 80186 and 80286 microprocessors.
+[c: 10 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2017.pdf, pages 13, 15, 16, 17, 18.
+
+Notes: Figure6(a) prints D4=0 in ICW1; retained. Figure6(b) annotation says T7–T3 are A3–A0 of interrupt vector address, with A10–A8 selected according to interrupt request level and not address lines to microprocessor; the inconsistent range is retained here as a source note. Question references Figure5(b–c), but captions also assign 5(d–e) to Question8a; retained.
+
+## CSE-305 · 2018 · Term final · Question 1
+
+a. Write down the basic differences between microprocessor and microcontrollers? Explain with suitable examples.
+[a: 6 marks]
+
+b. Suppose, a touchscreen is connected with an 8086 microprocessor via 82C55 (PPI). The port A of 82C55 is configured as input port and Port B of 82C55 is configured as output port. 82C55 is decoded at I/O port number 2BH to 2EH. Write an assembly program for touchscreen driven procedure where the device works in strobe mode. [See the necessary diagram at the end: Figure-1]
+Figure-1: Command Byte A of 82C55 (bits D7…D0):
+D7 = 1. D6–D5: Group A mode, 00=mode 0, 01=mode 1, 1X=mode 2 (X=0 or 1).
+D4: Port A, 1=input, 0=output. D3: Group A Port C (PC7–PC4), 1=input, 0=output.
+D2: Group B mode, 0=mode 0, 1=mode 1. D1: Port B, 1=input, 0=output. D0: Group B Port C (PC3–PC0), 1=input, 0=output.
+The supplied bit cells D7…D0 are 1 0 0 0 0 0 1 0.
+[b: 14 marks]
+
+c. “The 8086 can read a 16-bit word in one operation if the first byte of the word is at an even address. On the other hand, the 8086 must perform two memory accesses to two consecutive even addresses, if the first byte of the word is at an odd address” – Explain the above statement with suitable example.
+[c: 9 marks]
+
+d. What is the difference between encoded and decoded keyboard as defined for 8279 Programmable keyboard/Display Interface (PK/DI).
+[d: 6 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 9, 13.
+
+
+## CSE-305 · 2018 · Term final · Question 2
+
+a. Define register addressing mode and immediate addressing mode of 8086 micro-processor with suitable examples. What will be the value of AX register in each step after execution the following instructions?
+```
+MOV AX, ALPHA [BX] [SI]
+ADD AL, 03
+INC AX
+```
+Where, [BX] = 0201H, ALPHA = 09H, [SI] = 1200H, DS = 300AH
+[a: 9 marks (4+5=9)]
+
+b. What is the significance of FIFO status register of 8279 PK/DI? Write down the assembly code that will find out the number of characters present in the FIFO on a specific time. [See the necessary diagram at the end: Figure-2]
+Figure-2: FIFO Status Register of 8279, bits7…0: D | S/E | O | U | F | N | N | N.
+Bits2…0 indicate the number of characters in the FIFO. Bit3 F: indicates the FIFO is full. Bit4 U: indicates the FIFO has been read while empty. Bit5 O: indicates the FIFO is full and has been overrun. Bit6 S/E: indicates multiple key closures. Bit7 D: display unavailable because of clear command.
+[b: 15 marks (5+10=15)]
+
+c. Suppose, you are going to design a Keyboard which will have the alphabets (English) and numeric characters. There will be a special key that will differentiate between the lowercase and uppercase characters. Now, interface the keyboard with 8088 microprocessor through 8279 PH/DI.
+[c: 6 marks]
+
+d. What is the importance of read back command in 8254 programmable Interval Timer?
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 9, 10, 13.
+
+Notes: Part a gives no memory contents for the MOV instruction; retained as supplied. Part c prints “PH/DI”; retained.
+
+## CSE-305 · 2018 · Term final · Question 3
+
+a. Draw the timing diagram of scanner driver procedure, mentioning the signals needed to complete the process.
+[a: 5 marks]
+
+b. Suppose, timer/counter umber 1 (TM1) is configured in mode 0 and load it with 2 ms period at 1.5 MHz clock frequency. Timer/counter number 2 (TM2) is configured in mode 2 and load it with 50 μs period at 3MHz clock frequency. 8254 is connected to function at ports 0101H to 0104H. All the counters are written in binary format. Write an initialization program for 8254. [See the necessary diagram at the end: Figure:3]
+Figure-3: Control Word Register of 8254, D7…D0: SC1 | SC0 | RW1 | RW0 | M2 | M1 | M0 | BCD.
+SC1 SC0: 00=select counter 0; 01=select counter 1; 10=select counter 2; 11=read-back command (see Read Operations).
+RW1 RW0: 00=counter latch command (see Read Operations); 01=read/write least significant byte only; 10=read/write most significant byte only; 11=read/write least significant byte first, then most significant byte.
+M2 M1 M0: 000=mode 0; 001=mode 1; X10=mode 2; X11=mode 3; 100=mode 4; 101=mode 5.
+BCD: 0=binary counter 16-bits; 1=binary coded decimal (BCD) counter (4 decades).
+[b: 14 marks]
+
+c. Why do we need to set command byte in 82C55 PPI? Briefly explain the command bytes of 82C55 PPI.
+[c: 11 marks (3+8=11)]
+
+d. Write down the functionality of the following signals of 82C55 PPI:
+i. /STB
+ii. /ACK
+iii. IBF
+iv. /OBF
+v. INTR
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 10, 13.
+
+Notes: Overbars in part d are represented by a leading slash for active-low STB, ACK and OBF. Source part b prints “umber 1”.
+
+## CSE-305 · 2018 · Term final · Question 4
+
+a. Now-a-days, the terms CPU and Microprocessor have become synonymous. However, there still has a major difference between these two terms. Mention the differences between CPU and Microprocessor in terms of computer architecture. What does it mean when we say – “8086 is a 16 bit Microprocessor”?
+[a: 5 marks (3+2=5)]
+
+b. Write down the differences between mode 0 and mode 1 of 8254 with example. What is the significance of “GATE” signal in these two modes?
+[b: 7 marks]
+
+c. Suppose, you have a microprocessor of 16 bit address bus and data bus of 8 bit and some RAMS, each of 512B. Draw a neat diagram showing the connections between the above microprocessor and RAMs to include the memory map 0800H through 08FFH.
+i. Use line decoding method
+ii. Use partial decoding method
+iii. What is meant by fold back error and bus conflict error in Line decoding? How are these problems solved in partial/full decoding method?
+[c: 18 marks (6+6+6=18)]
+
+d. Define different types of segmentation of 8086 microprocessor with suitable figure.
+[d: 5 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 10.
+
+Notes: The source specifies 512B RAM chips and memory range 0800H–08FFH; retained.
+
+## CSE-305 · 2018 · Term final · Question 5
+
+a. Describe the six modem control signals of 16550 UART.
+[a: 6 marks]
+
+b. Describe the control & debug registers of 80386.
+[b: 9 marks]
+
+c. Write down a program for 8086 microprocessor to program 8259A PIC and 16550 UART for 6 bit serial data which sends 1200 baud per second. Other bit pattern of baud frame is 1.5 stop bits, odd parity and a beak between two data frames. The INTR signal from 16550 UART is connected to 8259A’s interrupt request input IR5. 73.728 MHz crystal is used as timing source in 16550 UART. The 16550 UART is decoded at I/O ports 0C0H to 0C7H of 8086. The 8259A PIC is set up to function at interrupt vectors 0E6H–0EDH and operates with rotate on nonspecific end of interrupt, specially fully nested mode and will trigger on level triggered mode. The 8259A PIC is decoded at I/O ports 72H and 73H. [See the necessary registers & command words at the end: Fig:4(a-f) & Fig:5(a-f)]
+Fig4: Command Words of 8259A PIC.
+8259A command words (fields listed A0, then D7…D0):
+ICW1: 0 | A7 | A6 | A5 | 1 | LTIM | ADI | SNGL | IC4.
+ICW2: 1 | T7 | T6 | T5 | T4 | T3 | A10 | A9 | A8 (Interrupt vector address).
+ICW3 master: 1 | S7 | S6 | S5 | S4 | S3 | S2 | S1 | S0. Si=1: IR input has a slave; Si=0: IR input does not have a slave.
+ICW3 slave: 1 | 0 | 0 | 0 | 0 | 0 | ID2 | ID1 | ID0. Slave IDs 0…7 correspond to ID2 ID1 ID0=000,001,010,011,100,101,110,111.
+ICW4: 1 | 0 | 0 | 0 | SFNM | BUF | M/S | AEOI | μPM.
+OCW1: 1 | M7 | M6 | M5 | M4 | M3 | M2 | M1 | M0 (Interrupt Mask Register).
+(f) OCW2 (A0 then D7…D0): 0 | R | SL | EOI | 0 | 0 | L2 | L1 | L0. L2 L1 L0 selects IR level 0…7 as 000,001,010,011,100,101,110,111.
+R SL EOI: 001=Non specific EOI command; 011=Specific EOI command (End of interrupt); 101=Rotate on non specific EOI command; 100=Rotate in automatic EOI mode (Set); 000=Rotate in automatic EOI mode (Clear) (Automatic rotation); 111=Rotate on specific EOI command; 110=Set priority command (Specific rotation); 010=No operation. L0–L2 are used for Rotate on specific EOI and Set priority commands.
+Figure5: Registers of 16550 UART.
+(a) Register selection in 16550 (A2 A1 A0):
+| A2 A1 A0 | Register |
+| --- | --- |
+| 000 | Receiver buffer (read) and transmitter holding (write) |
+| 001 | Interrupt enable |
+| 010 | Interrupt identification (read) and FIFO control (write) |
+| 011 | Line control |
+| 100 | Modem control |
+| 101 | Line status |
+| 110 | Modem status |
+| 111 | Scratch |
+(b) Line Control Register D7…D0: DL | SB | ST | P | PE | S | L1 | L0.
+(c) FIFO Control Register D7…D0: RT1 | RT0 | 0 | 0 | DMA | XMIT RST | REVC RST | EN.
+(d) Line Status Register D7…D0: ER | TE | TH | BI | FE | PE | OE | DR.
+(e) Interrupt Control Register D7…D0: 0 | 0 | 0 | 0 | EM | EL | ET | ER.
+(f) Interrupt Control Bits:
+| Bit3 Bit2 Bit1 Bit0 | Priority | Type | Reset Control |
+| --- | --- | --- | --- |
+| 0001 | — | No interrupt | — |
+| 0110 | 1 | Receiver error (parity, framing, overrun, or break) | Reset by reading the line register |
+| 0100 | 2 | Receiver data available | Reset by reading the data |
+| 1100 | 2 | Character time-out, nothing has been removed from the receiver FIFO for at least four character times | Reset by reading the data |
+| 0010 | 3 | Transmitter empty | Reset by writing to the transmitter |
+| 0000 | 4 | Modem status | Reset by reading the modem status |
+[c: 20 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 10, 11, 14, 15.
+
+Notes: Source prints “beak” in part c; retained.
+
+## CSE-305 · 2018 · Term final · Question 6
+
+a. Describe five interrupt vectors that are identical in all Intel microprocessor family members.
+[a: 5 marks]
+
+b. Shortly describe the cast ineffective memory interfacing technique that improves the speed of a system in 80386.
+[b: 7 marks]
+
+c. How is instruction/data processed in 80286 microprocessors?
+[c: 8 marks]
+
+d. Develop a procedure for arithmetic coprocessor 80x87 that will calculate the area of a cylinder (whole surface) and the result must be saved in a variable, CYL_AREA. Also show the status of the stack of 80x87 after each instruction is executed. [Area of a cylinder = 2π × radius × (radius + height). Assume that, radius = 3.5m and height = 9m]
+[d: 15 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 11.
+
+Notes: Part b wording “cast ineffective” retained from the source.
+
+## CSE-305 · 2018 · Term final · Question 7
+
+a. Define the program status word and data pointer register of 8051 microcontroller.
+[a: 5 marks]
+
+b. What are the two ways of testing status register in 80x87 arithmetic coprocessor? Describe the 6 errors that are found in 80x87 compressor.
+[b: 8 marks]
+
+c. What is framing error and overrun error in 16550? 8086 microprocessor receives 7 bit data to other end through 16550. While receiving 7 bit data, some of the bits may have changed due to noise or distortion. Now you need to write a procedure to check if there is any framing error or overrun error. If there is an overrun error while receiving data, BL register will contain “?” and if there is a framing error then BL register will contain “!”; otherwise, it will transfer received data to AL register. [See the necessary register at the end; Fig:5(a) & (d)]
+Fig5(a): Register selection in 16550 (A2 A1 A0):
+| A2 A1 A0 | Register |
+| --- | --- |
+| 000 | Receiver buffer (read) and transmitter holding (write) |
+| 001 | Interrupt enable |
+| 010 | Interrupt identification (read) and FIFO control (write) |
+| 011 | Line control |
+| 100 | Modem control |
+| 101 | Line status |
+| 110 | Modem status |
+| 111 | Scratch |
+Fig5(d): Line Status Register D7…D0: ER | TE | TH | BI | FE | PE | OE | DR.
+[c: 10 marks]
+
+d. Design a cascade 8259A PIC, where three 8259A PICs send their interrupt signal to master 8259A PIC. Suppose, the master 8259A PIC is decoded at I/O ports 0501H and 0505H, and slave 8259A PIC is decoded at I/O ports 050BH and 050DH. Master is used for interrupt vectors 0B5H–0BCH and slave is used for interrupt vectors 30H–37H. The three slaves are connected to interrupt vector 0B6H, 0B9H and 0BCH, respectively as cascade input. [Only draw the connection diagram]
+[d: 12 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 11, 15.
+
+Notes: Part b prints “compressor”; retained. Part d gives one I/O address pair and one vector range for three slaves; retained as printed.
+
+## CSE-305 · 2018 · Term final · Question 8
+
+a. Shortly describe the way of measuring time interval in 80186.
+[a: 5 marks]
+
+b. Describe the addressing modes of 8051 microcontroller.
+[b: 8 marks]
+
+c. What do you understand by poll status register and end of interrupt register in 80186? Draw the block diagram of programmable interrupt controller of 80186/80188.
+[c: 10 marks]
+
+d. Suppose in 8259A, programmable interrupt controller has 8 interrupt request pins (IR0–IR7). Among them, three interrupt request pins are unmasked (IR3, IR6, IR7). STI instruction of 8086 is enabled. An invalid opcode interrupt occurs at IR3 pin and 8259A sends the interrupt to 8086. While 8086 is executing invalid opcode interrupt procedure, another interrupt occurs at IR7. How will 8259A handle this new interrupt and what will happen if another interrupt occurs at IR6? Also, draw the diagram of the operating scenario.
+[d: 12 marks]
+
+Total: 35 marks.
+Source: CSE,L-3,T-1,2018.pdf, pages 11, 12.
+
+
+## CSE-305 · 2019 · Term final · Question 1
+
+(a) Distinguish between minimum mode and maximum mode operation of 8086. [10]
+[a: 10 marks]
+
+(b) Distinguish between data addressing in memory by 80286 in real mode and protected mode. [20]
+[b: 20 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 9.
+
+
+## CSE-305 · 2019 · Term final · Question 2
+
+(a) 80286 provides ‘multitasking’ and ‘multiprogramming’ environment. Discuss how 80286 protects tasks and program from each other? [12]
+[a: 12 marks]
+
+(b) Discuss an 80386 segment descriptor. [18]
+[b: 18 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 9.
+
+
+## CSE-305 · 2019 · Term final · Question 3
+
+(a) Discuss why ‘paging’ was introduced in 80386? What are its disadvantages? How was that solved? [15]
+[a: 15 marks]
+
+(b) Discuss how a 32-bit logical address is converted into physical address in 80386? [15]
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 9.
+
+
+## CSE-305 · 2019 · Term final · Question 4
+
+(a) Discuss BCD and floating point data format of 80x87. [12]
+[a: 12 marks]
+
+(b) Modify decimal 5.5 data to short [single precision] data format of 80x87. [5]
+[b: 5 marks]
+
+(c) Explain the bits of 80x87 status register. Exclude the condition code bits from the explanation. [13]
+[c: 13 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 9.
+
+
+## CSE-305 · 2019 · Term final · Question 5
+
+(a) Determine the mode set control word needed to initialize an 8255 as follows: [15]
+Port A — bidirectional I/O
+Port B — simple I/O
+Port C — PC₀ and PC₁ as input.
+[a: 15 marks]
+
+(b) List the different modes in which the ports of 8255 can be initialized. Discuss any two such modes. [15]
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 11.
+
+
+## CSE-305 · 2019 · Term final · Question 6
+
+(a) List and discuss the steps an 8086 will take when it responds to an interrupt. [12]
+[a: 12 marks]
+
+(b) List and elaborate the different dedicated inputs used by 8086. [18]
+[b: 18 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 11.
+
+
+## CSE-305 · 2019 · Term final · Question 7
+
+(a) 55H was sent to the control register of an 8254. Determine the operation of 8254. [15]
+[a: 15 marks]
+
+(b) Explain the bits of 16550 line control register. [15]
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 11.
+
+
+## CSE-305 · 2019 · Term final · Question 8
+
+(a) 8259 can handle 8 interrupting devices. Design a system using 8259s that can handle 50 interrupting devices. [10]
+[a: 10 marks]
+
+(b) 11H was sent as ICW1 to an 8259. Determine whether ICW3 and ICW4 are needed to complete the initialization of 8259. [5]
+[b: 5 marks]
+
+(c) 00H was sent to an 8279 as control word. Explain the operation of the 8279. [15]
+[c: 15 marks]
+
+Total: 30 marks.
+Source: CSE,L-3,T-1,2019.pdf, pages 11.
+
+
+## CSE-305 · 2021 · Term final · Question 1
+
+(a) Determine the value of register AX after executing each of the following instructions sequentially. [15]
+[a: 15 marks]
+
+```asm
+main proc
+    MOV AX,XXXXh ; where XXXX is the last four digits of your student ID
+    ADD AX,AX
+    SUB AX,YYYYh ; where YYYY is the first four digits of your student ID
+    NEG AX
+    INC AX
+    AND AX,8000h
+    NOT AX
+main endp
+```
+
+(b) Take a decimal number n as input and find out whether it is a palindrome or not. [For example, if the input is 15351 the program should produce the output message showing that “The given number is palindrome”.] [15]
+[b: 15 marks]
+
+(c) Define the segment registers of 8086 microprocessors. Determine the physical address of a memory location given by YYYYh:XXXXh where YYYY is the first four digits of your student ID and XXXX is the last four digits of your student ID. [10]
+[c: 10 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 11.
+
+
+## CSE-305 · 2021 · Term final · Question 2
+
+(a) Suppose AL contains the binary value of 1XX where XX is the last two digits of your student ID and CF=1. Give the new contents of AL and CF after each of the following instructions is executed. Assume the preceding initial conditions for each part of this question. [15]
+[a: 15 marks]
+
+```text
+(i)   SHL AL,1
+(ii)  SHR AL,1
+(iii) ROR AL,CL   if CL contains 3
+(iv)  SAR AL,CL   if CL contains 2
+(v)   RCL Al,1
+```
+
+(b) Write a procedure REVERSE in assembly language that will reverse an array of N elements. The procedure is entered with SI pointing to the array and BX has the number of words N. [15]
+[b: 15 marks]
+
+(c) How to connect a LED on Arduino? Write down the sketch for blinking an LED. [10]
+[c: 10 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 11, 12.
+
+Notes: RCL register is printed as Al (lowercase l); retained.
+
+## CSE-305 · 2021 · Term final · Question 3
+
+(a) If it is a legal instruction, give the values of DX & AX after each of the following instructions or tell if overflow occurs. [15]
+[a: 15 marks]
+
+| Instruction | Initial conditions |
+| --- | --- |
+| (i) MUL BX | AX contains 000Xh and BX contains 0003h, where X is the last digit of your student ID |
+| (ii) MUL CX | AX contains 00FFh and CX contains YYYYh, where YYYY is the first four digit of your student ID |
+| (iii) IMUL CX | AX contains 000Xh and CX contains FFFFh, where X is the last digit of your student ID |
+| (iv) DIV BX | DX contains 0000h, AX contains XXXXh and BX contains YYYYh, where XXXXh is the last four digit of your student ID and YYYYh is the first four digit of your student ID |
+| (v) IDIV BX | DX contains FFFFh, AX contains FFFCh and BX contains 0003h |
+
+(b) Suppose the following declaration have been made: [15, handwritten]
+[b: 15 marks]
+
+```asm
+String1 db CSE-18
+String2 db MIST-
+```
+
+Write an assembly code to move String1 to the end of String2, producing the string MIST-CSE-18.
+
+(c) Give a logic instruction to do each of the following: [10, handwritten]
+(i) Clear the even-numbered bits of AX, leaving the other bits unchanged.
+(ii) Set the LSB and MSB of BL, leaving the other bits unchanged.
+(iii) Complement the MSB of DX, leaving the other bits unchanged.
+(iv) One’s complement of AX.
+[c: 10 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 12.
+
+Notes: Allocations for (b) and (c) appear handwritten on the source: 15 and 10. String declarations lack quotation marks in the source; retained.
+
+## CSE-305 · 2021 · Term final · Question 4
+
+Marks allotted for Viva 40. (Compulsory) [40]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 12.
+
+
+## CSE-305 · 2021 · Term final · Question 5
+
+(a) Explain, with uses, the following 8086 signals: [4x10=40]
+(i) ALE
+(ii) BHE̅ (BHE with an overbar)
+(iii) MN/MX̅ (overbar over MX)
+(iv) RESET
+[a: 40 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 13.
+
+
+## CSE-305 · 2021 · Term final · Question 6
+
+(a) Distinguish between data addressing in memory by 80x86 in real and protected mode. [25]
+[a: 25 marks]
+
+(b) Illustrate virtual 8086 mode operation of 80386 microprocessor. [15]
+[b: 15 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 13.
+
+
+## CSE-305 · 2021 · Term final · Question 7
+
+(a) What is BIST in 80386? [10]
+[a: 10 marks]
+
+(b) List and discuss the steps an 8086 will take when it responds to an external interrupt. [12]
+[b: 12 marks]
+
+(c) Illustrate how an 8086 finds the address of an interrupt service routine (ISR) after an interrupt occurs. [8]
+[c: 8 marks]
+
+(d) List the dedicated interrupts used by 8086 and elaborate any two of them. [2x5]
+[d: 10 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 13.
+
+
+## CSE-305 · 2021 · Term final · Question 8
+
+Marks allotted for Viva 40. (Compulsory) [40]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2021.pdf, pages 13.
+
+
+## CSE-305 · 2022 · Term final · Question 1
+
+(a) Consider the two binary numbers: [20]
+[a: 20 marks]
+
+```text
+11010110
+11101101
+```
+
+For addition and subtraction, find out the FLAGS status.
+
+(b) Write a program in Assembly which will take three inputs from keyboard. Show that resultant value will be over at least (≥20), after adding all 3 numbers. [20]
+For example:
+1st value: 7
+2nd value: 8
+3rd value: 5
+Result: 20
+[b: 20 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 11.
+
+Notes: Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 2
+
+(a) Consider the following sequence of bits: [20]
+[a: 20 marks]
+
+```text
+11010110
+```
+
+(i) Now perform ROL using CL=5, where CF=1.
+(ii) Perform RCR using CL=5, where CF=1.
+
+(b) Assume you have a physical address B1128h and offset 6A08h. What will be the segment value? [10]
+[b: 10 marks]
+
+(c) Give an example to show both overflows occurred. [10]
+[c: 10 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 11.
+
+Notes: Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 3
+
+(a) Write a program in Assembly to display the following pattern. For example: n=5 it will print the below: [20]
+[a: 20 marks]
+
+```text
+    1
+   2 2
+  3 3 3
+ 4 4 4 4
+5 5 5 5 5
+```
+
+You need to take ‘n’ as an input.
+
+(b) Consider the following program: [20]
+[b: 20 marks]
+
+```asm
+MOV AX, 5
+MOV BX, 6
+MOV CX, 7
+MOV DX, 8
+PUSH AX
+ADD AX, CX
+PUSH CX
+PUSH AX
+POP DX
+SUB DX, BX
+DEC DX
+PUSH DX
+POP AX
+POP BX
+POP CX
+```
+
+Now, draw stacks (whenever required) and show contents of relevant registers after each of the instruction above.
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 11, 12.
+
+Notes: Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 4
+
+(a) Give the new value of DX and AX (in decimal/hexa) and CF/OF for each of the following instructions: [08]
+[a: 8 marks]
+
+```text
+(i)   IMUL CX; where AX = 0100h and CX = FFFFh
+(ii)  IDIV BX; where AX = FFFDh, BX = 02h, DX = FFFFh
+(iii) DIV BX; where AX = FFFDh, BX = 2h, DX = FFFFh
+```
+
+(b) Write a program in Assembly language to replace each lowercase letter in the following string by its uppercase equivalent. [12]
+[b: 12 marks]
+
+```asm
+MSG DB 'this is a message'
+```
+
+Recall, ascii value of ‘A’ is 65 and ‘z’ is 122.
+
+(c) Suppose [20]
+[c: 20 marks]
+
+```text
+AX = 0500h, BX = 1000h, SI = 1500h, DI = 2000h
+offset 1000h contains 0100h
+offset 1500h contains 0150h
+offset 2000h contains 0200h
+offset 3000h contains 0400h
+offset 4000h contains 0300h
+```
+
+BETA is a word variable whose offset address is 1000h.
+Now for each of the following instructions, if legal, give the source offset address or register and result stored in the destination:
+
+```text
+(i)    MOV DI, SI
+(ii)   MOV DI, [DI]
+(ii)   ADD AX, [SI]
+(iv)   SUB BX, [DI]
+(v)    LEA BX, BETA[BX]
+(vi)   ADD [SI], [DI]
+(ii)   ADD BH, [BL]
+(ii)   ADD AH, [SI]
+(ix)   MOV AX, [BX+DI+BETA]
+(x)    SUB BETA [DI], AX
+```
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 12.
+
+Notes: The instruction numbering repeats ii in the source; retained. Some instructions are intentionally potentially illegal as asked in the question. Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 5
+
+(a) Write down a program in both Assembly Language and corresponding Machine Language to determine the result in SPA1 for the following arithmetic expression: [20]
+[a: 20 marks]
+
+```text
+-18 + (12 - 10) - (6 - 28)
+```
+
+You need to specify both the address and contents (in RAM) for both the languages.
+
+(b) Show the timing diagram (T1–T6) for SAP1 SUB routine, specifying all the control signals: [20]
+[b: 20 marks]
+
+```text
+CON = C_P E_P /L_M /CE /L_I /E_I /L_A E_A S_U E_U /L_B /L_O
+```
+
+A slash before a signal denotes the overbar printed above that signal in the source.
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 13.
+
+Notes: Part (a) prints SPA1, whereas (b) prints SAP1; retained. CON overbars are represented by slash prefixes; ordering and low-active bars follow the printed control word. Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 6
+
+(a) Assume, the following declaration have been made so far: [20]
+[a: 20 marks]
+
+```asm
+STR2 DB 'CDEF'
+STR1 DB 'ABXY'
+     DB 4 DUP(?); Now, STR1 can have at most 8 characters
+```
+
+Now write instructions to move STR2 in the middle of STR1, producing the string (STR1) “ABCDEFXY”. You may use temporary strings as necessary. You must use string instructions to write this program.
+
+(b) Write down the output of the following program: [12]
+[b: 12 marks]
+
+```asm
+.CODE
+main proc
+    mov ch,1
+All_:
+    MOV AL,ch
+    cmp al,2
+    jl FALSE
+    je TRUE
+    MOV BL,02H
+    MOV DX,0000H
+    MOV AH,00H
+L1:
+    DIV BL
+    CMP AH,00H
+    JNE NEXT
+    jmp FALSE
+NEXT:
+    INC BL
+    ;reset for division
+    MOV AX,0000H
+    MOV DX,0000H
+    MOV AL,ch
+    CMP BL,ch
+    JL L1
+TRUE:
+    MOV AH,02H
+    mov dl,
+    int 21h
+    mov dl,ch
+    add dl,48
+    INT 21H
+    mov ah,0
+    JMP EXIT
+FALSE:
+EXIT:
+    inc ch
+    cmp ch,10
+    jl All_
+    MOV AH,4CH
+    INT 21H
+main endp
+end main
+```
+
+(c) Use the addressing modes used in Array addressing to write appropriate instructions equivalent to each of the following string instructions: [08]
+(i) CMPSB
+(ii) SCASB
+[c: 8 marks]
+
+Note that the flags should reflect the result of the comparison. You may use AL for temporary storage, and assume DF=0. Also, assume that SI and DI already have the offset addresses of the source string and destination string respectively.
+[Hint: for MOV SB:
+
+```asm
+MOV AL, [SI]
+MOV [DI], AL
+INC SI
+INC DI
+```
+
+]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 13, 14.
+
+Notes: In the printed program (b), mov dl, has no visible second operand. It is preserved as incomplete, without guessing an operand. Label All_ contains a final underscore in the scan; retained. The source hint spells MOV SB with a space. Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 7
+
+(a) Explain with necessary figure how address and data bus of 8086 are demultiplexed using its interface circuitry. [20]
+[a: 20 marks]
+
+(b) What is the physical address space (range of address) in IVT of 8086? Calculate the memory address/location for the interrupt INT 5H in IVT. You must specify the addresses for CS and IP. [12]
+[b: 12 marks]
+
+(c) Why exactly 4 bytes are needed for each interrupt in IVT? Write down the main difference(s) between IVT and ISR. [08]
+[c: 8 marks]
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 14.
+
+Notes: Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2022 · Term final · Question 8
+
+(a) Show the BUS timing diagram for an 8086 I/O Read operation, specifying the signals for the following pins: [20]
+(i) A₁₉–A₁₆ / S₆–S₃
+(ii) AD₁₅–AD₀
+(iii) /RD
+(iv) /WR
+(v) DT//R (overbar over R)
+(vi) ALE
+(vii) MN//MX (overbar over MX)
+(viii) M//IO (overbar over IO)
+[a: 20 marks]
+
+(b) Write down the basic functions of the following pins of 8086: [20]
+(i) MN//MX (overbar over MX)
+(ii) NMI
+(iii) READY
+(iv) /TEST
+[b: 20 marks]
+
+Leading slash denotes a printed overbar; a double slash after a mode separator indicates the overbar applies to the signal portion following it.
+
+Total: 40 marks.
+Source: CSE,L-3,T-1,2022-18072026044723.pdf, pages 14.
+
+Notes: Pin overbars are given explicitly in text to avoid losing their active-low designation. No timing diagrams were supplied in the question: drawing them is the requested task. Filename year is 2022; both MMA section covers read Term Final (Spring) Examination 2021: July-Aug 2021.
+
+## CSE-305 · 2023 · Term final · Question 1
+
+a. Analyze the protection scheme of 80286 among multiple tasks or users.
+[a: 14 marks]
+
+b. Suppose an 80286 segment descriptor is described as (0000912020141234)₁₆. Analyze:
+
+(i) The location of the segment in memory,
+[b(i): 7 marks (7+7+7+5=26); b: 26 marks (7+7+7+5)]
+
+(ii) Size of the segment,
+[b(ii): 7 marks (7+7+7+5=26)]
+
+(iii) Who can access this segment and
+[b(iii): 7 marks (7+7+7+5=26)]
+
+(iv) Whether this is a code or data or stack segment.
+[b(iv): 5 marks (7+7+7+5=26)]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 9.
+
+
+## CSE-305 · 2023 · Term final · Question 2
+
+a. Once you are in “protected mode” in 80286, you cannot come back to “real mode” without “rebooting” the processor. How 80386 handles this problem?
+[a: 16 marks]
+
+b. Analyze a segment descriptor of 80386.
+[b: 24 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 9.
+
+
+## CSE-305 · 2023 · Term final · Question 3
+
+a. List the specialties of port C in comparison to port A or Port B of an 8255.
+[a: 12 marks]
+
+b. The control register of an 8255 contains (FF)₁₆. Analyze the operation of the 8255 ports.
+[b: 16 marks]
+
+c. Compare the “minimum mode” and “maximum mode” of operation of an 8086.
+[c: 12 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 9.
+
+
+## CSE-305 · 2023 · Term final · Question 4
+
+a. List and describe the steps INTEL processors will take when they respond to an external interrupt.
+[a: 16 marks]
+
+b. Analyze why Pentium is known as “Super scalar” processor.
+[b: 8 marks]
+
+c. Illustrate the differences of page memory management of 80386 and Pentium.
+[c: 16 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 9.
+
+
+## CSE-305 · 2023 · Term final · Question 5
+
+Scenario: Entrepreneur Mr. X runs a modest business. His products are safe at normal temperatures (below 25 degree Celsius), but their quality deteriorates at temperature above 30 degrees Celsius. Mr. X cannot afford to have the air conditioning on all the time because of his poor financial situation and rising utility costs. Therefore, he seeks a low cost device that can alert him when to active the air conditioning.
+
+Now, he wants to design and developed a microcontroller-based (Arduino) System that will do the following:
+(i) Above 30 degree Celsius the Red LED will blink.
+(ii) Between 25 degree and 30 degree a Yellow LED will turn ON (in low intensity).
+(iii) Under 25 degree Celsius a Green LED will turn ON.
+You need to answer the followings based on the above scenario:
+
+a. Determine the hardware requirements.
+[a: 7 marks]
+
+b. Draw the hardware connections.
+[b: 13 marks]
+
+c. Write down the code (Arduino Code) accordingly to the hardware connection of b.
+[c: 20 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 10.
+
+
+## CSE-305 · 2023 · Term final · Question 6
+
+a. Illustrate with examples how overflow is detected for both signed and unsigned numbers in 8086.
+[a: 12 marks]
+
+b. Construct an assembly program that will prompts the user to enter a character, and on subsequent lines prints its ASCII code in binary, and the number of 1 bit in its ASCII code.
+[b: 13 marks]
+
+c. Construct a program in assembly language to display the following pattern. For example, n = 5 will print the below where n is the user input.
+```text
+1 2 3 4 5
+2 3 4 5
+3 4 5
+4 5
+5
+```
+Note that, the range of n is 0 to 5.
+[c: 15 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 10.
+
+
+## CSE-305 · 2023 · Term final · Question 7
+
+a. Describe the effect of MUL and IMUL on the status flags of 8086. For the following instructions find out the new value of AH, AL and CF/OF.
+(i) MUL BL; if AL contains FFh and BL contains 80h
+(ii) IMUL BL; if AL contains FFh and BL contains 80h
+[a: 16 marks]
+
+b. Write a procedure FIBONACCI that will compute the nth term of the Fibonacci sequence for a positive integer n. The procedure should receive n in CX and return the nth term of the fibonacci sequence in AX. Assume that there will be no overflow.
+[b: 16 marks]
+
+c. Briefly discuss the following instructions with appropriate examples:
+(i) PUSHF
+(ii) POPF
+[c: 8 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 10, 11.
+
+
+## CSE-305 · 2023 · Term final · Question 8
+
+a. Illustrate with examples how a number can be checked whether it’s odd or even without division or addition or subtraction instructions in 8086 using assembly language.
+[a: 12 marks]
+
+b. Discuss how an instruction is executed in 8086 in terms of the execution steps.
+[b: 12 marks]
+
+c. Using only MOV, ADD, SUB, INC, DEC and NEG change the following high level language assignment statements into low level assembly language. Assume, A, B, C are Word variables.
+```text
+(i) A = -A + B - 1
+(ii) B = 3B + 2A - 7
+(iii) C = -(C + 1)
+(iv) B = A - B
+(v) C = 2(A+B) - 4C
+```
+[c: 16 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 , 2023.pdf, pages 11.
+
+
+## CSE-305 · 2024 · Term final · Question 1
+
+a. Briefly describe the interrupts of 8086 predefined by INTEL.
+[a: 12 marks]
+
+b. List and describe the steps INTEL microprocessor take when an external interrupt arrives.
+[b: 12 marks]
+
+c. What address in the interrupt-vector table are used for a Type-1 interrupt?
+[c: 6 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 13.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 2
+
+a. Analyze how protection among tasks or users are ensured in 80286.
+[a: 10 marks]
+
+b. Suppose DS [Data Segment] register contains (OOFF)₁₆ which points to a segment descriptor which is described in memory as (0000912021145678)₁₆. Analyze:
+
+(i) Segment start address,
+[b(i): 6 marks ((6+6+6+2=20)); b: 20 marks (6+6+6+2)]
+
+(ii) Size of the segment in bytes,
+[b(ii): 6 marks ((6+6+6+2=20))]
+
+(iii) Who can use this segment and
+[b(iii): 6 marks ((6+6+6+2=20))]
+
+(iv) Type of the segment (code/data/stack).
+[b(iv): 2 marks ((6+6+6+2=20))]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 13.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted. The segment-register value is printed using letter O as (OOFF)₁₆ in native text and appears OOFF in the source image; this source ambiguity is preserved rather than silently changed to 00FF.
+
+## CSE-305 · 2024 · Term final · Question 3
+
+a. In 80286, returning from “protected mode” to “read mode” is not allowed and not possible without “rebooting”. How 80386 made this possible?
+[a: 12 marks]
+
+b. Analyze 80386 segment descriptor.
+[b: 18 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 13.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted. Part (a) says “read mode” in the source; retained.
+
+## CSE-305 · 2024 · Term final · Question 4
+
+a. Explain why Pentium is known as ‘superscalar’ microprocessor.
+[a: 6 marks]
+
+b. Illustrate how paging memory management of Pentium is different from that of 80386 processor.
+[b: 12 marks]
+
+c. The control register of an 8255 contains (F7)₁₆. Analyze the operations of 8255 ports.
+[c: 12 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 13.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 5
+
+Mr. X owns a small green house where he grows temperature sensitive plants. To automate the environment control, he want to build a system using two microcontroller boards. One microcontroller, placed in his control room, will act as the Host, while the other will be inside the greenhouse as the local device. The host microcontroller will be connected to a LED and will send command to the Local microcontroller through UART communication. The local microcontroller, equipped with an LM35 temperature sensor and a servo motor, will read the temperature of the greenhouse and send it back to control panel. If the temperature exceeds a set threshold, the host will instruct the local to adjust the vents via the servo motor, maintaining an ideal environment for the plants.
+
+Now, Mr. X wants to design and develop a microcontroller based system that will do the following:
+(i) If the temperature of the greenhouse goes under 25 degree, then LED will turn off and the vents will be adjusted to 90°.
+(ii) If the temperature of the greenhouse goes above 25 degree, then the LED will turn on and the vents will be adjusted to 180°.
+Note that, LED is connected with the Host and the vent is connected with the Local microcontroller.
+You need to answer the followings based on the above scenario:
+
+a. Identify the hardware requirements.
+[a: 5 marks]
+
+b. Draw the hardware connections.
+[b: 10 marks]
+
+c. Write down the code accordingly to the hardware connection of 5(b).
+[c: 15 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 14.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 6
+
+a. Describe the effect of MUL and IMUL on the status flags of 8086. For the following instructions find the new value of AH, AL and CF/OF.
+(i) MUL BL; if AL contains 80H and BL contains FFH.
+(ii) IMUL BL; if AL contains 80H and BL contains FFH.
+[a: 15 marks]
+
+b. Describe the following instructions with appropriate examples:
+(i) PUSH
+(ii) POP
+(iii) CALL
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 14.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 7
+
+a. Find out the value of DL register and carry Flag status after the execution of each code snippet:
+```asm
+; (i)
+MOV CL, 03H
+MOV DL, 18H
+SHL DL, CL
+```
+```asm
+; (ii)
+MOV CL, 03H
+MOV DL, -18H
+SAR DL, CL
+NEG DL
+```
+[a: 15 marks]
+
+b. Construct a program in assembly language to display the following patterns. For example, n = 5 will print the below pattern where n is the user input. Note that, the range of n is 0 to 5.
+```text
+1
+2 3
+3 4 5
+4 5 6 7
+5 6 7 8 9
+```
+[b: 15 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 14, 15.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 8
+
+a. Write an assembly program that lets the user type some text, considering words separated by spaces, ending with a carriage return, and displays the text in the same word order as entered, but with the letters in each word reversed.
+Sample Input-Output:
+```text
+Enter a string: this is a test
+Output: siht si a tset
+```
+[a: 15 marks]
+
+b. One of the fundamental differences between an Arduino and Raspberry Pi is the presence of an operating system. Describe the implications of using an OS (like Linux) on Raspberry Pi compared to the Base-metal programming Approach on Arduino.
+[b: 10 marks]
+
+c. Describe how an Arduino Uno sends an analog output.
+[c: 5 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 15.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 1
+
+a. What are the predefined interrupts in 8086? Briefly describe them.
+[a: 16 marks]
+
+b. List and describe the steps INTEL microprocessor take when an interrupts arrive.
+[b: 16 marks]
+
+c. Calculate the address from where CS and IP can be obtained for interrupt type 2.
+[c: 8 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 10.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 2
+
+a. The control register of an 8255 contains (F7)₁₆. Analyze the operations of 8255 ports.
+[a: 16 marks]
+
+b. Explain why Pentium is known as ‘superscalar’ microprocessor.
+[b: 8 marks]
+
+c. Illustrate the difference of paging memory management of Pentium to that of 80386.
+[c: 16 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 10.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 3
+
+a. Analyze how protection among tasks or users are ensured in 80286.
+[a: 14 marks]
+
+b. Suppose a segment register contains (OOFF)₁₆ which points to a segment descriptor which is described in memory as (0000912021145678)₁₆. Analyze:
+
+(i) Segment start address,
+[b(i): 8 marks ((8+8+7+3)); b: 26 marks (8+8+7+3)]
+
+(ii) Size of the segment in bytes,
+[b(ii): 8 marks ((8+8+7+3))]
+
+(iii) Who can use this segment and
+[b(iii): 7 marks ((8+8+7+3))]
+
+(iv) Type of the segment (code/data/stack).
+[b(iv): 3 marks ((8+8+7+3))]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 10.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted. The segment-register value is printed using letter O as (OOFF)₁₆ in native text and appears OOFF in the source image; this source ambiguity is preserved rather than silently changed to 00FF.
+
+## CSE-305 · 2024 · Term final · Question 4
+
+a. Discuss the ‘virtual 8086’ mode of operation of 80386.
+[a: 16 marks]
+
+b. Analyze 80386 segment descriptor.
+[b: 24 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 10.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 5
+
+Mr. X owns a small green house where he grows temperature sensitive plants. To automate the environment control, he want to build a system using two microcontroller boards. One microcontroller, placed in his control room, will act as the Host, while the other will be inside the greenhouse as the local device. The host microcontroller will be connected to a LED and will send command to the Local microcontroller through UART communication. The local microcontroller, equipped with an LM35 temperature sensor and a servo motor, will read the temperature of the greenhouse and send it back to control panel. If the temperature exceeds a set threshold, the host will instruct the local to adjust the vents via the servo motor, maintaining an ideal environment for the plants.
+
+Now, Mr. X wants to design and develop a microcontroller based system that will do the following:
+(i) If the temperature of the greenhouse goes under 25 degree, then the LED will turn off and the vents will be adjusted to 90°.
+(ii) If the temperature of the greenhouse goes above 25 degree, then the LED will turn on and the vents will be adjusted to 180°.
+Note that, LED is connected with the Host and the vent is connected with the local microcontroller.
+You need to answer the followings based on the above scenario:
+
+a. Identify the hardware requirements.
+[a: 7 marks]
+
+b. Draw the hardware connections.
+[b: 13 marks]
+
+c. Write down the code accordingly to the hardware connection of 5(b).
+[c: 20 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 11.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 6
+
+a. Describe the effect of MUL and IMUL on the status flags of 8086. For the following instructions find the new value of AH, AL and CF/OF.
+(i) MUL BL; if AL contains 80H and BL contains FFH.
+(ii) IMUL BL; if AL contains 80H and BL contains FFH.
+[a: 20 marks]
+
+b. Describe the following instructions with appropriate examples:
+(i) PUSH
+(ii) POP
+(iii) CALL
+[b: 20 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 11.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 7
+
+a. Find out the value of DL register and carry Flag status after the execution of each code snippet:
+```asm
+; (i)
+MOV CL, 03H
+MOV DL, 18H
+SHL DL, CL
+```
+```asm
+; (ii)
+MOV CL, 03H
+MOV DL, -18H
+SAR DL, CL
+NEG DL
+```
+[a: 20 marks]
+
+b. Construct a program in assembly language to display the following patterns. For example, n = 5 will print the below pattern where n is the user input. Note that, the range of n is 0 to 5.
+```text
+1
+2 3
+3 4 5
+4 5 6 7
+5 6 7 8 9
+```
+[b: 20 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 11.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2024 · Term final · Question 8
+
+a. Write an assembly program that lets the user type some text, considering words separated by spaces, ending with a carriage return, and displays the text in the same word order as entered, but with the letters in each word reversed.
+Sample Input-Output:
+```text
+Enter a string: this is a test
+Output: siht si a tset
+```
+[a: 20 marks]
+
+b. Due to the fundamental differences between an Arduino and Raspberry Pi is the presence of an operating system. Describe the implications of using an OS (Linux like) on Raspberry Pi compared to the Base-metal programming Approach on Arduino.
+[b: 12 marks]
+
+c. Describe how an Arduino Uno sends an analog output.
+[c: 8 marks]
+
+Total: 40 marks.
+Source: CSE L-3 T-1 ,2024.pdf, pages 12.
+
+Notes: The source PDF contains two distinct 2024 CSE305 papers with the same Oct 2024–Nov 2024 heading: 240-mark paper on pp10–12, and 180-mark paper on pp13–15. Both are retained as separate editions; no draft/final status is asserted.
+
+## CSE-305 · 2025 · Term final · Question 1
+
+a. Elaborate the processes and events that will take place when an INTEL microprocessor received a high signal on its INTR pin.
+[a: 12 marks]
+
+b. Briefly discuss the pre-defined interrupts of 8086.
+[b: 12 marks]
+
+c. Calculate the address of Type 4 interrupt of 8086.
+[c: 6 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 7.
+
+
+## CSE-305 · 2025 · Term final · Question 2
+
+a. List the differences in characteristics between Port A and Port C of an 8255.
+[a: 10 marks]
+
+b. Compute the mode set control word for the following configuration of an 8255:
+Port A in bidirectional and Port B in hand-shake input.
+[b: 10 marks]
+
+c. Suppose a segment register of 80386 points to a segment descriptor as (20 C0 F0 A1 23 45 67 89)₁₆. Find (i) The starting address and (ii) Size of the segment.
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 7.
+
+
+## CSE-305 · 2025 · Term final · Question 3
+
+a. Explain why Pentium is known as ‘super-scalar’ processor.
+[a: 7 marks]
+
+b. Explain why 8086 is known as 16-bit processor whereas Pentium is known as 32-bit processor.
+[b: 7 marks]
+
+c. Differentiate between Pentium and 80386 processor’s paging scheme.
+[c: 16 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 7.
+
+
+## CSE-305 · 2025 · Term final · Question 4
+
+a. Explain the ‘minimum’ and ‘maximum’ mode of operations of 8086.
+[a: 6 marks]
+
+b. Differentiate the usage of segment registers of 80286 in real mode and protected mode.
+[b: 12 marks]
+
+c. Elaborate how 80286 ensures protection between users and tasks.
+[c: 12 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 7.
+
+
+## CSE-305 · 2025 · Term final · Question 5
+
+Azmain Taki, the owner of a manufacturing company, plans to introduce a mini robotic crane prototype for use in an automated assembly line. He has assigned you, as an embedded systems engineer, to design the system using an ATmega328P based microcontroller.
+The crane system must meet the following requirements:
+- A base servo motor rotates the crane arm within 0° - 180°.
+- A claw servo motor can open (0°) and close (90°) to grip objects.
+- A joystick module is provided for operator input: moving the joystick left/right rotates the base.
+- Pressing the joystick button toggles the claw open/close.
+- Two indicator LEDs are placed on either side of the crane to indicate the current rotation direction (left LED ON when moving left, right LED ON when moving right).
+- The system is powered by a regulated 5 V supply, with all grounds common.
+Azmain Taki expects a working prototype with both the hardware prototype interfacing and the software program implemented correctly. Additionally he expects you to maintain documentation of the used microcontroller.
+TASKS:
+
+a. Sketch a complete interfacing diagram of the system, showing connections between the microcontroller, joystick module, servos, LEDs, and power supply. Clearly label the ports and pins used.
+[a: 10 marks]
+
+b. Write a program that:
+- Reads joystick input (X-axis via analog input & button as digital input).
+- Rotates the base servo proportionally from 0°-180° based on joystick position.
+- Lights up the corresponding LED according to base movement direction.
+- Toggles the claw servo between open (0°) and closed (90°) on each button press.
+[b: 10 marks]
+
+c. Sketch the Port Structured Diagram of ATmega328P microcontroller.
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 8.
+
+
+## CSE-305 · 2025 · Term final · Question 6
+
+a. Below is the basic program structure of an assembly program. Explain each part of the program structure briefly.
+```asm
+.MODEL SMALL
+.STACK 100H
+.DATA
+[a: 10 marks]
+
+.CODE
+MAIN PROC
+
+MAIN ENDP
+END MAIN
+```
+
+b. Verify the following instructions if it is legal or illegal. If illegal, explain why?
+```text
+(i) MUL AL, AL
+(ii) MOV AK, VAR1
+(iii) MOV AL, 10000000
+(iv) ADD AL, DX
+(v) NEG VAR1
+```
+[b: 10 marks]
+
+c. Write assembly instructions to formulate the following equation for unsigned numbers. Use as much variables as you want.
+```text
+Y = (M³ - 2N²) + ((P × Q) / R²) - (((S × T) / 16) % 5)
+```
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 8, 9.
+
+Notes: Part (b)(ii) prints AK; retained. Part (b)(iii) prints 10000000 without a base suffix; no suffix added. Mathematical fractions in (c) are transcribed using explicit parentheses.
+
+## CSE-305 · 2025 · Term final · Question 7
+
+a. Write an assembly program that takes Income as input (Decimal) (max value 100) and calculate income_tax based on the following rules:
+(i) If income < 0, print “Invalid”.
+(ii) Otherwise, compute tax as:
+- for income 0 tk – 25 tk range: No tax
+- for income 26 tk – 50 tk range: 25% of the amount above 25.
+- for income 51 tk – 100 tk range: 25% of the first 25 tk above the base 25 tk + 50% of the amount above 50 tk
+- for income above 100 tk: 25% of the slab 25 tk – 50 tk + 50% of the slab 51 tk – 100 tk + 75% of the slab above 100 tk
+(iii) After computing the tax, apply a rebate after taking age as input:
+- If age >= 60, reduce the tax by 25%.
+- However, the maximum rebate allowed is 25 tk.
+(iv) Finally print the final payable tax in Decimal Number.
+[a: 20 marks]
+
+b. Write the algorithm for Binary Output and illustrate the full process showing the state of the register after each iteration. Imagine the register and input being 8 bits.
+[b: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 9.
+
+Notes: The input is stated to have maximum value 100, but the source also specifies a slab for income above 100. Both statements are preserved.
+
+## CSE-305 · 2025 · Term final · Question 8
+
+a. Write an assembly program that will take a decimal number as input and calculate the factorial of that number and print it.
+[a: 10 marks]
+
+b. The initial state of registers and stack of a system is given in figure 1. Now after executing the following instructions, sketch the final state of the registers and the stack.
+```asm
+PUSH AX
+PUSH BX
+POP CX
+ADD AX, CX
+PUSH DX
+SUB AX, BX
+POP BX
+PUSH CX
+PUSH AX
+ADD AX, BX
+POP DX
+SUB BX, CX
+PUSH BX
+POP AX
+POP CX
+```
+Figure 1: Initial state (handwritten source diagram)
+| Register | Value |
+| --- | --- |
+| DX | 4FFF |
+| CX | 0011 |
+| BX | 5678 |
+| AX | 1234 |
+| SP | 0100 |
+The stack is labeled “STACK (empty)”. Its blank cells are labeled by offsets 00EE, 00F0, 00F2, 00F4, 00F6, 00F8, 00FA, 00FC, 00FE, 0100 from top to bottom. The SP arrow points to the bottom cell at offset 0100.
+[b: 10 marks]
+
+c. Describe the following instructions with appropriate examples:
+(i) IMUL
+(ii) DUP Operator
+(iii) CALL
+(iv) RET
+[c: 10 marks]
+
+Total: 30 marks.
+Source: CSE L-3 T-1 2025.pdf, pages 9.
+
+Notes: Figure 1 register values and stack offsets are transcribed as printed; all cells are empty initially. No missing content supplied.
+
+## CSE-305 · Undated · Exam suggestion · Question 1
+
+Explain the roles of Ports A, B and C of the 8255. Compare Port C with Ports A and B, including the uses discussed in class.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 2
+
+Explain the 8255 modes of operation: Mode 0, Mode 1 and Mode 2. Identify the appropriate mode for a stated I/O scenario.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 3
+
+Given a port configuration, construct and explain the 8255 mode-set control word. Show how the required directions and operating modes are selected.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 4
+
+Explain and construct a bit set/reset (BSR) control word for the 8255. Distinguish it from a mode-set control word.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 5
+
+Explain how to connect the 8255 to a microprocessor and determine its port/control-register addresses from a stated address-decoding arrangement.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 6
+
+Draw and explain the internal architecture of the 8086, separating the Bus Interface Unit (BIU) and Execution Unit (EU) and explaining how they cooperate.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The opening topic list contains the apparent transcript error “8206”; the later explicit 8086/BIU/EU discussion and the supplied closing slides identify the intended processor as 8086.
+
+## CSE-305 · Undated · Exam suggestion · Question 7
+
+Explain the general-purpose registers, segment registers and flag bits of the 8086. State what the taught flags mean and how they are used.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 8
+
+Explain 8086 memory addressing and calculate physical addresses from the given segment and offset values.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 9
+
+Explain the addressing modes taught for the 8086 and identify the addressing mode used by a given instruction.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 10
+
+Explain the roles of the 8086 signals discussed in class and determine which signal is required in a stated operation. Focus on understanding their purposes rather than memorizing an entire pin diagram.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 11
+
+Compare the minimum and maximum operating modes of the 8086 and explain their intended configurations and signal roles.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 12
+
+Explain what an interrupt is and trace how an 8086 interrupt is handled. Identify the registers, memory information and execution steps needed for a stated interrupt scenario.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 13
+
+Explain the five dedicated/predefined 8086 interrupts discussed in class, including their purposes and how they are invoked.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 14
+
+Explain the internal blocks of the 80286 and describe its general-purpose registers, segment registers and flag information.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. A handwritten block-count note is uncertain; the prompt follows the transcript’s four-block description and asks for the architecture shown in the lecture reference.
+
+## CSE-305 · Undated · Exam suggestion · Question 15
+
+Compare the real and protected operating modes of the 80286, giving particular attention to the protected-mode memory system.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 16
+
+Explain 80286 protected-mode memory addressing using a selector and a segment descriptor. Contrast the process with real-mode segment-offset addressing.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 17
+
+Explain the 80286 segment descriptor and interpret the relevant fields for a stated addressing or protection problem.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 18
+
+Explain how the 80286 implements protection between tasks or users. Use the selector/descriptor and protection concepts taught in class to justify whether access is permitted in a scenario.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The closing course-outline slide, PDF page 392, labels 80286 as a compulsory-question focus. This is preserved as source emphasis, not a guarantee of the final exam.
+
+## CSE-305 · Undated · Exam suggestion · Question 19
+
+Explain the 80386 architecture, general-purpose registers, segment registers and flags. Identify the additional segment registers and the special control, debug and test registers discussed in class.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 20
+
+Explain the real, protected and virtual 8086 operating modes of the 80386. Distinguish the role of virtual 8086 mode from the other two.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 21
+
+Compare the segment descriptors and protected-mode addressing of the 80286 and 80386. Explain the important field differences using the taught formats.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 22
+
+Explain how paging works in the 80386 and trace the translation steps for a stated paging problem.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 23
+
+Explain the Pentium memory system to the extent covered in class. Relate its organization to the processor’s operation.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The instructor limits Pentium preparation to material actually taught, rather than the full breadth of the merged slide deck.
+
+## CSE-305 · Undated · Exam suggestion · Question 24
+
+Explain the Pentium superscalar environment and the reason for describing the processor as superscalar.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 25
+
+Briefly explain branch prediction and its purpose in the Pentium, following the scope discussed in class.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 26
+
+Explain the Pentium cache architecture and the role of separate instruction and data caches.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 27
+
+Compare the 80386 and Pentium paging schemes covered in class. Explain how each translation mechanism operates, using the taught page-table and page-size arrangements.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The transcript’s “386 paging versus two-level paging” wording is ambiguous. The final handwritten note explicitly says “386 paging vs Pentium paging”; the prompt uses that clearer comparison without asserting that the 80386 is not a two-level paging system.
+
+## CSE-305 · Undated · Exam suggestion · Question 28
+
+Explain the arithmetic co-processor data formats taught in class and interpret their components, including the floating-point representation where applicable.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 29
+
+Review the 64-bit architecture discussion associated with the processor family and explain the differences covered in class.
+
+Marks not specified in the source.
+Source: Part A instructor transcript supplied with the archive request (supplied instructor transcript).
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The transcript mentions 64-bit architecture but does not provide a detailed subtopic list. This prompt is intentionally limited to the taught comparison.
+
+## CSE-305 · Undated · Exam suggestion · Question 1
+
+Prepare an integrated microcontroller/Arduino problem combining two or three sensors and a suitable communication protocol, similar in scope to the class-test scenario mentioned in the handnote. State the required connections, program logic and assumptions.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The handnote labels microcontroller work as a compulsory-question focus and mentions a scenario with two or three sensors. It does not supply a complete new exam scenario, so no particular sensors or timing requirements are invented.
+
+## CSE-305 · Undated · Exam suggestion · Question 2
+
+Compare the basic operation and differences of UART, I2C and SPI. Choose a suitable protocol for a stated scenario and justify the choice.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 3
+
+Prepare the complete set of array-based assembly exercises taught in class, including the relevant addressing, traversal and program logic.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The source marks arrays as a full-set preparation area; individual lecture exercises are separately listed as lecture practice.
+
+## CSE-305 · Undated · Exam suggestion · Question 4
+
+Prepare the basic assembly and conditional-branching exercise set covered in class. Trace the conditions and explain how the required result is produced.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 5
+
+Review the taught stack exercise set, tracing the stack/register effects of the relevant instructions.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 72.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The final handwritten line mentions a stack exercise set conditionally. Its wording is not treated as a definite exam prediction.
+
+## CSE-305 · Undated · Exam suggestion · Question 6
+
+Use the potentiometer’s stated input range to control a servo over the required angular range. Explain the mapping and the program logic.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 70.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The handwritten example uses map(sig, 0, 5, 0, 180). That is retained as the stated example range, not asserted to be the raw ADC range for every Arduino setup.
+
+## CSE-305 · Undated · Exam suggestion · Question 7
+
+Prepare the Arduino traffic-control system for the intersection of four roads referenced in the notes and lecture slides. Explain the control sequence and program logic using the supplied project specification.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 70.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The handnote says a similar question may appear and points to the slide project link. It does not specify a new set of traffic timings.
+
+## CSE-305 · Undated · Exam suggestion · Question 8
+
+Explain asynchronous serial communication, optional parity, and the receive/transmit connections shown in the handnote. Discuss the use of software serial when additional serial pins are needed.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 70.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 9
+
+Explain the master/slave communication arrangement for multiple sensors on I2C, and the taught scenario in which a second Arduino is used when more interface connections are needed.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned.
+
+## CSE-305 · Undated · Exam suggestion · Question 10
+
+Explain SPI’s wiring requirements and compare its communication trade-offs with the other protocols in a stated scenario.
+
+Marks not specified in the source.
+Source: MMA_RashidSir.pdf, pages 71.
+
+Notes: A study prompt derived from supplied suggestions, not a confirmed exam question. No date or marks are assigned. The handnote describes SPI as fastest and highlights its four-wire requirement. The prompt asks for scenario-based trade-offs rather than treating that speed ranking as universal.
+
+## CSE-305 · Undated · Lecture practice · Question 1
+
+Write a Assembly program to find maximum between two numbers.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 61.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 2
+
+Write a Assembly program to find maximum between three numbers.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 61.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 3
+
+Write a Assembly program to check whether a number is negative, positive or zero.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 61.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 4
+
+Write a Assembly program to check whether a number is even or odd.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 61.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 5
+
+Write an assembly code to input two unsigned and output the product.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 134.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 6
+
+Write an assembly code to input two signed number and output the product.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 134.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 7
+
+Write an assembly code to input two unsigned and output the division.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 134.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 8
+
+Write an assembly code to input two signed number and output the division.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 134.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 9
+
+Take Decimal number as input and output the decimal number.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 134.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 10
+
+Your friend Swapnil collected different types of bank notes and coins. But now he is being very lazy to count the total amount of money he collected. So, you must help him count the total amount of money. But as you are an Computer Science Engineering student you want to do the job efficiently using an assembly program. Ignore the floating points.
+
+Sample Input:
+
+```text
+1000 taka note : 3
+500 taka note : 5
+200 taka note : 3
+100 taka note : 7
+50 taka note : 9
+20 taka note : 2
+10 taka note : 4
+2 taka note : 3
+50 paisa coin : 14
+25 paisa coin : 13
+```
+
+Sample Output:
+
+```text
+Total Money: 7346
+```
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 135.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 11
+
+Write a program in assembly to display a positive/negative decimal number (put in AX) as output. [using stack/not using stack]
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 136.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 12
+
+Take an integer number as input and print the reverse of that number.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 136.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 13
+
+Write an assembly program that finds the sum of the following series up to n terms:
+
+```text
+0, 1, 8, 27, 64, ...
+```
+
+You must take n as an input, assuming 0 < n < 10. You need to put the final sum in the AX Register. Example: Input: n = 5; Output: AX = 225 (in decimal).
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 136.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed. The printed series begins with 0, but the n=5 example gives 225. The source example and sequence are both retained; the indexing convention is not silently repaired.
+
+## CSE-305 · Undated · Lecture practice · Question 14
+
+Find the sum of all the elements of the array arr that contains 10, 20, 30, 40, 50.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 15
+
+Take an integer n as the array size and input n elements into the array. Finally, print the sum of all the elements in the array.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 16
+
+Given an array that contains 10, 11, 9, 15, 20, 25, 21, find the maximum element from the array.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 17
+
+Separate the even and odd elements of an array and store them in two arrays named even and odd, respectively. Print both even and odd arrays.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 18
+
+Insert an element to an array at a given position.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 19
+
+Merge two sorted arrays into one sorted array.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 20
+
+Given an array that contains 5, 4, 6, 2, 3, 7, 1, 7, reverse the array without using any additional array (two pointer approach).
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 21
+
+Calculate frequency of each element for the given an array of 5, 6, 5, 6, 5, 7, 8 values.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 22
+
+Sort an array using bubble sort.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 167.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 23
+
+Character Case Converter: Change a character’s (stored in AL) case and store it in AL using a procedure. Take the character input from main procedure. Print the character before and after case conversion in main procedure.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 172.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 24
+
+Maximum Element: Find the maximum element from an array and store it in AX using a procedure. Take the array input in one procedure, and the maximum finding logic in another procedure. Call the procedures from main procedure.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 172.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 25
+
+Count Even Elements: Write a procedure CountEven that takes an array’s offset (SI) and length (CX), and returns the count of even numbers in the array in AX.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 172.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 26
+
+Array Reversal: Write a procedure ReverseArray that takes an array’s offset (SI) and length (CX), and reverses the array in place.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 172.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 27
+
+Linear Search: Write a procedure LinearSearch that takes an array and a target value (AX), and returns the index of the target in BX if found, or -1 in BX if not found.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 172.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 28
+
+Maximum how many Left Shift operation needed for setting a n-bit register to 0?
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 90.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 29
+
+Write a code that sets BL to 0 by Left Shift operation.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 90.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
+
+## CSE-305 · Undated · Lecture practice · Question 30
+
+Write a code for printing the binary value of a 8 bit register/variable.
+
+Marks not specified in the source.
+Source: Rashid Sir Emrged.pdf, pages 90.
+
+Notes: A practice exercise from the supplied lecture slides, not a past exam question. No year or marks are printed.
