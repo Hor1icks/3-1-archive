@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; connect-src https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ6PEF1BRP"></script>
+  <script src="analytics.js?v=1"></script>
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#183e35">
@@ -51,7 +53,7 @@
     </main>
   </div>
   <div id="sidebar-backdrop" hidden></div>
-  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Close about dialog" type="button">×</button><span class="eyebrow">THE QUESTION ARCHIVE</span><h2>Your semester, in one place.</h2><p id="archive-summary"></p><h3>How it is structured</h3><p>Start with a subject, then combine its chapter, topic, year and assessment filters. A question can cover several chapters; its complete scenario and subparts stay together. Compiler Part A follows the supplied syllabus, while Part B follows the four supplied lecture and suggestion areas. MMA study Part A covers Intel processors; Part B covers assembly and microcontrollers. Its older papers retain their printed sections even when these differ from the current study-part division.</p><p>Quoted searches such as <code>"left recursion" "SDD"</code> match either phrase. Marks are shown where the source supplies them. Undated preparation prompts are labeled separately, with no invented marks or exam year.</p><ul id="archive-notes"></ul><p class="privacy-note">Saved questions stay in this browser. There are no accounts or trackers. This is a public question archive; source papers are available for reference.</p></dialog>
+  <dialog id="about-dialog"><button class="dialog-close icon-button" aria-label="Close about dialog" type="button">×</button><span class="eyebrow">THE QUESTION ARCHIVE</span><h2>Your semester, in one place.</h2><p id="archive-summary"></p><h3>How it is structured</h3><p>Start with a subject, then combine its chapter, topic, year and assessment filters. A question can cover several chapters; its complete scenario and subparts stay together. Compiler Part A follows the supplied syllabus, while Part B follows the four supplied lecture and suggestion areas. MMA study Part A covers Intel processors; Part B covers assembly and microcontrollers. Its older papers retain their printed sections even when these differ from the current study-part division.</p><p>Quoted searches such as <code>"left recursion" "SDD"</code> match either phrase. Marks are shown where the source supplies them. Undated preparation prompts are labeled separately, with no invented marks or exam year.</p><ul id="archive-notes"></ul><p class="privacy-note">Saved questions stay in this browser. There are no accounts. Google Analytics measures website usage. This is a public question archive; source papers are available for reference.</p></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
